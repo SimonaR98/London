@@ -1,77 +1,76 @@
-* {
-    box-sizing: border-box;
-}
-
-#header-title {
-    width: auto;
-    min-height: 54px;
-    border: 1px solid #c8102e;
-    text-align: center;
-    color: white;
-    font: 40px 'Great Vibes';
-    border-radius: 48px;
-    background-color: #c8102e;
-}
-
-/*Riga intestazione*/
-.header-row {
-    display: flex;
-    align-items: center;
-    margin: 10px;
-    justify-content: left;
-    background-color: red;
-}
-
-.header-left {
-    display: flex;
-    align-items: flex-end;
-    gap: 8px;
-}
-
-.header-right {
-    display: flex;
-    gap: 8px;
-    font-size: 21px;
-    color: white;
-}
-
-/*Stile menù*/
-.list-btn {
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-}
-
-.list {
-    position: relative;
-    display: inline-block;
-}
-
-.list-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.list-content a {
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
     color: black;
-    padding: 12px 16px;
+}
+
+.section-title {
+    position: relative;
+    height: 80vh;
+    /* Altezza della testata (80% dello schermo) */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('../img/skyline-londra.jpg');
+    /* Assicurati di avere questa foto! */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centra il titolo verticalmente */
+    align-items: center;
+    color: white;
+}
+
+.header-title {
+    font: 40px 'Great Vibes';
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    /* Ombra per leggere meglio sulla foto */
+    margin: 0;
+}
+
+/*Stile menù - menubar, menu-container, menu-links*/
+.menubar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    /* Effetto Vetro (Glassmorphism) */
+    background: rgba(255, 255, 255, 0.1);
+    /* Sfoca leggermente lo skyline dietro */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.menu-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.menu-links a {
     text-decoration: none;
-    display: block;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.3s;
 }
 
-.list-content a:hover {
-    background-color: #ddd;
-}
-
-.list:hover .list-content {
-    display: block;
-}
-
-.list:hover .list-btn {
-    background-color: #3e8e41;
+.nav-links a:hover {
+    color: #ffd700;
+    /* Un tocco d'oro al passaggio del mouse */
 }
