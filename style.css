@@ -1,0 +1,76 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+.section-title {
+    position: relative;
+    height: 80vh;
+    /* Altezza della testata (80% dello schermo) */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('../img/skyline-londra.jpg');
+    /* Assicurati di avere questa foto! */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centra il titolo verticalmente */
+    align-items: center;
+    color: white;
+}
+
+.header-title {
+    font: 40px 'Great Vibes';
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    /* Ombra per leggere meglio sulla foto */
+    margin: 0;
+}
+
+/*Stile menù - menubar, menu-container, menu-links*/
+.menubar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    /* Effetto Vetro (Glassmorphism) */
+    background: rgba(255, 255, 255, 0.1);
+    /* Sfoca leggermente lo skyline dietro */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.menu-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.menu-links a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffd700;
+    /* Un tocco d'oro al passaggio del mouse */
+}

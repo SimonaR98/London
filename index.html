@@ -18,39 +18,61 @@
 
 <body>
     <!-- Intestazione della pagina -->
-    <header>
-        <div id="header-title">
+    <header class="section-title">
+        <div class="header-title">
             <h1>Discover the wonder of London</h1>
         </div>
-        <div class="header-row">
-            <div class="header-right">
-                <!-- Barra con menù a tendina -->
-                <div class="list">
-                    <button class="list-btn">
-                        <img src="./img/icon.jpg" width="100px" height="100px" />
-                        <i class="bi bi-three-dots"></i>
-                    </button>
-                    <div class="list-content">
-                        <a href="#">Dove mangiare</a>
-                        <a href="#">Trasporti</a>
-                        <a href="#">App utili</a>
-                    </div>
+        <menu type="toolbar" class="menubar">
+            <!-- Barra menù -->
+            <div class="menu-container">
+                <div class="menu-links">
+                    <a href="#">Alloggio e volo</a>
+                    <a href="#">Dove mangiare</a>
+                    <a href="#">Attrazioni</a>
+                    <a href="#">Internet</a>
                 </div>
             </div>
-        </div>
-        </div>
-
-        <h3>Prova Tecnica! 🚀</h3>
-        <p>Chi sta leggendo ora, è un gran piccione!</p>
+        </menu>
     </header>
 
+    <!-- Countdown -->
+    <h3>Il nostro viaggio inizia tra...</h3>
+    <input name="ora" type="datetime-local" />
 
     <!-- Itinerario con foto -->
+    <div>
+        <h4>Giorno 1</h4>
+        <p>Descrizione left</p>
+        <button type="button">Dettagli</button>
+    </div>
 
-    <!-- Sezione documenti per Londra -->
+    <div>
+        <h4>Giorno 2</h4>
+        <p>Descrizione right</p>
+        <button type="button">Dettagli</button>
+    </div>
+
+    <div>
+        <h4>Giorno 3</h4>
+        <p>Descrizione left</p>
+        <button type="button">Dettagli</button>
+    </div>
+
+    <div>
+        <h4>Giorno 4</h4>
+        <p>Descrizione right</p>
+        <button type="button">Dettagli</button>
+    </div>
+
+    <br><br>
 
     <!-- Footer con consigli -->
+    <h5>Prima di partire</h5>
+    <button type="button">Documenti</button>
+    <button type="button">Valigia</button>
+    <button type="button">App utili</button>
 
+    <!-- Decorazione fine pagina tipo riga rossa-->
 </body>
 
 </html>
