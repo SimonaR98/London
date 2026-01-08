@@ -11,7 +11,6 @@ body {
     /* Altezza della testata (80% dello schermo) */
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url('../img/skyline-londra.jpg');
-    /* Assicurati di avere questa foto! */
     background-size: cover;
     background-position: center;
     display: flex;
@@ -24,8 +23,8 @@ body {
 
 .header-title {
     font: 40px 'Great Vibes';
+    /* Ombra sulla foto */
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-    /* Ombra per leggere meglio sulla foto */
     margin: 0;
 }
 
@@ -37,7 +36,7 @@ body {
     /* Effetto Vetro (Glassmorphism) */
     background: rgba(255, 255, 255, 0.1);
     /* Sfoca leggermente lo skyline dietro */
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     padding: 15px 0;
@@ -64,13 +63,11 @@ body {
     color: white;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    font-size: 0.9rem;
-    letter-spacing: 1px;
+    font-size: 16px;
     text-transform: uppercase;
     transition: 0.3s;
 }
 
-.nav-links a:hover {
+.menu-links a:active {
     color: #ffd700;
-    /* Un tocco d'oro al passaggio del mouse */
 }
