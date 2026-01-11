@@ -1,3 +1,11 @@
+html,
+body {
+    overflow-x: hidden;
+    /* Nasconde lo scorrimento orizzontale */
+    width: 100%;
+    position: relative;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -7,16 +15,14 @@ body {
 
 .section-title {
     position: relative;
-    height: 80vh;
+    height: 50vh;
     /* Altezza della testata (80% dello schermo) */
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url('../img/skyline-londra.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    /* Centra il titolo verticalmente */
     align-items: center;
     color: white;
 }
@@ -34,17 +40,16 @@ body {
     top: 0;
     width: 100%;
     /* Effetto Vetro (Glassmorphism) */
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(28, 26, 27, 0.3);
     /* Sfoca leggermente lo skyline dietro */
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(28, 26, 27, 0.3);
     padding: 15px 0;
     z-index: 1000;
 }
 
 .menu-container {
-    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -55,19 +60,206 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 30px;
+    gap: 70px;
 }
 
 .menu-links a {
     text-decoration: none;
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: "League Spartan", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 24px;
     text-transform: uppercase;
+    letter-spacing: 2px;
     transition: 0.3s;
 }
 
 .menu-links a:active {
-    color: #ffd700;
+    color: #ebb866;
+}
+
+/* Countdown */
+.countdown-flip {
+    text-align: center;
+    padding: 20px;
+    background: transparent;
+}
+
+.countdown-title {
+    margin-top: 56px;
+    color: #c8102e;
+    text-transform: uppercase;
+    font-family: "Anton", sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 45px;
+    text-align: center;
+}
+
+.flip-clock {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    perspective: 1000px;
+}
+
+.flip-unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flip-card {
+    width: 75px;
+    height: 95px;
+    background-color: transparent;
+    perspective: 1000px;
+    /* Fondamentale per il 3D */
+    position: relative;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+    transform-origin: center center;
+    /* Permette il 3D reale */
+}
+
+/*Quando la classe rotating viene rimossa, il ritorno deve essere istantaneo */
+.flip-card:not(.rotating) .card-inner {
+    transition: none;
+    transform: rotateX(0deg);
+}
+
+/* Quando aggiungiamo questa classe, la card ruota di 180 gradi */
+.flip-card.rotating .card-inner {
+    transform: rotateX(-180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    /* Nasconde il retro di ogni faccia */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-front {
+    background-color: #c8102e;
+    z-index: 2;
+    transform: rotateX(0deg);
+}
+
+.card-back {
+    background-color: #a00d25;
+    transform: rotateX(180deg);
+    /* Pre-ruotato così appare dritto dopo il flip */
+}
+
+/* Stile per le etichette (MESI, GIORNI...) */
+.flip-unit span {
+    font-size: 10px;
+    margin-top: 10px;
+    color: #c8102e;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*Stile card*/
+.card-title {
+    color: #002147;
+    font-family: "League Spartan", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 35px;
+    margin-bottom: 8px;
+    margin-top: 24px;
+}
+
+.card-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.card {
+    background-color: #967f60;
+    border: 4px solid #ebb866;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 8px 8px 16px 8px rgba(0, 0, 0, 0.65);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.btn-card {
+    display: inline-block;
+    font-family: "League Spartan", sans-serif;
+    padding: 8px 20px;
+    border: 2px solid #ebb866;
+    background-color: #5d4237;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+}
+
+.btn-card:active {
+    background-color: #ebb866;
+}
+
+/* Footer */
+.footer-title {
+    margin-top: 56px;
+    color: #c8102e;
+    text-transform: uppercase;
+    font-family: "Anton", sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 45px;
+    text-align: center;
+}
+
+.info-footer {
+    font-weight: 400px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.footer-style {
+    background-color: #967f60;
+    border: 4px solid #ebb866;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 8px 8px 16px 8px rgba(0, 0, 0, 0.65);
+    text-align: center;
+    transition: transform 0.3s ease;
 }
