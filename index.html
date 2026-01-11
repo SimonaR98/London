@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=League+Spartan:wght@100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Great+Vibes&family=League+Spartan:wght@100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Great+Vibes&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Great+Vibes&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
     </style>
     <link type="text/css" rel="stylesheet" href="./css/style.css">
+    <link type="text/css" rel="stylesheet" href="./css/smartphone.css">
 
     <!-- Collegamento alle icone di Bootstrap Icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -36,43 +41,124 @@
     </header>
 
     <!-- Countdown -->
-    <h3>Il nostro viaggio inizia tra...</h3>
-    <input name="ora" type="datetime-local" />
+    <div class="container-flip">
+        <h3 class="countdown-title">Il nostro viaggio inizia tra...</h3>
+        <div class="flip-clock">
+            <div class="flip-unit">
+                <div class="flip-card" id="months">
+                    <div class="card-inner">
+                        <div class="card-front">00</div>
+                        <div class="card-back">00</div>
+                    </div>
+                </div>
+                <span>MESI</span>
+            </div>
+
+            <div class="flip-unit">
+                <div class="flip-card" id="days">
+                    <div class="card-inner">
+                        <div class="card-front">00</div>
+                        <div class="card-back">00</div>
+                    </div>
+                </div>
+                <span>GIORNI</span>
+            </div>
+
+            <div class="flip-unit">
+                <div class="flip-card" id="hours">
+                    <div class="card-inner">
+                        <div class="card-front">00</div>
+                        <div class="card-back">00</div>
+                    </div>
+                </div>
+                <span>ORE</span>
+            </div>
+
+            <div class="flip-unit">
+                <div class="flip-card" id="minutes">
+                    <div class="card-inner">
+                        <div class="card-front">00</div>
+                        <div class="card-back">00</div>
+                    </div>
+                </div>
+                <span>MINUTI</span>
+            </div>
+
+            <div class="flip-unit">
+                <div class="flip-card" id="seconds">
+                    <div class="card-inner">
+                        <div class="card-front">00</div>
+                        <div class="card-back">00</div>
+                    </div>
+                </div>
+                <span>SECONDI</span>
+            </div>
+        </div>
+    </div>
 
     <!-- Itinerario con foto -->
-    <div>
-        <h4>Giorno 1</h4>
-        <p>Descrizione left</p>
-        <button type="button">Dettagli</button>
-    </div>
+    <div class="card-box">
+        <div class="card">
+            <div class="card-image">
+                <img src="./Itinerari/day1.png" alt="Giorno 1" />
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">Giorno 1</h4>
+                <p>Descrizione breve del primo giorno</p>
+                <a href="./giorno1.html"><button class="btn-card" type="button">Dettagli</button></a>
+            </div>
+        </div>
 
-    <div>
-        <h4>Giorno 2</h4>
-        <p>Descrizione right</p>
-        <button type="button">Dettagli</button>
-    </div>
+        <div class="card">
+            <div class="card-image">
+                <img src="./Itinerari/day2.png" alt="Giorno 2" />
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">Giorno 2</h4>
+                <p>Descrizione breve del secondo giorno</p>
+                <a href="./giorno2.html"><button class="btn-card" type="button">Dettagli</button></a>
+            </div>
+        </div>
 
-    <div>
-        <h4>Giorno 3</h4>
-        <p>Descrizione left</p>
-        <button type="button">Dettagli</button>
-    </div>
+        <div class="card">
+            <div class="card-image">
+                <img src="./Itinerari/day3.jpg" alt="Giorno 3" />
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">Giorno 3</h4>
+                <p>Descrizione breve del terzo giorno</p>
+                <a href="./giorno3.html"><button class="btn-card" type="button">Dettagli</button></a>
+            </div>
+        </div>
 
-    <div>
-        <h4>Giorno 4</h4>
-        <p>Descrizione right</p>
-        <button type="button">Dettagli</button>
+        <div class="card">
+            <div class="card-image">
+                <img src="./Itinerari/day4.png" alt="Giorno 4" />
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">Giorno 4</h4>
+                <p>Descrizione breve del quarto giorno</p>
+                <a href="./giorno1.html"><button class="btn-card" type="button">Dettagli</button></a>
+            </div>
+        </div>
     </div>
-
-    <br><br>
 
     <!-- Footer con consigli -->
-    <h5>Prima di partire</h5>
-    <button type="button">Documenti</button>
-    <button type="button">Valigia</button>
-    <button type="button">App utili</button>
+    <h5 class="footer-title">Prima di partire</h5>
+    <p class="info-footer">Scopri cosa non può mancare nella tua valigia, come scegliere l’assicurazione giusta per
+        stare tranquillo e dove
+        lasciare i bagagli in città in modo sicuro e comodo. Tre letture veloci ma fondamentali per partire
+        preparato!
+    </p>
+    <div class="footer-style">
+
+        <a href="./documenti.html"><button type="button">Documenti</button></a>
+        <a href="./valigia.html"><button type="button">Valigia</button></a>
+        <a href="./app.html"><button type="button">App utili</button></a>
+    </div>
 
     <!-- Decorazione fine pagina tipo riga rossa-->
 </body>
+<script src="./script.js"></script>
 
 </html>
