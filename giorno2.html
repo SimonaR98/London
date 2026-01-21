@@ -11,20 +11,21 @@
         @import url('https://fonts.googleapis.com/css2?family=Anton&family=Great+Vibes&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Anton&family=Great+Vibes&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
     </style>
-
     <link type="text/css" rel="stylesheet" href="./css/pages.css">
+    <link type="text/css" rel="stylesheet" href="./css/page-day2.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <title>Giorno 2</title>
-    <link rel="icon" type="image/ico" href="./img/icon.jpg">
+    <link rel="icon" type="image/ico" href="./icon.png">
 </head>
 
 <body>
     <!-- Intestazione della pagina -->
-    <header class="section-title">
+    <header class="main-header londra-day2">
         <div class="header-title">
             <h1>Dinosauri e Tramonti</h1>
         </div>
+
         <menu type="toolbar" class="menubar">
             <!-- Barra menù -->
             <div class="menu-container">
@@ -40,76 +41,193 @@
 
     <!-- Itinerario -->
     <h3>Mercoledì 19 agosto:</h3>
-    <p>
-    <ul>
-        <li>Colazione in hotel con partenza massimo per le 09:45 per arrivare a Buckingham Palace in tempo per vedere la
-            cerimonia</li>
-        <li>Dall'hotel camminiamo per 4 minuti verso la metro ed entriamo a Bekesbourne St e prendiamo la metro DLR Bank
-            <br>Limehouse (2 fermate - 6 minuti)
-            <br>↓
-            <br>Bank
-        </li>
+    <p>Iniziamo la giornata assistendo al cambio della guardia, quindi facciamo una bella colazione e partiamo subito
+    </p>
+    <div class="itinerary-timeline">
+        <img class="itinerary-image" src="./img/subway/dlr-line.jpg" width="400px" height="200px"
+            alt="Mappa metro DLR Bank" />
 
-        <li>Cambiamo la linea e, in quattro minuti a piedi, prendiamo la metro Monument (Circle Westbound o District
-            Westbound)
-            <br>Monument (8 fermate - 13 minuti)
-            <br>↓
-            <br>Victoria
-        </li>
+        <div class="metro-step dlr">
+            <div class="line"></div>
+            <div class="details">
+                <span class="time">Percorso da 6 minuti</span>
+                <p class="station-name">Limehouse → Bank</p>
+            </div>
+        </div>
+        <br>
+        <img class="itinerary-image" src="./img/subway/circle-line.webp" width="400px" height="200px"
+            alt="Mappa metro Circle Westbound" />
+        <div class="metro-step circle">
+            <div class="line"></div>
 
-        <li>Usciamo a Victoria Street e camminiamo per 11 minuti verso Buckingham Palace (arrivo circa per le 10:24)
-            <br>La cerimonia inizia con la vecchia guardia e poi, intorno alle 11:00, inizia quella ufficiale e termina
-            verso le 11:45
-        </li>
+            <div class="details">
+                <span class="time">Percorso da 13 minuti</span>
+                <p class="station-name">Monument → Victoria</p>
+                <p>Camminiamo per 11 minuti verso Buckingham Palace</p>
+            </div>
+        </div>
+    </div>
 
-        <li>Andiamo a pranzo da "Buckingham Arms" che dista 7 minuti a piedi
-            <br>Arriviamo per circa 12:10 e ripartiamo verso le 13:10 per la visita alle altre attrazioni
-        </li>
+    <section class="guard-ceremony-section">
+        <div class="platform-container">
+            <div class="platform-image">
+                <img class="guard" src="./img/day2/guardia.avif" alt="Changing of the Guard">
+            </div>
+            <div class="platform-text">
+                <h2 class="guard-title">Cambio della Guardia</h2>
+                <p>
+                    Un rito che si ripete dal 1660. Davanti ai cancelli di Buckingham Palace, assistiamo alla marcia dei
+                    granatieri accompagnati dalla banda militare. Un momento di pura tradizione britannica.
+                </p>
+                <br>
+                <p>La cerimonia inizia con la vecchia guardia e dopo, circa alle 11:00, inizia quella ufficiale che
+                    termina verso le 11:45</p>
+                <div class="quick-info info-guard">
+                    <span><i class="bi bi-clock"></i> Inizio ore 10:45 / 11:00</span>
+                    <span><i class="bi bi-geo-alt"></i> Buckingham Palace</span>
+                </div>
 
-        <li>Dal locale ci spostiamo verso Westminster Abbey (10 minuti a piedi), proseguendo al Palace of Westminster (3
-            minuti a piedi) e arriviamo Natural History Museum</li>
+                <div class="tip-box guard-tip">
+                    <p><strong>💂 Consiglio:</strong> Arriviamo con anticipo per trovare un posto lungo il Victoria
+                        Memorial!</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <li>Supponiamo siano le 13:30, andiamo verso Westminster (3 minuti a piedi) e prendiamo la metro Circle
-            Westbound o District Westbound
-            <br>Westminster (4 fermate - 8 minuti)
-            <br>↓
-            <br>South Kensington
-        </li>
-        <li>Camminiamo verso il Natural History Museum (6 minuti a piedi con arrivo circa 13:47)
-            <br>Visita di 3 ore quindi finiremo verso le 17:00
-        </li>
-        <li>Spostiamoci con 3 minuti a piedi al Victoria & Albert Museum, facendo solo le foto esterne</li>
-        <li>Ci dirigiamo verso Kensington Gardens per visitare anche Kensington Palace (saranno circa le 17:30)</li>
+    <section class="restaurant-section">
+        <div class="divider-line top"></div>
 
-        <li>Andiamo a visitare Kyoto Garden (21 minuti a piedi) e poi vediamo il Chess Playground (2 minuti a piedi)
-        </li>
+        <div class="restaurant">
+            <div class="restaurant-content">
+                <h2 class="attraction-title">Pausa Pranzo</h2>
+                <h3>Pranzo Tradizionale: Buckingham Arms</h3>
+                <p class="attraction-description">
+                    Finita l'emozione della cerimonia, a 7 minuti di distanza andremo in questo pub storico. <br>
+                    È il momento perfetto per mangiare un piatto tipico per ricaricare le pile per il resto della
+                    giornata
+                </p>
 
-        <li>Ci sposteremo per le 18:30 circa per andare a vedere il tramonto sullo Sky Garden</li>
+                <div class="quick-info">
+                    <span><i class="bi bi-clock"></i> 12:00 - 13:15 </span>
+                    <span><i class="bi bi-geo-alt"></i> Baker St, Marylebone</span>
+                </div>
 
-        <li>Camminiamo verso Holland Park per 14 minuti e prendiamo la metro Central Eastbound
-            <br>Holland Park (11 fermate - 19 minuti)
-            <br>↓
-            <br>Bank
-        </li>
+                <a href="https://www.buckinghamarms.com/" target="_blank" class="btn-restaurant"> Menu & Sito </a>
+            </div>
+        </div>
 
-        <li>Usciamo dalla 6 Lombard St, King William St e camminiamo per 8 minuti verso lo Sky Garden (circa 19:12)</li>
-        <li>Dopo il tramonto visiteremo Leadenhall Market e ceneremo in un pub in zona
-            <br><strong>N.B.:</strong> Prima di andare a cena, andiamo al supermercato M&S Simply Food per prendere un
-            "meal deal" per il giorno dopo
-            <br>M&S Simply Food (Stazione di Liverpool Street): si trova all'interno della Stazione di Liverpool Street,
-            a circa 10-15 minuti a piedi da Leadenhall Market
-        </li>
+        <div class="divider-line bottom"></div>
+    </section>
 
-        <li>Dal mercato facciamo una camminata verso la Torre di Londra e il Tower Bridge (18 minuti) con foto al
-            Millennium Bridge</li>
-        <li>Camminiamo verso Tower Gateway dall'entrata Minories (8 minuti) prendiamo la metro DLR Beckton
-            <br>Tower Gateway (2 fermate - 4 minuti)
-            <br>↓
-            <br>Limehouse
-        </li>
-        <li>Camminiamo verso l'hotel e poi finiamo la serata con un giro a Piccadilly Circus, Leicester Square,
-            Chinatown e Cecil Court</li>
-    </ul>
+    <section class="attraction-section">
+        <div class="attraction-container">
+            <div class="attraction-text">
+                <h2 class="attraction-title">Westminster Abbey</h2>
+                <p class="attraction-description">
+                    Passeggiamo verso l'abbazia gotica più famosa del mondo, sede di incoronazioni e matrimoni reali.
+                    Subito dietro, vedremo svettare il Big Ben e il Palazzo di Westminster.
+                    <br>
+                    Proseguiamo la passeggiata verso un must, il Natural History Museum
+                </p>
+                <div class="quick-info">
+                    <span><i class="bi bi-geo-alt"></i> Parliament Square</span>
+                    <span><i class="bi bi-camera"></i> Foto iconiche</span>
+                </div>
+            </div>
+            <div class="attraction-image-wrapper">
+                <img src="./img/day2/westminster-abbey.webp" class="circle-img" alt="Westminster">
+            </div>
+        </div>
+    </section>
+
+    <div class="itinerary-timeline">
+        <img class="itinerary-image" src="./img/subway/circle-line.webp" width="400px" height="200px"
+            alt="Mappa metro Circle Westbound" />
+        <div class="metro-step circle">
+            <div class="line"></div>
+
+            <div class="details">
+                <span class="time">Percorso da 8 minuti</span>
+                <p class="station-name">Westminster → South Kensington</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="museum-premium-section">
+        <div class="museum-hero">
+            <img src="./img/day2/natural-history-museum.avif" alt="Natural History Museum" class="hero-img">
+            <div class="hero-overlay">
+                <h1 class="museum-main-title">Natural History Museum</h1>
+            </div>
+        </div>
+
+        <div class="museum-container">
+            <div class="museum-grid">
+                <div class="museum-description">
+                    <p class="lead">Entriamo nella <strong>Hintze Hall</strong>, dove lo scheletro della balena azzurra
+                        "Hope" ci accoglie sospeso nel vuoto.</p>
+                    <p>Oltre ai famosi dinosauri, esploreremo le meraviglie della Terra in un edificio che è esso stesso
+                        un'opera d'arte. È un viaggio nel tempo tra fossili millenari e l'architettura gotico-vittoriana
+                        di Alfred Waterhouse.</p>
+                </div>
+
+                <div class="museum-highlight-box">
+                    <div class="highlight-gallery">
+                        <div class="highlight-item">
+                            <img src="./img/day2/hintze-hall.jpg" alt="Hintze Hall">
+                            <p>Hintze Hall</p>
+                        </div>
+
+                        <div class="highlight-item">
+                            <img src="./img/day2/dinosauri.jpg" alt="Dinosauri">
+                            <p>I Dinosauri</p>
+                        </div>
+
+                        <div class="highlight-item">
+                            <img src="./img/day2/earth-hall.jpg" alt="Earth Hall">
+                            <p>Earth Hall</p>
+                        </div>
+                    </div>
+
+                    <div class="quick-info museum-info">
+                        <span><i class="bi bi-clock"></i> 14:00 - 17:00</span>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <li>Spostiamoci con 3 minuti a piedi al Victoria & Albert Museum, facendo solo le foto esterne</li>
+    <li>Ci dirigiamo verso Kensington Gardens per visitare anche Kensington Palace (saranno circa le 17:30)</li>
+
+    <li>Andiamo a visitare Kyoto Garden (21 minuti a piedi) e poi vediamo il Chess Playground (2 minuti a piedi)
+    </li>
+
+    <li>Ci sposteremo per le 18:30 circa per andare a vedere il tramonto sullo Sky Garden</li>
+
+    <li>Camminiamo verso Holland Park per 14 minuti e prendiamo la metro Central Eastbound
+        <br>Holland Park (11 fermate - 19 minuti)
+        <br>↓
+        <br>Bank
+    </li>
+
+    <li>Usciamo dalla 6 Lombard St, King William St e camminiamo per 8 minuti verso lo Sky Garden (circa 19:12)</li>
+    <li>Dopo il tramonto visiteremo Leadenhall Market e ceneremo in un pub in zona
+        <br><strong>N.B.:</strong> Prima di andare a cena, andiamo al supermercato M&S Simply Food per prendere un
+        "meal deal" per il giorno dopo
+        <br>M&S Simply Food (Stazione di Liverpool Street): si trova all'interno della Stazione di Liverpool Street,
+        a circa 10-15 minuti a piedi da Leadenhall Market
+    </li>
+
+    <li>Dal mercato facciamo una camminata verso la Torre di Londra e il Tower Bridge (18 minuti) con foto al
+        Millennium Bridge</li>
+    <li>Camminiamo verso Tower Gateway dall'entrata Minories (8 minuti) prendiamo la metro DLR Beckton
+        <br>Tower Gateway (2 fermate - 4 minuti)
+        <br>↓
+        <br>Limehouse
+    </li>
+    <li>Camminiamo verso l'hotel e poi finiamo la serata con un giro a Piccadilly Circus, Leicester Square,
+        Chinatown e Cecil Court</li>
     </p>
 
     <!-- Footer con comando alla pagina successiva e precedente-->

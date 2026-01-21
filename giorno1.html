@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
     <meta charset="UTF-8">
@@ -12,15 +12,16 @@
         @import url('https://fonts.googleapis.com/css2?family=Anton&family=Great+Vibes&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
     </style>
     <link type="text/css" rel="stylesheet" href="./css/pages.css">
+    <link type="text/css" rel="stylesheet" href="./css/page-day1.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <title>Giorno 1</title>
-    <link rel="icon" type="image/ico" href="./img/icon.jpg">
+    <link rel="icon" type="image/ico" href="./icon.png">
 </head>
 
 <body>
     <!-- Intestazione della pagina -->
-    <header class="section-title">
+    <header class="main-header londra-day1">
         <div class="header-title">
             <h1>Misteri, Star e Magia</h1>
         </div>
@@ -41,65 +42,332 @@
     <!-- Itinerario -->
     <h3>Martedì 18 agosto:</h3>
     <p>
-    <ul>
-        <li> Partenza in aereo da Milano Malpensa a Londra Gatwick con arrivo alle 08:25</li>
-        <li>Usciti dall'aeroporto, ci dirigiamo verso il South Terminal e facciamo colazione da "Wondertree"</li>
-        <li>Prendiamo il treno Southern con fermata a London Victoria
-            <br>Gatwick Airport - 09:10
-            <br> ↓
-            <br> Victoria station - 09:41
-        </li>
-        <li>Prendiamo la metro Victoria Northbound verso Green Park</li>
-        <li>Cambiamo la linea e, in due minuti a piedi, prendiamo la metro Jubilee Northbound
-            <br>Green Park
-            <br>↓
-            <br>Baker street (arrivo circa per le 09:50)
-        </li>
-        <li>Usciamo a Marlyebone RD e camminiamo per 5 minuti verso il Madame Tussauds
-            <br>Visita al Madame Tussauds nella fascia 10:15 - 10:30 → tempo di visita di circa 2 ore e mezza
-        </li>
-        <li>Supponiamo di uscire alle 12:45 - 13:00, camminiamo per 4 minuti e pranziamo da "Bill's Baker Street
-            Restaurant"</li>
+        <img class="fly" src="./img/day1/Volo.jpeg" alt="volo andata" />
 
-        <li>Considerando un'ora per pranzare, ci dirigiamo verso Sherlock Holmes Museum con visita alle 14:00 (bisogna
-            arrivare 10 minuti prima)
-            <br>La visita al museo è di circa 30/45 minuti
-        </li>
+    <p>Usciti dall'aeroporto, ci dirigiamo verso il South Terminal e facciamo colazione da <a
+            href="https://boparanrestaurantgroup.co.uk/brand/wondertree/">Wondertree</a></p>
+    <p>Dopo che ci siamo riempiti il pancino, è tempo di iniziare il nostro viaggio.
+        Spostiamoci vicino al centro di Londra con il treno Southern, fermata a London Victoria</p>
 
-        <li>Finito il museo, camminiamo attraverso Regent's Park verso lo zoo; ci vogliono circa 25 minuti quindi
-            dovremmo
-            essere di fronte allo zoo alle 15:00
-            <br>La visita dello zoo è di circa 3/4 ore
-        </li>
+    <div class="step">
+        <div class="icon"><i class="bi bi-train-front"></i></div>
+        <div class="details">
+            <span class="time">09:10 - 09:41</span>
+            <p><strong>Gatwick Airport</strong> → <strong>Victoria Station</strong></p>
+        </div>
+    </div>
 
-        <li>Terminato lo zoo visitiamo Primrose Hill dove faremo qualche foto e poi ci dirigiamo verso il binario 9 3/4
-            a
-            King's Cross</li>
+    <p>Prendiamo la nostra prima metro londinese</p>
+    <div class="itinerary-timeline">
+        <img class="itinerary-image" src="./img/subway/victoria-line.png" width="400px" height="200px"
+            alt="Mappa metro Victoria" />
 
-        <li>Camminiamo verso Chalk Farm per 13 minuti entrando ad Adelaide Road. Prendiamo la metro Northern Southbound
-            <br>Chalk Farm
-            <br>↓
-            <br>King's Cross St. Pancras (circa 8 minuti)
-        </li>
+        <div class="metro-step victoria">
+            <div class="line"></div>
+            <div class="details">
+                <span class="time">09:41</span>
+                <p class="station-name">Victoria Station → Green Park</p>
+            </div>
+        </div>
+        <br>
+        <img class="itinerary-image" src="./img/subway/jubilee-line.webp" width="400px" height="200px"
+            alt="Mappa metro Jubilee" />
+        <div class="metro-step jubilee">
+            <div class="line"></div>
 
-        <li>Facciamo la foto con il binario e visitiamo lo shop. Dopodiché ci avviamo verso l'hotel prendendo la metro
-            Northern Southbound
-            <br>King's Cross St. Pancras
-            <br>↓
-            <br>Bank (circa 9 minuti)
-        </li>
+            <div class="details">
+                <span class="time">09:50</span>
+                <p class="station-name">Green Park → Baker Street</p>
+            </div>
+        </div>
+    </div>
 
-        <li>Cambiamo la linea con DLR Lewisham | Woolwich Arsenal
-            <br>Bank
-            <br>↓
-            <br>Limehouse (circa 6 minuti)
-        </li>
+    <section class="attraction-section">
+        <div class="attraction-container">
+            <div class="attraction-text">
+                <h2 class="attraction-title">Madame Tussauds</h2>
+                <p class="attraction-description">
+                    Usciamo a Marlyebone RD e in soli 5 minuti raggiungiamo l'ingresso.
+                    Ci aspetta un viaggio tra le icone del cinema, della musica e della storia.
+                    Dalla Famiglia Reale ai supereroi Marvel, avremo circa 2 ore e mezza per scattare foto incredibili!
+                </p>
 
-        <li>Camminiamo verso l'hotel uscendo da Bekesbourne St e facciamo il check in</li>
-        <li>Quando vogliamo andiamo a cenare al "The Grapes Pub" (circa 12 minuti a piedi)</li>
-        <li>Serata libera con possibile crociera sul Tamigi</li>
-    </ul>
+                <div class="quick-info">
+                    <span><i class="bi bi-clock"></i> 10:15 - 13:00</span>
+                    <span><i class="bi bi-geo-alt"></i> Marylebone Rd</span>
+                    <span><i class="bi bi-camera"></i> Foto Illimitate</span>
+                </div>
+
+                <div class="tip-box">
+                    <p><strong>Consiglio:</strong> Dovremmo fare <em>"Spirit of London"</em>, la
+                        giostra sui taxi neri che racconta la storia della città!
+                        <br>Il giorno della visita, consultare un membro del personale per ricevere istruzioni su come
+                        salire a bordo
+                    </p>
+                </div>
+            </div>
+
+            <div class="attraction-image-wrapper">
+                <img src="./img/day1/famiglia-reale.jpg" alt="Madame Tussauds Icon" class="circle-img">
+            </div>
+        </div>
+    </section>
+
+    <section class="restaurant-section">
+        <div class="divider-line top"></div>
+
+        <div class="restaurant">
+            <div class="restaurant-content">
+                <h2 class="attraction-title">Pausa Pranzo</h2>
+                <h3>Bill's Baker Street Restaurant</h3>
+                <p class="attraction-description">
+                    Dopo la mattinata al museo, ci godiamo un'ora di relax. Bill's è il posto perfetto per ricaricare le
+                    energie in un ambiente accogliente e moderno, proprio a pochi passi da Baker Street.
+                </p>
+
+                <div class="quick-info">
+                    <span><i class="bi bi-clock"></i> 13:00 - 14:00</span>
+                    <span><i class="bi bi-geo-alt"></i> Baker St, Marylebone</span>
+                </div>
+
+                <a href="https://www.bills-website.co.uk/restaurants/baker-street/" target="_blank"
+                    class="btn-restaurant"> Menu & Sito </a>
+            </div>
+        </div>
+
+        <div class="divider-line bottom"></div>
+    </section>
+
+    <section class="attraction-section">
+        <div class="attraction-container reverse">
+
+            <div class="attraction-image-wrapper">
+                <img src="./img/day1/sherlock.jpg" alt="Sherlock Holmes Museum" class="circle-img">
+            </div>
+
+            <div class="attraction-text">
+                <h2 class="attraction-title">Sherlock Holmes Museum</h2>
+                <p class="attraction-description">
+                    Dopo pranzo, ci dirigiamo verso il leggendario 221B di Baker Street (il famoso numero dell'indizio
+                    della lente d'ingrandimento).
+                    <br>
+                    Entreremo nel mondo del detective più famoso del mondo, esplorando il suo studio, scoprendo che
+                    l'indizio "pipa" era riferito a lui,
+                    e scoprendo i dettagli dei suoi casi più celebri in questa casa vittoriana perfettamente conservata.
+                </p>
+
+                <div class="quick-info">
+                    <span><i class="bi bi-clock"></i> 14:00 - 14:45</span>
+                    <span><i class="bi bi-geo-alt"></i> 221B Baker St</span>
+                    <span><i class="bi bi-search"></i> Ingresso prioritario</span>
+                </div>
+
+                <div class="tip-box detective-tip">
+                    <p><strong>🔎 Ricordiamoci:</strong> Bisogna arrivare 10 minuti prima (13:50) per il controllo dei
+                        biglietti!</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="zoo-section">
+        <div class="zoo-image">
+            <img src="./img/day1/zoo.jpg" alt="London Zoo" class="zoo-hero-img">
+        </div>
+
+        <div class="zoo-content">
+            <h2 class="attraction-title">ZSL London Zoo</h2>
+            <p class="attraction-description">
+                Dopo una passeggiata di 25 minuti attraverso il verde di Regent's Park, arriviamo allo zoo scientifico
+                più antico del mondo.
+                Ci aspettano circa 3 o 4 ore di immersione totale tra il <em>Tiger Territory</em>,
+                la <em>Snowdon Aviary</em> e le tantissime specie che popolano questo parco storico.
+            </p>
+
+            <div class="zoo-details-grid">
+                <div class="zoo-info-item">
+                    <i class="bi bi-clock"></i>
+                    <span>15:00 - 18:30</span>
+                </div>
+                <div class="zoo-info-item">
+                    <i class="bi bi-geo-alt"></i>
+                    <span>Regent's Park</span>
+                </div>
+                <div class="zoo-info-item">
+                    <i class="bi bi-person-walking"></i>
+                    <span>Visita di 3/4 ore</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hp-curiosity-box">
+            <div class="hp-curiosity-content">
+                <div class="hp-image">
+                    <img src="./img/day1/harry-zoo.jpg" alt="Harry Potter Reptile House">
+                    <div class="hp-badge"><i class="bi bi-magic"></i> Movie Location</div>
+                </div>
+
+                <div class="hp-text">
+                    <h3>Lo sapevi che...?</h3>
+                    <p>
+                        Proprio qui allo Zoo di Londra è stata girata la famosa scena di
+                        <strong>Harry Potter e la Pietra Filosofale</strong> in cui Harry parla per la prima volta
+                        il <em>Serpentese</em> con un pitone birmano (che nel film era un boa constrictor)!
+                    </p>
+                    <p class="hp-location-note">
+                        <i class="bi bi-geo-fill"></i> Troverai una targa commemorativa accanto alla teca originale.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <p>Proseguiamo la nostra giornata verso il famoso binario di Harry Potter.
+        <br>
+    <div class="binary-phrase">
+        <em>Non devi fare altro che camminare dritto verso il muro fra i binari 9 e 10!</em>
+    </div>
     </p>
+    <div class="itinerary-timeline">
+        <img class="itinerary-image" src="./img/subway/northern-line.webp" width="400px" height="200px"
+            alt="Mappa metro Northern" />
+
+        <div class="metro-step northern">
+            <div class="line"></div>
+            <div class="details">
+                <span class="time">Percorso da 8 minuti</span>
+                <p class="station-name">Chalk Farm → King's Cross St. Pancras</p>
+                <p>Camminiamo verso Chalk Farm entrando ad Adelaide Road</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="panoramic-step">
+        <div class="panoramic-content">
+            <h2 class="attraction-title"><i class="bi bi-camera"></i> Primrose Hill</h2>
+            <p class="attraction-description">
+                Usciti dallo zoo, facciamo una breve camminata verso la cima della collina.
+                È uno dei punti più belli di Londra: ci godiamo il tramonto e scattiamo qualche foto
+                allo skyline della città che si accende.
+            </p>
+        </div>
+    </section>
+
+    <section class="platform-section">
+        <div class="platform-container">
+            <div class="platform-image">
+                <img src="./img/day1/binario.jpg" alt="Binario 9 3/4">
+            </div>
+            <div class="platform-text">
+                <h2 class="platform-title">Binario 9 ¾</h2>
+                <p>
+                    Raggiungiamo King's Cross per l'ultima tappa magica. Facciamo la foto con il carrello
+                    che scompare nel muro e visitiamo il negozio ufficiale per un po' di shopping a tema.
+                    Dopodiché, ci dirigiamo finalmente verso l'hotel.
+                </p>
+                <br>
+                <p>Ci sono due possibilità per scattare la nostra foto ricordo:
+                <ul class="platform-list">
+                    <li><strong>Senza l'assistenza degli stewards: dalle 6:00 alle 8:00 e dalle 22:00 alle
+                            12:00</strong>
+                        <br>
+                        In questo caso c'è soltanto il muro con il cartello Platform 9 3/4 in quanto il carrello è
+                        disponibile solo durante gli orari di apertura dello Shop
+                    </li>
+                    <br>
+                    <li><strong>Con lo staff (con carrello, bacchette e sciarpe): dalle 8:00 alle 22:00</strong>
+                        <br>
+                        In questo caso possiamo scattare la foto con il carrello nel muro e con lo staff e i fotografi
+                        che ci aiuteranno a scegliere la bacchetta e la sciarpa (ovviamente sceglierai Grifondoro)
+                    </li>
+                </ul>
+                </p>
+                <div class="quick-info binary-info">
+                    <span><i class="bi bi-geo-alt"></i> King's Cross Station</span>
+                    <span><i class="bi bi-magic"></i> Foto & Shop</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <p>Dopo questa giornata super intensa, è arrivato il momento del check-in in hotel.</p>
+    <div class="itinerary-timeline">
+        <img class="itinerary-image" src="./img/subway/northern-line.webp" width="400px" height="200px"
+            alt="Mappa metro Northern" />
+
+        <div class="metro-step northern">
+            <div class="line"></div>
+            <div class="details">
+                <span class="time">Percorso da 9 minuti</span>
+                <p class="station-name">King's Cross St. Pancras → Bank</p>
+            </div>
+        </div>
+        <br>
+        <img class="itinerary-image" src="./img/subway/dlr-line.jpg" width="400px" height="200px"
+            alt="Mappa metro DLR Lewisham" />
+        <div class="metro-step dlr">
+            <div class="line"></div>
+
+            <div class="details">
+                <span class="time">Linea DLR Lewisham | Woolwich Arsenal</span>
+                <p class="station-name">Bank → Limehouse</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="hotel-section">
+        <div class="attraction-container">
+            <div class="attraction-text">
+                <h2 class="attraction-title">Check-in & Relax</h2>
+                <p class="attraction-description">
+                    Arrivatii! Posiamo i bagagli e rinfreschiamoci.
+                    L'hotel è la nostra base per questa avventura londinese.
+                </p>
+                <div class="tip-box">
+                    <p><i class="bi bi-house"></i> The Royal Foundation of St. Katharine</p>
+                    <p><i class="bi bi-geo-alt"></i> 2 Butcher Row, London E14 8DS,
+                        Regno Unito</p>
+                    <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x487602d4744a14bf:0xf1f9546d06f91f02?sa=X&ved=1t:8290&ictx=111"
+                        target="_blank" class="res-link">Apri su Maps</a>
+                    <br>
+                    <br>
+                    <i class="bi bi-clock"></i> 16:00 - 00:00
+                </div>
+            </div>
+            <div class="attraction-image-wrapper">
+                <img src="./img/day1/hotel.jpg" class="circle-img" alt="Hotel">
+            </div>
+        </div>
+    </section>
+
+    <section class="zoo-section grapes-pub">
+        <div class="zoo-hero-container">
+            <img src="./img/day1/the-grapes-pub.jpg" alt="The Grapes Pub" class="zoo-hero-img">
+        </div>
+
+        <div class="zoo-content">
+            <h2 class="attraction-title" style="color: #ebb866;">The Grapes</h2>
+            <h4 class="title-pub">Il Pub di Gandalf</h4>
+            <p class="attraction-description" style="color: #ddd;">
+                Chiudiamo la prima serata a Londra in questo pub storico del 1583 affacciato sul Tamigi.
+                Oltre alla vista incredibile, potremo ammirare il bastone originale di Gandalf:
+                un luogo dove la storia di Londra incontra la magia della Terra di Mezzo.
+            </p>
+
+            <div class="zoo-details-grid">
+                <div class="zoo-info-item">
+                    <i class="bi bi-stars"></i>
+                    <span style="color: white;">Atmosfera Unica</span>
+                </div>
+                <div class="zoo-info-item">
+                    <i class="bi bi-cup-straw"></i>
+                    <span style="color: white;">Cena</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer con comando alla pagina successiva-->
     <div class="nav-footer">
