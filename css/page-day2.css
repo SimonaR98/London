@@ -1,0 +1,201 @@
+/*Immagine titolo*/
+.londra-day2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('../img/day2/buck-palace.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/*Sezione Cerimonia della cambio della guardia*/
+.guard {
+    width: 100%;
+    height: 450px;
+}
+
+.guard-ceremony-section {
+    background-color: #1c1a1b;
+    color: white;
+    text-align: center;
+    margin: 60px 0;
+    padding: 50px 0;
+    border-top: 5px solid #c8102e;
+    border-bottom: 5px solid #ebb866;
+}
+
+.guard-title {
+    color: #ebb866;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.guard-tip {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Sfondo semitrasparente */
+    border-left: 5px solid #ebb866;
+    margin-top: 20px;
+    color: #f1f1f1;
+}
+
+.guard-tip strong {
+    color: #ebb866;
+}
+
+.info-guard {
+    margin-left: 32px;
+    margin-bottom: 32px;
+}
+
+/*Westminster Abeey*/
+/*Madame Tussauds*/
+/* Container Principale */
+.attraction-section {
+    max-width: 800px;
+    margin: 32px auto;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.attraction-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    /* Per renderlo responsive sui telefoni */
+}
+
+/* Immagine Circolare */
+.attraction-image-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.circle-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #ebb866;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/*Natural History Museum*/
+.museum-premium-section {
+    margin: 100px 0;
+    position: relative;
+}
+
+.museum-hero {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    /* Molto più alto dello zoo */
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+    /* Scurisce leggermente per far leggere il titolo */
+}
+
+.hero-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 60px 20px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    text-align: center;
+}
+
+.museum-main-title {
+    color: #ebb866;
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+.museum-container {
+    max-width: 1100px;
+    margin: -50px auto 0;
+    /* Fa sovrapporre il testo all'immagine */
+    position: relative;
+    z-index: 2;
+    padding: 0 20px;
+}
+
+.museum-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 40px;
+    background: white;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.museum-description .lead {
+    font-size: 1.3rem;
+    color: #002147;
+    margin-bottom: 20px;
+}
+
+.museum-highlight-box {
+    background: linear-gradient(360deg, #5d4237 0%, #c49e90 100%);
+    padding: 30px;
+    border-radius: 15px;
+    border: 3px solid #ebb866;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    position: relative;
+    color: white;
+}
+
+.highlight-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 colonne uguali */
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.highlight-item {
+    text-align: center;
+}
+
+.highlight-item img {
+    width: 100%;
+    height: 150px;
+    /* Altezza fissa per uniformità */
+    object-fit: cover;
+    border-radius: 8px;
+    border: 3px solid #ebb866;
+}
+
+
+.highlight-item p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 8px;
+    line-height: 1.2;
+    color: #dedce4;
+}
+
+/* Fix per la grid principale del museo per accogliere il box più grande */
+.museum-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Su desktop ora mettiamo uno sopra l'altro o 1.2fr 1fr */
+    gap: 30px;
+}
+
+.museum-info {
+    color: white;
+}

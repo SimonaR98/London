@@ -13,14 +13,10 @@ body {
     color: black;
 }
 
-.section-title {
+.main-header {
     position: relative;
     height: 50vh;
     /* Altezza della testata (80% dello schermo) */
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url('../img/skyline-londra.jpg');
-    background-size: cover;
-    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,16 +74,226 @@ body {
     color: #ebb866;
 }
 
+/*Corpo*/
+p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+
 /* Stile itinerario */
 h3 {
     margin-top: 24px;
     color: #c8102e;
     text-transform: uppercase;
-    font-family: "Anton", sans-serif;
-    font-weight: 300;
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
     letter-spacing: 2px;
-    font-size: 32px;
+    font-size: 35px;
     text-align: center;
+}
+
+/*Stile metro/treno*/
+.itinerary-timeline {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    margin-left: 30px;
+}
+
+.step {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 8px;
+    padding-left: 45px;
+    margin-bottom: 16px;
+    margin-top: 32px;
+    position: relative;
+}
+
+.icon {
+    font-size: 24px;
+    z-index: 1;
+    background: white;
+    color: #ebb866;
+    font-size: 24px;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+    margin-left: 16px;
+}
+
+/*Immagini delle metro*/
+.itinerary-image {
+    display: block;
+    margin: 20px auto;
+    /* Centra orizzontalmente */
+    max-width: 90%;
+    /* Impedisce che esca dai bordi su mobile */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Singolo Step Metro */
+.metro-step {
+    display: flex;
+    align-items: stretch;
+    /* Fa sì che la linea sia alta quanto il testo */
+    margin-bottom: 8px;
+}
+
+/* La linea verticale */
+.line {
+    width: 8px;
+    /* Spessore della linea */
+    margin-right: 25px;
+    /* SPAZIO tra linea e orario/fermata */
+    min-height: 60px;
+    /* Altezza minima della tratta */
+}
+
+.time {
+    font-weight: bold;
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.station-name {
+    color: #c8102e;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Colore Victoria Line (Azzurro) */
+.victoria .line {
+    background-color: #0098D4;
+}
+
+/* Colore Jubilee Line (Grigio) */
+.jubilee .line {
+    background-color: #A0A5A9;
+}
+
+/* Colore Northern Line (Nero) */
+.northern .line {
+    background-color: black;
+}
+
+/* Colore DLR (Azzurro) */
+.dlr .line {
+    background-color: #0098D4;
+}
+
+/*Colore Circle Westbound line (Giallo)*/
+.circle .line {
+    background-color: #ffd300;
+}
+
+/* Icone e Info Rapide */
+.quick-info {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.quick-info i {
+    color: #ebb866;
+    margin-right: 5px;
+}
+
+/* Testo */
+.attraction-text {
+    flex: 2;
+    min-width: 300px;
+}
+
+.attraction-title {
+    color: #c8102e;
+    font-family: "League Spartan", sans-serif;
+    text-transform: uppercase;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.attraction-description {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/*Pause pranzo, ristoranti*/
+.restaurant-section {
+    max-width: 800px;
+    margin: 70px auto;
+    padding: 0 20px;
+}
+
+.restaurant {
+    text-align: center;
+}
+
+.restaurant h3 {
+    font-family: "Playfair Display", serif;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Stile del Pulsante/Link */
+.btn-restaurant {
+    display: inline-block;
+    background-color: #ebb866;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 32px;
+}
+
+.btn-restaurant:active {
+    background-color: #c8102e;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(200, 16, 46, 0.2);
+    color: white;
+}
+
+.divider-line {
+    height: 0;
+    border-top: 2px solid #ebb866;
+    box-shadow: 0 0 1px transparent;
+    width: 60%;
+    /* Non tutta la larghezza per un look più chic */
+    margin: 0 auto;
+    position: relative;
+    display: block;
+}
+
+.divider-line::after {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #ebb866;
+    border-radius: 50%;
+}
+
+/* Spaziature sopra e sotto */
+.divider-line .top {
+    margin-bottom: 50px;
+}
+
+.divider-line .bottom {
+    margin-top: 50px;
 }
 
 /* Footer */
@@ -103,12 +309,11 @@ h3 {
 
 .nav-icon {
     color: #ebb866;
-    font-size: 24px;
+    font-size: 32px;
     text-decoration: none;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* Effetto quando passi il mouse sopra */
 .nav-icon:active {
     transform: scale(1.2);
     /* Si ingrandisce leggermente */

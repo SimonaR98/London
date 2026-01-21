@@ -1,0 +1,306 @@
+/*Immagine titolo*/
+.londra-day1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('../img/day1/madame.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/*Stile immagine volo*/
+.fly {
+    width: 400px;
+    height: 150px;
+    display: block;
+    margin: 32px auto;
+    max-width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*Madame Tussauds*/
+/* Container Principale */
+.attraction-section {
+    max-width: 800px;
+    margin: 32px auto;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.attraction-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    /* Per renderlo responsive sui telefoni */
+}
+
+/* Immagine Circolare */
+.attraction-image-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.circle-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #ebb866;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Box Suggerimento */
+.tip-box {
+    background-color: #f3eadc;
+    border-left: 5px solid #c8102e;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 0 10px 10px 0;
+}
+
+/*Sherlock Holmes*/
+/* Regola per invertire l'ordine */
+.attraction-container .reverse {
+    flex-direction: row-reverse;
+}
+
+/* Stile specifico per il box*/
+.detective-tip {
+    background-color: #dbdada;
+    border-left-color: #333;
+    /* Un bordo scuro più "misterioso" */
+}
+
+/*Immagine a sinistra */
+.reverse .attraction-image-wrapper {
+    justify-content: flex-start;
+}
+
+/*Zoo*/
+.zoo-section {
+    max-width: 900px;
+    /* Più largo per dare importanza */
+    margin: 80px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.zoo-image {
+    width: 100%;
+    margin-bottom: 30px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.zoo-hero-img {
+    width: 100%;
+    height: 400px;
+    /* Altezza fissa per un look cinematografico */
+    object-fit: cover;
+    /* Ritaglia l'immagine senza deformarla */
+}
+
+.zoo-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.zoo-details-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #002147;
+}
+
+.zoo-info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.zoo-info-item i {
+    font-size: 24px;
+    color: #ebb866;
+}
+
+.zoo-info-item span {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/*Curiosità su HP*/
+.hp-curiosity-box {
+    background-color: #dedce4;
+    max-width: 800px;
+    margin: 40px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hp-curiosity-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hp-image {
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+    line-height: 0;
+    /* Rimuove spazi bianchi sotto l'immagine */
+}
+
+.hp-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 250px;
+}
+
+.hp-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: rgba(200, 16, 46, 0.9);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.hp-text {
+    flex: 1.2;
+    padding: 30px;
+    text-align: left;
+}
+
+.hp-text h3 {
+    font-family: 'Anton', sans-serif;
+    color: #333;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.hp-text p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #444;
+}
+
+.hp-location-note {
+    margin-top: 15px;
+    font-size: 0.85rem !important;
+    font-style: italic;
+    color: #666;
+}
+
+/*Primrose Hills*/
+.panoramic-step {
+    text-align: center;
+    margin: 60px auto;
+    max-width: 600px;
+}
+
+/*Frase Harry*/
+.binary-phrase {
+    text-align: center;
+    font-size: 40px;
+    font-family: "Great Vibes", cursive;
+    letter-spacing: 2px;
+    margin-top: 8px;
+    margin-bottom: 32px;
+}
+
+/*Stile Binario 9 3/4*/
+.platform-section {
+    background-color: #2b2b2b;
+    /* Grigio ferro/scuro stazione */
+    color: white;
+    margin-top: 40px;
+    padding: 40px 0;
+}
+
+.platform-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.platform-image {
+    flex: 1;
+}
+
+.platform-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.platform-text {
+    flex: 1.5;
+}
+
+.platform-title {
+    color: #ebb866;
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.platform-text p {
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+.platform-list li {
+    flex: 1.5;
+    line-height: 1.7;
+    opacity: 0.9;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+.binary-info {
+    color: white;
+    margin-top: 32px;
+}
+
+/*Hotel*/
+.hotel-section {
+    max-width: 800px;
+    margin: 32px auto;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tip-box i {
+    color: #ebb866;
+    margin-right: 5px;
+}
+
+/*Pub*/
+.title-pub {
+    color: white;
+    margin-top: -10px;
+    font-family: 'Playfair Display', serif;
+}
+
+.grapes-pub {
+    background-color: #1a1a1a;
+    /* Sfondo scuro per un'atmosfera da pub serale */
+    padding: 60px 20px;
+    border-radius: 20px;
+}
