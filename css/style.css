@@ -248,12 +248,6 @@ body {
     text-align: center;
 }
 
-.info-footer {
-    font-weight: 400px;
-    text-align: center;
-    margin-bottom: 16px;
-}
-
 .footer-style {
     background-color: #967f60;
     border: 4px solid #ebb866;
@@ -262,4 +256,79 @@ body {
     box-shadow: 8px 8px 16px 8px rgba(0, 0, 0, 0.65);
     text-align: center;
     transition: transform 0.3s ease;
+}
+
+/* --- RESPONSIVE INDEX --- */
+@media (max-width: 768px) {
+
+    /*Menù: riduzione dello spazio tra le voci e se non ci stanno, vanno a capo*/
+    .menu-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu-links a {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    /*Titoli: cambio delle dimensioni */
+    .header-title {
+        font-size: 30px;
+    }
+
+    .countdown-title,
+    .footer-title {
+        font-size: 28px;
+        margin-top: 30px;
+    }
+
+    /*Countdown: rimpiccioliamo le card per farle stare su una riga */
+    .flip-clock {
+        gap: 8px;
+    }
+
+    .flip-card {
+        width: 55px;
+        height: 75px;
+    }
+
+    .card-front,
+    .card-back {
+        font-size: 28px;
+    }
+
+    /*La Griglia dei Giorni: da 2 colonne a 1 colonna */
+    .card-box {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 15px;
+    }
+
+    /* 5. Section Title: riduciamo l'altezza della testata */
+    .section-title {
+        height: 40vh;
+    }
+}
+
+/* Ottimizzazione extra per schermi molto piccoli*/
+@media (max-width: 400px) {
+    .flip-card {
+        width: 45px;
+        height: 65px;
+    }
+
+    .card-front,
+    .card-back {
+        font-size: 22px;
+    }
+
+    .menu-links {
+        gap: 10px;
+    }
+
+    .menu-links a {
+        font-size: 14px;
+    }
 }
