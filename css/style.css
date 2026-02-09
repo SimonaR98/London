@@ -262,6 +262,14 @@ body {
 @media (max-width: 768px) {
 
     /*Menù: riduzione dello spazio tra le voci e se non ci stanno, vanno a capo*/
+    .menubar {
+        padding: 8px 0;
+    }
+
+    .menu-container {
+        width: 100%;
+    }
+
     .menu-links {
         gap: 15px;
         flex-wrap: wrap;
@@ -269,13 +277,21 @@ body {
     }
 
     .menu-links a {
-        font-size: 16px;
+        font-size: 14px;
         letter-spacing: 1px;
     }
 
     /*Titoli: cambio delle dimensioni */
     .header-title {
         font-size: 30px;
+        text-align: center;
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    /* Menu più in alto accorciando la testata */
+    .section-title {
+        height: 35vh;
     }
 
     .countdown-title,
@@ -306,10 +322,12 @@ body {
         padding: 15px;
     }
 
-    /* 5. Section Title: riduciamo l'altezza della testata */
-    .section-title {
-        height: 40vh;
+    .card {
+        box-shadow: none !important;
+        border: 2px solid #ebb866;
+        transform: none !important;
     }
+
 }
 
 /* Ottimizzazione extra per schermi molto piccoli*/
