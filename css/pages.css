@@ -77,6 +77,8 @@ body {
 p {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /* Stile itinerario */
@@ -119,6 +121,30 @@ h3 {
     text-decoration: none;
     transition: transform 0.3s ease, color 0.3s ease;
     margin-left: 16px;
+}
+
+/* Trasporti */
+/*Treno*/
+.transport-main-step {
+    background: #0b132b;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.train-icon i {
+    font-size: 60px;
+    color: #ebb866;
+}
+
+.train-details h4 {
+    margin: 0;
+    color: #ebb866;
 }
 
 /*Immagini delle metro*/
@@ -318,4 +344,92 @@ h3 {
 .quick-info i {
     color: #ebb866;
     margin-right: 5px;
+}
+
+/* --- RESPONSIVE PAGINE INTERNE (Day 1-4) --- */
+@media (max-width: 768px) {
+
+    /* 1. Header e Menù */
+    .main-header {
+        height: 35vh;
+    }
+
+    .header-title {
+        font-size: 30px !important;
+    }
+
+    .menu-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu-links a {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    h3 {
+        font-size: 26px;
+        margin-top: 40px;
+        padding: 0 10px;
+    }
+
+    /* 3. Itinerario e Metro Step */
+    .itinerary-timeline {
+        margin-left: 10px;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .step {
+        padding-left: 20px;
+        gap: 15px;
+    }
+
+    .time {
+        font-size: 18px;
+    }
+
+    /* 4. Box Treno/Trasporti (il box blu) */
+    .transport-main-step {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding: 25px 15px;
+    }
+
+    .train-icon i {
+        font-size: 45px;
+    }
+
+    /* 5. Sezione Ristorante */
+    .restaurant-section {
+        margin: 40px auto;
+    }
+
+    /* 6. Footer Navigazione (Home e Frecce) */
+    .nav-footer {
+        gap: 50px;
+        margin-top: 30px;
+    }
+
+    .nav-icon {
+        font-size: 32px;
+    }
+}
+
+/* Ottimizzazione per schermi molto stretti */
+@media (max-width: 480px) {
+    .line {
+        margin-right: 15px;
+    }
+
+    .station-name {
+        font-size: 14px;
+    }
+
+    .details p {
+        font-size: 14px;
+    }
 }
