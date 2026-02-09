@@ -263,7 +263,12 @@ body {
 
     /*Menù: riduzione dello spazio tra le voci e se non ci stanno, vanno a capo*/
     .menubar {
-        padding: 8px 0;
+        top: 0;
+        padding: 5px 0;
+        background: rgba(28, 26, 27, 0.4);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        position: absolute;
     }
 
     .menu-container {
@@ -271,21 +276,22 @@ body {
     }
 
     .menu-links {
-        gap: 15px;
+        gap: 12px;
         flex-wrap: wrap;
         justify-content: center;
     }
 
     .menu-links a {
-        font-size: 14px;
+        font-size: 13px;
         letter-spacing: 1px;
     }
 
     /*Titoli: cambio delle dimensioni */
     .header-title {
-        font-size: 30px;
+        font-size: 26px;
         text-align: center;
         width: 100%;
+        margin-top: 20px;
         padding: 0 15px;
     }
 
