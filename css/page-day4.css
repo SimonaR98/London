@@ -603,3 +603,136 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* --- RESPONSIVE DAY 4 --- */
+@media (max-width: 768px) {
+
+    /* 1. Sea Life - Acquario */
+    .sea-hero-box {
+        min-height: auto;
+        flex-direction: column;
+        border-radius: 20px;
+        margin: 0 10px;
+    }
+
+    .ocean-overlay {
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .sea-title {
+        font-size: 2.5rem;
+    }
+
+    .sea-arrival-info {
+        width: 100%;
+        justify-content: center;
+        border-radius: 15px;
+    }
+
+    /* Box VR (Spostato sotto l'immagine per non coprire nulla) */
+    .vr-experience-card {
+        position: static;
+        width: 90%;
+        margin: -20px auto 30px;
+        right: 0;
+        bottom: 0;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    /* 2. South Bank Walk (La linea a puntini) */
+    .walk-steps {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .step-line {
+        display: none;
+    }
+
+    /* 3. Borough Market */
+    .lunch-stop .market-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .market-frame {
+        width: 100%;
+        height: 200px;
+    }
+
+    .attraction-text h3 {
+        font-size: 2.2rem;
+    }
+
+    /* 4. Uber Boat */
+    .boat-content h2 {
+        font-size: 32px;
+    }
+
+    .boat-details {
+        flex-direction: column;
+        gap: 15px;
+        border-radius: 20px;
+        width: 90%;
+    }
+
+    /* 5. Osservatorio Greenwich (Scacchiera) */
+    .observatory-hero {
+        height: 300px;
+    }
+
+    .observatory-body {
+        padding: 40px 20px;
+    }
+
+    .meridian-divider {
+        left: 20px;
+        /* Spostiamo la linea del meridiano tutta a sinistra */
+    }
+
+    .coord-tag {
+        left: 20px;
+        transform: none;
+    }
+
+    .grid-item {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-bottom: 40px;
+        text-align: left !important;
+        padding-left: 40px;
+    }
+
+    .grid-item:nth-child(even) {
+        direction: ltr;
+    }
+
+    .grid-visual img {
+        height: 180px;
+        margin-top: 10px;
+    }
+
+    /* 6. Trasporti e Volo */
+    .grid-transport img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .text-final {
+        font-size: 18px;
+        padding: 0 20px;
+    }
+}
+
+/* Fix per schermi micro */
+@media (max-width: 400px) {
+    .sea-title {
+        font-size: 2rem;
+    }
+
+    .observatory-main-title {
+        font-size: 28px;
+    }
+}

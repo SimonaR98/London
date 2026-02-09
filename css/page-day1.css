@@ -297,3 +297,84 @@
     padding: 60px 20px;
     border-radius: 20px;
 }
+
+
+/* --- RESPONSIVE DAY 1 --- */
+@media (max-width: 768px) {
+
+    /* 1. Madame Tussauds & Sherlock: Immagini Circolari */
+    .attraction-container {
+        flex-direction: column !important;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .circle-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .tip-box {
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+
+    /* 2. Zoo di Londra */
+    .zoo-hero-img {
+        height: 250px;
+    }
+
+    .zoo-details-grid {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    /* 3. Box Curiosità Harry Potter */
+    .hp-curiosity-content {
+        flex-direction: column;
+    }
+
+    .hp-text {
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* 4. Binario 9 3/4 */
+    .platform-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .platform-title {
+        font-size: 32px;
+    }
+
+    .platform-list {
+        text-align: left;
+        display: inline-block;
+    }
+
+    /* 5. Frase finale Harry Potter */
+    .binary-phrase {
+        font-size: 28px;
+    }
+
+    /* 6. Pub e Hotel */
+    .grapes-pub {
+        padding: 30px 15px;
+        border-radius: 10px;
+    }
+}
+
+/* Fix per schermi micro */
+@media (max-width: 400px) {
+    .circle-img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .platform-title {
+        font-size: 28px;
+    }
+}

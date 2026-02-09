@@ -185,14 +185,17 @@
 /*Sezione Yeoman*/
 .sky-row-bottom {
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 50px;
     align-items: center;
     width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .yeoman-text {
-    width: 90%;
+    width: 100%;
+    text-align: left;
 }
 
 .yeo-lead-text {
@@ -218,7 +221,7 @@
 .yeoman-visual {
     position: relative;
     width: 100%;
-    max-width: 350px;
+    max-width: 320px;
     justify-self: center;
 }
 
@@ -260,10 +263,11 @@
 
 .yeoman-detail {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 30px;
     color: white;
     font-weight: 500;
+    margin-top: 20px;
 }
 
 .yeoman-detail i {
@@ -744,4 +748,124 @@
 .text-warning {
     color: #ddd;
     text-align: center;
+}
+
+/* --- RESPONSIVE DAY 3 --- */
+@media (max-width: 768px) {
+
+    /* 1. Torre di Londra - Header e Griglia icone */
+    .market-title {
+        font-size: 2.8rem;
+    }
+
+    .tower-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tower-grid-image {
+        width: 180px;
+        height: 180px;
+    }
+
+    /* 2. Sezione Yeoman (Box Fotografico) */
+    .sky-overlay {
+        padding: 40px 15px;
+    }
+
+    .tower-info-centered {
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .sky-row-bottom {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .yeoman-text {
+        text-align: center;
+    }
+
+    .yeoman-detail {
+        justify-content: center;
+    }
+
+    .magic-callout {
+        position: static;
+        margin: 15px auto;
+        transform: rotate(0deg);
+    }
+
+    /* 3. Harry Potter Studios Hero */
+    .magic-title {
+        font-size: 42px;
+    }
+
+    .hogwarts-hero-box {
+        min-height: 350px;
+        margin: 0 10px 40px;
+        border-radius: 20px;
+    }
+
+    .magic-line {
+        display: none;
+    }
+
+    /* 4. Magic Cards (Set di Hogwarts) */
+    .magic-grid {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+
+    .magic-card-img {
+        height: 180px;
+    }
+
+    /* 5. Anniversario Pietra Filosofale */
+    .anniversary-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .anniversary-title {
+        font-size: 30px;
+    }
+
+    .anniversary-details {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    /* 6. Dickens Inn Pub */
+    .pub-hero-img {
+        height: 250px;
+    }
+
+    .pub-details-grid {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    /* 7. Claremont Square & Altri Box */
+    .attraction-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .anniversary-phrase {
+        font-size: 28px;
+    }
+}
+
+/* Fix per schermi molto piccoli */
+@media (max-width: 400px) {
+    .magic-title {
+        font-size: 34px;
+    }
+
+    .tower-info-centered {
+        font-size: 14px;
+    }
 }
