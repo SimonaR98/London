@@ -13,15 +13,16 @@
     </style>
 
     <link type="text/css" rel="stylesheet" href="./css/pages.css">
+    <link type="text/css" rel="stylesheet" href="./css/page-day4.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <title>Giorno 4</title>
-    <link rel="icon" type="image/ico" href="./img/icon.jpg">
+    <link rel="icon" type="image/ico" href="./icon.png">
 </head>
 
 <body>
     <!-- Intestazione della pagina -->
-    <header class="section-title">
+    <header class="main-header londra-day4">
         <div class="header-title">
             <h1>Dagli abissi alle stelle</h1>
         </div>
@@ -29,7 +30,6 @@
             <!-- Barra menù -->
             <div class="menu-container">
                 <div class="menu-links">
-                    <a href="./menu/hotel.html">Alloggio e volo</a>
                     <a href="./menu/cibo.html">Dove mangiare</a>
                     <a href="./menu/attrazioni.html">Attrazioni</a>
                     <a href="./menu/internet.html">Internet</a>
@@ -40,62 +40,317 @@
 
     <!-- Itinerario giorno 4 -->
     <h3>Venerdì 21 agosto:</h3>
-    <p>
-    <ul>
-        <li>Colazione in hotel con partenza per le 09:30 per arrivare all'acquario.</li>
-        <li>Dall'hotel camminiamo per 4 minuti verso la metro ed entriamo a Bekesbourne St e prendiamo la metro DLR Bank
-            <br>Limehouse (2 fermate - 6 minuti)
-            <br>↓
-            <br>Bank
-        </li>
-
-        <li>Cambiamo la linea a Monument (4 minuti a piedi) e prendiamo la metro Circle o District Westbound
-            <br>Monument (6 fermate - 9 minuti)
-            <br>↓
-            <br>Westminster
-        </li>
-        <li>Camminiamo per 8 minuti verso l'acquario ammirando il Big Ben e il London Eye (entrata acquario 10:00 circa)
-            <br>Visita dell'acquario circa 2 ore + esperienza VR
-        </li>
-        <li>Usciamo dall'acquario e andiamo a pranzare a Covent Garden</li>
-
-        <li>Camminiamo verso Trafalgar Square per 15 minuti costeggiando il London Eye</li>
-        <li>Guardiamo Leicester Square che dista solo 6 minuti e andiamo verso Covent Garden dove possiamo vedere anche
-            Chinatown e successivamente Piccadilly Circus</li>
-        <li>Verso le 14:30, da Piccadilly Circus, prendiamo la metro Bakerloo Southbound
-            <br>Piccadilly Circus (3 fermate - 5 minuti)
-            <br>↓
-            <br>Waterloo
-        </li>
-        <li>Cambiamo linea e prendiamo la Jubilee Eastbound
-            <br>Waterloo (6 fermate - 12 minuti)
-            <br>↓
-            <br>North Greenwich
-        </li>
-        <li>Camminiamo verso North Greenwich Station e prendiamo il pullman 188
-            <br>North Greenwich Station (6 fermate - 11 minuti)
-            <br>↓
-            <br>Trafalgar Estate
-        </li>
-        <li>Scesi dal pullman camminiamo per 15 minuti verso Royal Observatory Greenwich (arrivo previsto per le 15:30)
-            <br>Tempo di visita 2/3 ore ma comunque fino a chiusura ovvero le 17:00
-        </li>
-        <li>Purtroppo dobbiamo tornare, quindi dobbiamo dirigerci per 16 minuti verso Greenwich ed entrare a Ticket Hall
-        </li>
-        <li>Prendiamo il treno Southeastern per London Cannon Street
-            <br>Greenwich (2 fermate - 8 minuti)
-            <br>↓
-            <br>London Bridge
-        </li>
-        <li>Cambiamo treno e prendiamo il Thameslink per Brighton
-            <br>London Bridge (2 fermate - 29 minuti)
-            <br>↓
-            <br>Gatwick Airport
-        </li>
-        <li>L'aereo dovrebbe partire alle 20:25</li>
-
-    </ul>
+    <p>Siamo giunti alla fine della nostra vacanza 😔.
+        Spero ti sia piaciuto come regalo e spero tu non veda l'ora, come me, di fare tutte queste attività insieme.
+        <br>
+        Prima di partire godiamoci l'ultimo nostro giorno, immergendoci nel mondo marino che ti piace tanto!
     </p>
+
+    <div class="itinerary-timeline">
+        <img class="itinerary-image" src="./img/subway/dlr-line.jpg" width="550px" height="300px"
+            alt="Mappa metro DLR Line" />
+
+        <div class="metro-step dlr">
+            <div class="line"></div>
+            <div class="details">
+                <span class="time">Linea DLR Bank</span>
+                <p class="station-name">Limehouse → Bank</p>
+            </div>
+        </div>
+        <br>
+        <img class="itinerary-image" src="./img/subway/circle-line.webp" width="500px" height="300px"
+            alt="Mappa metro Circle Line" />
+        <div class="metro-step circle">
+            <div class="line"></div>
+
+            <div class="details">
+                <span class="time">Linea Circle Westbound</span>
+                <p class="station-name">Monument → Westminster</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Acquario -->
+    <section class="sea-life-section">
+        <div class="sea-hero-box">
+            <div class="ocean-overlay">
+                <div class="sea-header">
+                    <span class="sea-subtitle">South Bank Experience</span>
+                    <h2 class="sea-title">SEA LIFE London Aquarium</h2>
+                    <div class="bubble-divider"></div>
+                </div>
+
+                <p class="sea-description">
+                    Un viaggio nelle profondità dell'oceano proprio sotto le strade di Londra.
+                    Dalle foreste di alghe ai tunnel degli squali, esploreremo uno degli acquari più grandi d'Europa.
+                </p>
+
+                <div class="sea-arrival-info">
+                    <span><i class="bi bi-tsunami"></i> Ocean Experience</span>
+                    <span><i class="bi bi-clock"></i> 10:00</span>
+                </div>
+            </div>
+
+            <div class="vr-experience-card">
+                <div class="vr-badge">Special Experience</div>
+                <h4><i class="bi bi-headset-vr"></i> Virtual Reality</h4>
+                <p>Nuota virtualmente insieme ai <strong>delfini</strong> in un'esperienza 360° mozzafiato.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Passeggita sulla South Bank fino al London Bridge -->
+    <section class="southbank-walk">
+        <div class="walk-path">
+            <div class="walk-intro">
+                <i class="bi bi-geo-fill"></i>
+                <span>The Scenic Route: South Bank Walk</span>
+            </div>
+
+            <div class="walk-steps">
+                <div class="step">
+                    <span class="step-icon"><i class="bi bi-camera"></i></span>
+                    <p>Foto panoramiche <br>sul Tamigi</p>
+                </div>
+                <div class="step-line"></div>
+                <div class="step">
+                    <span class="step-icon"><i class="bi bi-brush"></i></span>
+                    <p>Street Art e <br>Libri Usati</p>
+                </div>
+                <div class="step-line"></div>
+                <div class="step">
+                    <span class="step-icon"><i class="bi bi-buildings"></i></span>
+                    <p>Tate Modern & <br>Globe Theatre</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Big Ben -->
+    <section class="attraction-section">
+        <div class="attraction-container reverse">
+
+            <div class="attraction-image-wrapper">
+                <img src="./img/day4/big-ben.jpg" alt="Big Ben" class="circle-img">
+            </div>
+
+            <div class="attraction-text">
+                <h2 class="attraction-title">Big Ben</h2>
+                <p class="attraction-description">
+                    Con la sua torre imponente e il suono profondo delle campane,
+                    è il simbolo per eccellenza della città e uno dei monumenti più fotografati del mondo.
+                    <br>
+                    Ma ecco la curiosità: il nome “Big Ben” non indica la torre, bensì la grande
+                    campana da 13 tonnellate situata all'interno.
+                </p>
+
+                <div class="quick-info">
+                    <span><i class="bi bi-water"></i> Tamigi (indizio <em>fiume</em>)</span>
+                    <span><i class="bi bi-geo-alt"></i> Quartiere Westminster</span>
+                </div>
+
+                <div class="tip-box detective-tip">
+                    <p><strong>🔎 Indizio:</strong> Il quadrante (indizio <em>orologio</em>) del Big Ben è famoso per la
+                        sua estrema puntualità (al contrario della mia):
+                        per oltre un secolo ha funzionato quasi perfettamente, grazie a un sistema che utilizza
+                        delle monete da un penny per bilanciare il meccanismo del
+                        pendolo!
+                        <br>
+                        Speriamo non succeda come nell'ultimo Final Destination 🧐
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- London Eye-->
+    <section class="attraction-section">
+        <div class="attraction-container">
+            <div class="attraction-text">
+                <h2 class="attraction-title">London Eye</h2>
+                <p class="attraction-description">
+                    Il London Eye, situato sulla riva sud del Tamigi,
+                    è la ruota panoramica più alta d'Europa, con i suoi 135 metri di altezza.
+                    Con le sue 32 capsule di vetro, offre una vista panoramica a 360 gradi sulla città
+                </p>
+
+                <div class="quick-info">
+                    <span><i class="bi bi-clock"></i> 10:00 - 23:00</span>
+                </div>
+            </div>
+
+            <div class="attraction-image-wrapper">
+                <img src="./img/day4/london-eye.webp" alt="London Eye" class="circle-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Borough Market -->
+    <section class="lunch-stop">
+        <div class="divider-line top"></div>
+        <h2 class="attraction-title market-subtitle">Pausa Pranzo</h2>
+        <h3 class="restaurant market-title">Borough Market</h3>
+
+        <div class="market-container">
+            <div class="attraction-visual">
+                <div class="food-frame market-frame">
+                    <img src="./img/day4/borough-market.jpg" alt="Borough Market Food">
+                    <div class="food-badge">
+                        <i class="bi bi-egg-fried"></i> Foodie Paradise
+                    </div>
+                </div>
+            </div>
+
+            <div class="attraction-text">
+                <p>
+                    È il mercato alimentare più antico di Londra e il paradiso del cibo.
+                    Tra banchi di formaggi artigianali, ostriche fresche e profumo di spezie, cercheremo il nostro
+                    pranzo perfetto.
+                </p>
+                <p>
+                    Dallo street food etnico ai famosi <strong>sandwiches al formaggio fuso</strong>,
+                    qui ogni angolo nasconde una delizia.
+                </p>
+                <div class="quick-info">
+                    <span><i class="bi bi-clock"></i> Lunch Time</span>
+                    <span><i class="bi bi-bag-check"></i> Street Food</span>
+                </div>
+            </div>
+        </div>
+        <div class="divider-line bottom"></div>
+    </section>
+
+    <!-- Uber Boat -->
+    <section class="uber-boat-transit">
+        <div class="river-container">
+            <div class="river-line">
+                <i class="bi bi-life-preserver boat-icon"></i>
+            </div>
+
+            <div class="boat-content">
+                <span class="transit-label">River Experience</span>
+                <h2>Uber Boat: Tutti a bordo!</h2>
+                <p>
+                    Lasciamo London Bridge alle spalle e ci imbarchiamo per l'ultima traversata.
+                    Passeremo sotto il <strong>Tower Bridge</strong> e navigheremo tra i grattacieli di Canary Wharf
+                    fino a raggiungere il molo di Greenwich.
+                </p>
+
+                <div class="boat-details">
+                    <div class="detail-item">
+                        <span><strong>Da:</strong> London Bridge City Pier</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="bi bi-arrow-right"></i>
+                    </div>
+                    <div class="detail-item">
+                        <i class="bi bi-anchor"></i>
+                        <span><strong>A:</strong> Greenwich Pier</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Royal Observatory Greenwich -->
+    <section class="observatory-section">
+        <div class="observatory-hero">
+            <img src="./img/day4/greenwich.jpg" alt="Royal Observatory" class="hero-img">
+            <div class="hero-overlay">
+                <h1 class="observatory-main-title">Royal Observatory Greenwich</h1>
+            </div>
+        </div>
+
+        <div class="observatory-container">
+            <div class="observatory-body">
+                <div class="observatory-intro">
+                    <p>Siamo sulla cima del mondo, dove tutto il tempo ha inizio. Camminare sulla
+                        <strong>Prime Meridian
+                            Line</strong> è l'ultimo rito di questo viaggio.
+                    </p>
+                </div>
+
+                <div class="highlights-grid">
+                    <div class="meridian-divider">
+                        <span class="coord-tag">0° 0' 0''</span>
+                    </div>
+
+                    <div class="grid-item">
+                        <div class="grid-visual">
+                            <img src="./img/day4/telescope.webp" alt="Telescope">
+                        </div>
+                        <div class="grid-gap"></div>
+                        <div class="grid-content text-right">
+                            <h4>Great Equatorial Telescope</h4>
+                            <p>Uno dei telescopi più grandi al mondo per osservare i giganti del sistema solare.</p>
+                        </div>
+                    </div>
+
+                    <div class="grid-item reverse">
+                        <div class="grid-content text-left">
+                            <h4>Harrison's Clocks</h4>
+                            <p>Gli orologi Harrison furono rivoluzionari davano ai marinai un modo per calcolare la loro
+                                "longitudine".
+                                Questo sviluppo ridusse drasticamente il rischio che le navi e i loro equipaggi
+                                andassero persi in mare.</p>
+                        </div>
+                        <div class="grid-gap"></div>
+                        <div class="grid-visual">
+                            <img src="./img/day4/clock.jpg" alt="Clocks">
+                        </div>
+                    </div>
+
+                    <div class="quick-info">
+                        <span><i class="bi bi-clock"></i> 2 - 3 ore</span>
+                        <span><i class="bi bi-moon-stars-fill"></i> Stars</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mezzi per aeroporto -->
+    <div class="text-final">
+        <p>Ci siamo, è arrivato il momento di partire e tornare a casa.
+            Il nostro volo parte da Gatwick oppure...
+        </p>
+        <a href="./giorno1.html" target="_blank" class="btn-restaurant"> Si ricomincia!
+            <i class="bi bi-stars"></i>
+        </a>
+    </div>
+    </div>
+
+    <div class="grid-item">
+        <div class="grid-transport">
+            <img src="./img/day4/london-bridge-station.jpg" alt="London Bridge Station">
+        </div>
+        <div class="grid-gap"></div>
+        <div class="text-right">
+            <h4 class="attraction-title">The Way Back</h4>
+            <p>
+                Dalla Ticket Hall di Greenwich prendiamo il <strong>Southeastern</strong> verso London Cannon Street e
+                scendiamo a London Bridge.
+            </p>
+            <div class="transport-badge">
+                <i class="bi bi-train-front"></i>
+                <span>Greenwich → London Bridge</span>
+            </div>
+            <p>
+                Qui cambiamo binario per il <strong>Thameslink</strong> direzione Brighton, che ci porterà dritti
+                all'aeroporto.
+            </p>
+            <div class="transport-badge">
+                <i class="bi bi-airplane-engines"></i>
+                <span>London Bridge → Gatwick (30-40 min)</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Immagine volo ritorno -->
+    <img class="fly" src="./img/day1/Volo.jpeg" alt="volo andata" />
 
     <!-- Footer con comando alla pagina successiva e precedente-->
     <div class="nav-footer">
