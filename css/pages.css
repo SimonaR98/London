@@ -391,7 +391,6 @@ h3 {
     }
 }
 
-
 /* --- RESPONSIVE PAGINE INTERNE (Day 1-4) --- */
 @media (max-width: 768px) {
 
@@ -470,7 +469,9 @@ h3 {
     img[src*="victoria"],
     img[src*="jubilee"],
     img[src*="northern"],
-    img[src*="dlr"] {
+    img[src*="dlr"],
+    img[src*="circle"],
+    img[src*="central"] {
         height: 200px !important;
         width: auto !important;
         margin: 20px auto !important;
