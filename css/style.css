@@ -267,7 +267,7 @@ body {
         left: 0 !important;
         width: 100% !important;
         padding: 5px 0 !important;
-        position: absolute !important;
+        position: fixed !important;
         background: rgba(28, 26, 27, 0.3) !important;
         backdrop-filter: blur(15px);
         -webkit-backdrop-filter: blur(10px);
