@@ -302,16 +302,55 @@
 /* --- RESPONSIVE DAY 1 --- */
 @media (max-width: 768px) {
 
-    /* 1. Madame Tussauds & Sherlock: Immagini Circolari */
+    .menubar {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        padding: 5px 0 !important;
+        background: rgba(28, 26, 27, 0.6) !important;
+        backdrop-filter: blur(15px) !important;
+        -webkit-backdrop-filter: blur(15px) !important;
+        z-index: 9999 !important;
+    }
+
+    .menu-links {
+        gap: 10px !important;
+    }
+
+    .menu-links a {
+        font-size: 12px !important;
+    }
+
+    .londra-day1 {
+        height: 35vh !important;
+        background-position: center !important;
+    }
+
+    /*Linee metro*/
+    img[src*="victoria"],
+    img[src*="jubilee"] {
+        height: 100px !important;
+        width: auto !important;
+        margin: 20px auto !important;
+        object-fit: contain !important;
+    }
+
+    /*Madame Tussauds & Sherlock: Immagini Circolari */
     .attraction-container {
         flex-direction: column !important;
-        text-align: center;
-        gap: 20px;
+        text-align: center !important;
+        gap: 15px !important;
+    }
+
+    .attraction-image-wrapper {
+        order: -1 !important;
+        width: 100% !important;
     }
 
     .circle-img {
-        width: 200px;
-        height: 200px;
+        width: 250px !important;
+        height: 250px !important;
     }
 
     .tip-box {
@@ -319,7 +358,51 @@
         margin-top: 15px;
     }
 
-    /* 2. Zoo di Londra */
+    .attraction-container.reverse,
+    .attraction-container .reverse {
+        flex-direction: column !important;
+    }
+
+    .reverse .attraction-image-wrapper {
+        justify-content: center !important;
+    }
+
+    /*Info*/
+    .zoo-details-grid,
+    .pub-details-grid {
+        flex-direction: column !important;
+        /* Icone una sotto l'altra */
+        align-items: center !important;
+        gap: 20px !important;
+    }
+
+    .zoo-info-item,
+    .pub-info-item {
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    /* 5. Sezione Binario 9 3/4 e HP Curiosity */
+    .platform-container,
+    .hp-curiosity-content {
+        flex-direction: column !important;
+        text-align: center !important;
+    }
+
+    .hp-text {
+        text-align: center !important;
+        padding: 20px !important;
+    }
+
+    .platform-title {
+        font-size: 32px !important;
+    }
+
+    .binary-phrase {
+        font-size: 28px !important;
+    }
+
+    /*Zoo di Londra */
     .zoo-hero-img {
         height: 250px;
     }
