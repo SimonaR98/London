@@ -1,0 +1,605 @@
+/*Immagine titolo*/
+.londra-day4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('../img/day4/sea-life.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/*Acquario*/
+.sea-life-section {
+    padding: 80px 20px;
+}
+
+.sea-hero-box {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+    min-height: 550px;
+    border-radius: 40px;
+    background-image: linear-gradient(rgba(0, 120, 190, 0.5), rgba(0, 43, 91, 0.7)),
+        url('../img/day4/delfino.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+    /* Necessario per far sporgere il box VR */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.ocean-overlay {
+    padding: 60px;
+    max-width: 650px;
+    color: white;
+}
+
+.sea-title {
+    font-family: 'Anton', sans-serif;
+    font-size: 4rem;
+    margin: 10px 0;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.sea-subtitle {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #a5f3fc;
+    font-weight: bold;
+}
+
+.bubble-divider {
+    width: 100px;
+    height: 4px;
+    background: #a5f3fc;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.sea-description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Icone */
+.sea-arrival-info {
+    display: flex;
+    gap: 20px;
+    font-size: 0.9rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 50px;
+    width: fit-content;
+}
+
+.bi-tsunami {
+    display: inline-block;
+    animation: wave-move 3s infinite ease-in-out;
+    color: white;
+}
+
+@keyframes wave-move {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-3px);
+    }
+}
+
+/* --- BOX VR DELFINI --- */
+.vr-experience-card {
+    position: absolute;
+    right: -40px;
+    bottom: -40px;
+    width: 300px;
+    background: white;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    border-left: 6px solid #0077be;
+}
+
+.vr-badge {
+    background: #e0f2fe;
+    color: #0369a1;
+    font-size: 16px;
+    padding: 4px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.vr-experience-card h4 {
+    color: #002b5b;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.vr-experience-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/*South Bank Walk*/
+.southbank-walk {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.walk-intro {
+    margin-bottom: 30px;
+    color: #c8102e;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.walk-steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.step {
+    flex: 1;
+}
+
+.step-icon {
+    width: 50px;
+    height: 50px;
+    background: white;
+    border: 2px solid #ebb866;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    color: #ebb866;
+    font-size: 18px;
+}
+
+.step p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.step-line {
+    flex-grow: 1;
+    height: 2px;
+    background: #ebb866;
+    border-top: 2px dashed #ebb866;
+    background: transparent;
+    margin: 0 10px;
+    max-width: 100px;
+    margin-bottom: 40px;
+}
+
+/*Big Ben*/
+.attraction-container .reverse {
+    flex-direction: row-reverse;
+}
+
+.detective-tip {
+    background-color: #dbdada;
+    border-left-color: #333;
+}
+
+/*Immagine a sinistra */
+.reverse .attraction-image-wrapper {
+    justify-content: flex-start;
+}
+
+/*London Eye*/
+.attraction-section {
+    max-width: 800px;
+    margin: 32px auto;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.attraction-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Immagine Circolare */
+.attraction-image-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.circle-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #ebb866;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Box Suggerimento */
+.tip-box {
+    background-color: #d6d4db;
+    border-left: 5px solid #002147;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 0 10px 10px 0;
+}
+
+/*Borough Market*/
+.market-title {
+    color: #333;
+    font-size: 45px;
+}
+
+.market-title,
+.market-subtitle {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.market-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+}
+
+.lunch-stop {
+    padding: 80px 20px;
+}
+
+.lunch-stop .market-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.lunch-stop .attraction-text {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.market-frame {
+    position: relative;
+    width: 350px;
+    height: 250px;
+    margin-bottom: 0 !important;
+    transition: transform 0.3s ease;
+}
+
+.market-frame:hover {
+    transform: scale(1.05);
+}
+
+.market-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.food-frame {
+    border: 4px solid #ebb866;
+}
+
+.food-badge {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    background: #fdbb50d5;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    width: fit-content;
+}
+
+.attraction-text h3 {
+    color: #2c3e50;
+    font-size: 2.8rem;
+    font-family: 'Anton', sans-serif;
+}
+
+/*Uber Boat */
+.uber-boat-transit {
+    padding: 100px 20px;
+    background: linear-gradient(180deg, #fff 0%, #e0f2fe 100%);
+    text-align: center;
+}
+
+.river-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.river-line {
+    width: 100%;
+    height: 2px;
+    background: #74b9ff;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.boat-icon {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0984e3;
+    font-size: 1.5rem;
+    border: 2px solid #74b9ff;
+    animation: boat-float 3s infinite ease-in-out;
+}
+
+@keyframes boat-float {
+    0% {
+        transform: translateX(-50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+
+.boat-icon {
+    animation: boat-float 10s linear infinite;
+}
+
+.transit-label {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #0984e3;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.boat-content h2 {
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    font-size: 48px;
+    margin: 15px 0;
+    color: #2c3e50;
+}
+
+.boat-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 15px 30px;
+    border-radius: 50px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #2d3436;
+    font-weight: 500;
+}
+
+/*Osservatorio Greenwich*/
+.observatory-section {
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.observatory-hero {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
+}
+
+.observatory-main-title {
+    color: #ebb866;
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(2rem, 8vw, 4rem);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+/* Box con effetto stellato */
+.observatory-container {
+    max-width: 1000px;
+    margin: -80px auto 0;
+    position: relative;
+    z-index: 10;
+    padding: 0 20px;
+}
+
+.observatory-body {
+    background-image: linear-gradient(rgba(11, 16, 33, 0.5), rgba(11, 16, 33, 0.8)), url('../img/day4/stelle.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 40px;
+    border-radius: 20px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.observatory-intro {
+    position: relative;
+    z-index: 5;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* La Linea del Meridiano */
+.meridian-divider {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: -30px;
+    width: 2px;
+    background: #ebb866;
+    transform: translateX(-50%);
+}
+
+.coord-tag {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ebb866;
+    color: #000;
+    padding: 4px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+
+/* Griglia Scacchiera */
+.highlights-grid {
+    position: relative;
+    z-index: 5;
+}
+
+.grid-item {
+    display: grid;
+    grid-template-columns: 1fr 80px 1fr;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.grid-visual img {
+    width: 100%;
+    height: 200px;
+    margin-top: 30px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid rgba(235, 184, 102, 0.4);
+}
+
+.grid-content h4 {
+    color: #ebb866;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.grid-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.text-right {
+    text-align: left;
+}
+
+.reverse .text-left {
+    text-align: right;
+}
+
+/*Testo finale*/
+.text-final {
+    text-align: center;
+    font-size: 24px;
+}
+
+
+/*Trasporti*/
+.transport-badge {
+    background: rgba(235, 184, 102, 0.1);
+    border-left: 3px solid #ebb866;
+    padding: 10px 15px;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-radius: 4px;
+}
+
+.transport-badge i {
+    color: #ebb866;
+    font-size: 1.2rem;
+}
+
+.transport-badge span {
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.grid-transport img {
+    width: 400px;
+    height: 250px;
+    margin-left: 30px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid rgba(235, 184, 102, 0.4);
+}
+
+/*Stile immagine volo*/
+.fly {
+    width: 400px;
+    height: 150px;
+    display: block;
+    margin: 32px auto;
+    max-width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

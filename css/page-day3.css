@@ -1,0 +1,747 @@
+/*Immagine titolo*/
+.londra-day3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('../img/day3/hogwarts.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/*Frase Anniversario*/
+.anniversary-phrase {
+    text-align: center;
+    font-size: 40px;
+    font-family: "Great Vibes", cursive;
+    letter-spacing: 2px;
+    margin-top: 32px;
+    margin-bottom: 24px;
+}
+
+.anniversary i {
+    color: #df0101;
+}
+
+/*Torre di Londra*/
+.tower-open {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0px auto;
+    position: relative;
+}
+
+.tower-header {
+    text-align: center;
+}
+
+.market-label {
+    font-size: 16px;
+    color: #8b0000;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.title-underline {
+    width: 150px;
+    height: 6px;
+    background: #ebb866;
+    margin: 20px auto;
+}
+
+.market-title {
+    font-family: 'Anton', sans-serif;
+    font-size: 4rem;
+    color: #c8102e;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.tower-text {
+    font-size: 20px;
+    color: black;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.tower-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tower-visit {
+    flex: 1;
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.tower-grid-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #ebb866;
+    margin-bottom: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+.tower-info h4 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #333;
+    margin-bottom: -10px;
+    text-align: center;
+}
+
+.tower-info p {
+    font-size: 16px;
+    color: black;
+    line-height: 1.4;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.tower-visual {
+    text-align: center;
+    padding: 20px;
+}
+
+.main-img {
+    width: 100%;
+    border-radius: 4px;
+    filter: sepia(0.2);
+}
+
+/*Torre di Londra: Yeoman Warders*/
+.sky-garden-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+        url(../img/day3/tower-london.jpg);
+
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+    min-height: 400px;
+    margin: 80px auto;
+    max-width: 90%;
+    border-radius: 40px;
+    overflow: hidden;
+    position: relative;
+}
+
+.sky-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    min-height: 550px;
+    padding: 60px 50px;
+    display: flex;
+    align-items: center;
+}
+
+.tower-container-centered {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.tower-header-main {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sky-title {
+    font-family: 'Anton', sans-serif;
+    font-size: 54px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.tower-intro-text {
+    color: #f1f1f1;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.tower-info-centered {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    color: #ebb866;
+    font-weight: 500;
+}
+
+/*Sezione Yeoman*/
+.sky-row-bottom {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 50px;
+    align-items: center;
+    width: 100%;
+}
+
+.yeoman-text {
+    width: 90%;
+}
+
+.yeo-lead-text {
+    font-size: 22px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.yeo-sub-text {
+    color: #f1f1f1;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.sky-info {
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    gap: 20px;
+}
+
+.yeoman-visual {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    justify-self: center;
+}
+
+.yeoman-visual img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.corner-decoration {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: 3px solid #ebb866;
+    z-index: 1;
+}
+
+.top-left {
+    bottom: -15px;
+    left: -15px;
+    border-right: none;
+    border-top: none;
+}
+
+.magic-callout {
+    position: absolute;
+    top: -15px;
+    right: -20px;
+    background: #ebb866;
+    color: #333;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transform: rotate(2deg);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.yeoman-detail {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    color: white;
+    font-weight: 500;
+}
+
+.yeoman-detail i {
+    color: #ebb866;
+}
+
+/*Meal deal*/
+.meal-deal-note {
+    max-width: 800px;
+    margin: 40px auto;
+    margin-bottom: 80px;
+    background: #fff9e6;
+    border-left: 5px solid #ebb866;
+    border-right: 5px solid #ebb866;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 0px rgba(235, 184, 102, 0.1);
+    position: relative;
+}
+
+.note-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.note-text h4 {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.note-text p {
+    margin: 5px 0 0;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.stop-text h4 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Trasporti */
+/*Treno*/
+.transport-main-step {
+    background: #0b132b;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.train-icon i {
+    font-size: 60px;
+    color: #ebb866;
+}
+
+.train-details h4 {
+    margin: 0;
+    color: #ebb866;
+}
+
+/*Pullman*/
+.shuttle-step-info {
+    margin-top: 20px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.shuttle-step {
+    color: black;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.shuttle-name {
+    color: #c8102e;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 80px;
+}
+
+/*Hogwarts*/
+.hogwarts-studios {
+    background: #002147;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+/*Box titolo e sottotitolo*/
+.magic-title {
+    font-family: "Playfair Display", serif;
+    font-size: 72px;
+    color: white;
+    text-shadow: 0 0 15px rgba(235, 184, 102, 0.8);
+    margin: 10px 0;
+}
+
+.magic-subtitle {
+    color: #ebb866;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "League Spartan", sans-serif;
+    letter-spacing: 4px;
+}
+
+.hogwarts-description {
+    color: #d6d4db;
+    max-width: 700px;
+    margin: 20px auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.hogwarts-hero-box {
+    background-image: linear-gradient(rgba(11, 19, 43, 0.7), rgba(11, 19, 43, 0.9)),
+        url('../img/day3/hogwarts-express.webp');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    margin: 0 auto 60px;
+    max-width: 1100px;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ebb866;
+}
+
+.magic-line {
+    width: 150px;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #ebb866, transparent);
+    display: inline-block;
+    margin: 0 20px;
+    vertical-align: middle;
+}
+
+/*Card*/
+.magic-transition {
+    padding: 60px 20px;
+    background: #0b132b;
+    text-align: center;
+    color: #ebb866;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+}
+
+.magic-overlay {
+    padding: 40px;
+    width: 100%;
+}
+
+.magic-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.magic-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.magic-card:hover {
+    transform: translateY(-10px);
+    border-color: #ebb866;
+}
+
+.magic-card-img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.magic-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.magic-card h4 {
+    color: #ebb866;
+    font-family: "Great Vibes", cursive;
+    letter-spacing: 2px;
+    font-size: 36px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.magic-card p {
+    color: white;
+    font-size: 16px;
+}
+
+/*Anniversario Pietra Filosofale*/
+/* Linea divisoria */
+.anniversary-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px auto;
+    max-width: 900px;
+    padding: 0 20px;
+}
+
+.divider-line {
+    flex-grow: 1;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(235, 184, 102, 0.5), transparent);
+}
+
+.anniversary-divider i {
+    font-size: 2rem;
+    color: #ebb866;
+    margin: 0 20px;
+    animation: sparkle 1.5s infinite alternate;
+}
+
+/*Lampeggiante */
+@keyframes sparkle {
+    from {
+        opacity: 0.6;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
+
+/*Anniversario */
+.anniversary-section {
+    max-width: 1100px;
+    padding: 30px;
+    padding-top: 0px;
+}
+
+.anniversary-content {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.anniversary-tag {
+    color: #ebb866;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.anniversary-title {
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.anniversary-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.anniversary-text p {
+    color: #d1d1d1;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.anniversary-details {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ebb866;
+}
+
+.anniversary-visual {
+    position: relative;
+}
+
+.anniversary-visual img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 2;
+}
+
+/*Clameront Square*/
+.parag-claremont {
+    text-align: center;
+    font-weight: 400;
+    padding-top: 20px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.attraction-section {
+    max-width: 800px;
+    margin: 32px auto;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.attraction-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Immagine Circolare */
+.attraction-image-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.circle-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #ebb866;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.quick-info {
+    background: #333333e5;
+    color: #ebb866;
+    max-width: 260px;
+    padding: 5px;
+    gap: 30px;
+    border-radius: 10px;
+    border: 1px solid #ebb866;
+}
+
+/*Hotel Recharge*/
+.hotel-recharge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px auto;
+    color: #666;
+    font-style: italic;
+}
+
+.recharge-line {
+    flex-grow: 1;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #ccc, transparent);
+    max-width: 200px;
+}
+
+.recharge-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.recharge-content i {
+    color: #4CAF50;
+    /* Un verde ricarica */
+    font-size: 1.5rem;
+}
+
+/*The Dickens Inn*/
+.title-pub {
+    color: white;
+    margin-top: -10px;
+    font-family: 'Playfair Display', serif;
+}
+
+.dickens-pub {
+    background-color: #1a1a1a;
+    border-radius: 20px;
+}
+
+.pub-section {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.pub-hero-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.pub-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.pub-details-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #002147;
+}
+
+.pub-info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.pub-info-item i {
+    font-size: 24px;
+    color: #ebb866;
+}
+
+.pub-info-item span {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.text-warning h4 {
+    color: red;
+    font-family: "League Spartan", sans-serif;
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+.text-warning {
+    color: #ddd;
+    text-align: center;
+}
