@@ -764,106 +764,156 @@
 /* --- RESPONSIVE DAY 2 --- */
 @media (max-width: 768px) {
 
-    /* 1. Cambio della Guardia */
+    /* Cambio della Guardia */
+    .guard-ceremony-section {
+        padding: 30px 10px;
+    }
+
     .guard-title {
         font-size: 28px;
     }
 
     .guard {
+        height: 280px;
+        object-fit: cover;
+    }
+
+    .info-guard {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Natural History Museum */
+    .museum-hero {
         height: 250px;
     }
 
-    /* 2. Natural History Museum (La parte più critica) */
-    .museum-hero {
-        height: 300px;
-    }
-
     .museum-main-title {
-        font-size: 32px;
+        font-size: 30px;
+        padding: 0 10px;
     }
 
     .museum-container {
         margin-top: 0;
+        padding: 10px;
     }
 
     .museum-grid {
-        padding: 20px;
+        padding: 20px 15px;
         grid-template-columns: 1fr;
+        margin-top: -20px;
     }
 
     .highlight-gallery {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
 
-    /* 3. Kensington Palace & Parks Gallery */
+    .highlight-item img {
+        height: 200px;
+    }
+
+    /* Kensington Palace & Parks Gallery */
     .parks-grid {
         grid-template-columns: 1fr;
     }
 
     .park-card {
-        height: 200px;
+        height: 180px;
     }
 
-    /* 4. Kyoto Garden & Lego Store (Flex con immagini) */
+    .walk-steps,
+    .walk-steps-night {
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    .step-visual,
+    .step-visual-night {
+        width: 220px;
+        height: 220px;
+    }
+
+    /* Kyoto Garden & Lego Store */
     .kyoto-wrapper,
     .lego-wrapper {
         flex-direction: column !important;
-        gap: 20px;
-        margin: 0;
+        text-align: center;
+        gap: 30px;
     }
 
-    .kyoto-image img,
-    .lego-image img {
-        height: 200px;
+    .kyoto-wrapper.reverse,
+    .lego-wrapper.reverse {
+        flex-direction: column !important;
+    }
+
+    .kyoto-image,
+    .lego-image {
+        order: -1;
+        width: 100%;
+    }
+
+    .kyoto-title {
+        font-size: 32px;
     }
 
     .zen-badge {
-        position: static;
+        position: relative;
+        top: 0;
+        left: 0 !important;
+        right: 0 !important;
         margin-bottom: 10px;
         display: inline-block;
     }
 
-    /* 5. Sky Garden (L'overlay con reminder) */
+    /* Sky Garden e Leadenhall Market */
     .sky-overlay {
-        padding: 40px 20px;
+        padding: 30px 15px;
     }
 
     .sky-container {
         grid-template-columns: 1fr;
-        text-align: center;
+        width: 100%;
     }
 
     .sky-title {
-        font-size: 38px;
+        font-size: 36px;
+        text-align: center;
     }
 
     .sky-reminder {
-        margin: 0 auto;
+        margin: 20px auto;
         max-width: 100%;
         height: auto;
     }
 
-    /* 6. Leadenhall Market */
     .market-title {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
+        line-height: 1;
     }
 
     .market-main {
         grid-template-columns: 1fr;
     }
 
-    .magic-callout {
-        position: static;
-        margin: 20px auto;
-        transform: rotate(0deg);
-        justify-content: center;
+    .corner-decoration {
+        display: none;
     }
 
-    /* 7. Post-it Meal Deal */
+    .magic-callout {
+        position: relative;
+        right: 0;
+        margin: 15px auto;
+        width: fit-content;
+        transform: rotate(0);
+    }
+
+    /* Post-it Meal Deal */
     .meal-deal-note {
-        transform: rotate(0deg);
-        /* Raddrizziamo per facilitare la lettura */
-        margin: 20px;
+        transform: rotate(0);
+        margin: 20px 10px;
     }
 
     .note-content {
@@ -871,31 +921,53 @@
         text-align: center;
     }
 
-    /* 8. Ponti e Passeggiata Serale (Icone Tonde) */
-    .walk-steps,
-    .walk-steps-night {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .step-visual,
-    .step-visual-night {
-        width: 180px;
-        height: 180px;
+    .lead-text,
+    .lead-text-square {
+        font-size: 18px;
     }
 
     .night-title {
-        font-size: 40px;
-    }
-}
-
-/* Fix per schermi micro */
-@media (max-width: 400px) {
-    .museum-main-title {
-        font-size: 26px;
+        font-size: 45px;
     }
 
-    .kyoto-title {
+    /* Ponti e Passeggiata Serale */
+    .walk-intro p {
         font-size: 28px;
+    }
+
+    .walk-steps,
+    .walk-steps-night {
+        flex-direction: column !important;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .step,
+    .step-night {
+        width: 100%;
+    }
+
+    .step-visual {
+        width: 250px;
+        height: 250px;
+    }
+
+    .step-visual-night {
+        width: 220px;
+        height: 220px;
+    }
+
+    .step-info h4 {
+        margin-top: 10px;
+    }
+
+    /* 6. Leicester Square */
+    .night-title {
+        font-size: 48px;
+    }
+
+    .lead-text-square,
+    .sub-text-square {
+        padding: 0 15px;
     }
 }
