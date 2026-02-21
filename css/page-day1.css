@@ -303,7 +303,7 @@
 @media (max-width: 768px) {
 
     .londra-day1 {
-        height: 20vh !important;
+        height: 23vh !important;
         background-position: center !important;
     }
 
@@ -316,10 +316,18 @@
     }
 
     /*Madame Tussauds & Sherlock: Immagini Circolari */
+    .attraction-section {
+        padding: 10px !important;
+        margin: 20px 0 !important;
+        width: 100% !important;
+    }
+
     .attraction-container {
+        display: flex !important;
         flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
         text-align: center !important;
-        gap: 20px !important;
     }
 
     .attraction-image-wrapper {
@@ -336,8 +344,8 @@
     }
 
     .circle-img {
-        width: 260px !important;
-        height: 260px !important;
+        width: 200px !important;
+        height: 200px !important;
         border-width: 4px !important;
     }
 
@@ -380,7 +388,9 @@
     }
 
     .zoo-hero-img {
-        height: 250px;
+        height: 160px !important;
+        width: 100% !important;
+        object-fit: cover;
     }
 
     .zoo-info-item {
@@ -390,10 +400,9 @@
     }
 
     /* Box HP e Binario 9 3/4 */
-    .hp-image,
-    .platform-image {
-        width: 100% !important;
-        min-width: 100% !important;
+    .hp-image img {
+        min-height: 150px !important;
+        max-height: 180px !important;
     }
 
     .hp-text {
@@ -401,20 +410,36 @@
         padding: 20px !important;
     }
 
-    .hp-curiosity-content,
-    .platform-container {
+    .hp-curiosity-content {
         flex-direction: column;
         text-align: center;
     }
 
+    .platform-container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        padding: 20px !important;
+    }
+
+    .platform-text {
+        text-align: center !important;
+        order: 1;
+    }
+
+    .platform-image {
+        order: 2;
+        max-width: 200px !important;
+        margin-top: 20px;
+    }
+
     .platform-title {
-        font-size: 30px !important;
+        font-size: 26px !important;
     }
 
     .platform-list {
         text-align: left !important;
-        display: inline-block;
-        padding-right: 20px;
+        font-size: 14px;
     }
 
     /* Pub e Hotel */
