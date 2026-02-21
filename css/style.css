@@ -280,12 +280,12 @@ body {
 
     /* Menu e Testata */
     .section-title {
-        height: 15vh !important;
-        padding-top: 50px !important;
+        height: 10vh !important;
+        padding-top: 40px !important;
     }
 
     .header-title h1 {
-        font-size: 30px !important;
+        font-size: 35px !important;
         padding: 0 15px !important;
     }
 
@@ -308,14 +308,14 @@ body {
 
     /*Countdown*/
     .countdown-title {
-        font-size: 22px !important;
+        font-size: 24px !important;
         margin-top: 25px !important;
         letter-spacing: 1px !important;
     }
 
     .flip-clock {
         gap: 6px !important;
-        transform: scale(0.7);
+        transform: scale(0.6);
     }
 
     .flip-unit span {
@@ -324,7 +324,7 @@ body {
 
     /* 3. Dedica (Un'inaspettata avventura) */
     .title-adv {
-        font-size: 22px !important;
+        font-size: 24px !important;
         margin-top: 35px !important;
     }
 
@@ -365,4 +365,5 @@ body {
         gap: 10px;
         padding: 15px !important;
     }
+
 }
