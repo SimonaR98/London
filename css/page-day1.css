@@ -446,8 +446,8 @@
 
     .platform-image img {
         display: block !important;
-        width: 100% !important;
-        height: auto !important;
+        width: 300px !important;
+        height: 150px !important;
         object-fit: contain !important;
 
         /* Se per caso fosse rimasto un background impostato prima: */
@@ -591,4 +591,5 @@
     .title-pub {
         font-size: 28px !important;
     }
+
 }
