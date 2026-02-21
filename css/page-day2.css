@@ -789,14 +789,28 @@
         align-items: center;
     }
 
+    /* Westminster Abbey */
+    .attraction-container {
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    .attraction-image-wrapper {
+        order: -1;
+        margin-bottom: 20px;
+    }
+
     /* Natural History Museum */
     .museum-hero {
         height: 250px;
     }
 
     .museum-main-title {
-        font-size: 30px;
-        padding: 0 10px;
+        font-size: 24px !important;
+        white-space: nowrap;
+        overflow: hidden;
+        letter-spacing: 1px;
+        width: 100%;
     }
 
     .museum-container {
