@@ -436,16 +436,22 @@
     }
 
     .platform-image {
+        display: block !important;
         width: 100% !important;
-        max-width: 400px !important;
-        margin: 0 auto !important;
+        max-width: 100% !important;
+        margin: 10px auto !important;
+        overflow: hidden;
     }
 
     .platform-image img {
+        display: block !important;
         width: 100% !important;
         height: auto !important;
         object-fit: contain !important;
-        border-radius: 10px;
+
+        /* Se per caso fosse rimasto un background impostato prima: */
+        background-image: none !important;
+        background-repeat: no-repeat !important;
     }
 
     .platform-text {
