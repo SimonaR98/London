@@ -280,12 +280,12 @@ body {
 
     /* Menu e Testata */
     .section-title {
-        height: 25vh !important;
+        height: 15vh !important;
         padding-top: 50px !important;
     }
 
     .header-title h1 {
-        font-size: 28px !important;
+        font-size: 30px !important;
         padding: 0 15px !important;
     }
 
@@ -308,7 +308,7 @@ body {
 
     /*Countdown*/
     .countdown-title {
-        font-size: 20px !important;
+        font-size: 22px !important;
         margin-top: 25px !important;
         letter-spacing: 1px !important;
     }
@@ -324,12 +324,12 @@ body {
 
     /* 3. Dedica (Un'inaspettata avventura) */
     .title-adv {
-        font-size: 20px !important;
+        font-size: 22px !important;
         margin-top: 35px !important;
     }
 
     .adv-description {
-        font-size: 15px !important;
+        font-size: 16px !important;
         padding: 0 25px !important;
         line-height: 1.5 !important;
     }
@@ -351,7 +351,6 @@ body {
     }
 
     .card {
-        box-shadow: none !important;
         border: 2px solid #ebb866 !important;
     }
 
