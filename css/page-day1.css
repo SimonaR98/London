@@ -437,16 +437,22 @@
     }
 
     .platform-image {
-        display: block !important;
+        order: 2 !important;
+        display: flex !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-top: 5px !important;
         margin: 10px auto !important;
         overflow: hidden;
+        justify-content: center !important;
     }
 
     .platform-image img {
-        display: block !important;
-        width: 400px !important;
-        height: 200px !important;
-        object-fit: contain !important;
+        width: 95% !important;
+        height: auto !important;
+        max-height: 250px !important;
+        object-fit: cover !important;
+        border-radius: 8px;
 
         /* Se per caso fosse rimasto un background impostato prima: */
         background-image: none !important;
@@ -589,6 +595,4 @@
     .title-pub {
         font-size: 28px !important;
     }
-
 }
-
