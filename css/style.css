@@ -34,49 +34,6 @@ body {
     margin: 0;
 }
 
-/*Stile menù - menubar, menu-container, menu-links*/
-.menubar {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    /* Effetto Vetro (Glassmorphism) */
-    background: rgba(28, 26, 27, 0.5);
-    /* Sfoca leggermente lo skyline dietro */
-    backdrop-filter: blur(15px);
-    border-bottom: 1px solid rgba(28, 26, 27, 0.5);
-    padding: 15px 0;
-    z-index: 1000;
-}
-
-.menu-container {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-}
-
-.menu-links {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 70px;
-}
-
-.menu-links a {
-    text-decoration: none;
-    color: white;
-    font-family: "League Spartan", sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: 0.3s;
-}
-
-.menu-links a:active {
-    color: #ebb866;
-}
-
 /* Countdown */
 .countdown-flip {
     text-align: center;
@@ -176,6 +133,24 @@ body {
     text-transform: uppercase;
 }
 
+/*Sezione avventura*/
+.title-adv {
+    font-family: 'Cinzel Decorative', serif;
+    font-weight: 700;
+    color: #4a3728;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 45px;
+}
+
+.adv-description {
+    font-style: italic;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #2c1e14;
+}
+
 /*Stile card*/
 .card-title {
     color: #002147;
@@ -219,6 +194,7 @@ body {
 .btn-card {
     display: inline-block;
     font-family: "League Spartan", sans-serif;
+    font-style: italic;
     padding: 8px 20px;
     border: 2px solid #ebb866;
     background-color: #5d4237;

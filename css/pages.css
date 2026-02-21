@@ -37,10 +37,11 @@ body {
     width: 100%;
     /* Effetto Vetro (Glassmorphism) */
     background: rgba(28, 26, 27, 0.3);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
     border-bottom: 1px solid rgba(28, 26, 27, 0.3);
     padding: 15px 0;
+    margin-top: 0;
+    margin-bottom: 16px;
     z-index: 1000;
 }
 
@@ -55,17 +56,15 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 100px;
+    gap: 80px;
 }
 
 .menu-links a {
     text-decoration: none;
     color: white;
-    font-family: "Playfair Display", serif;
+    font-family: "League Spartan", sans-serif;
     font-weight: 400;
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    font-size: 26px;
     transition: 0.3s;
 }
 
@@ -411,15 +410,12 @@ h3 {
         left: 0 !important;
         width: 100% !important;
         padding: 10px 0 !important;
-        background: rgba(28, 26, 27, 0.6) !important;
-        backdrop-filter: blur(15px) !important;
-        -webkit-backdrop-filter: blur(15px) !important;
         z-index: 9999 !important;
     }
 
     /* 3. Voci del menu più compatte per stare su una riga */
     .menu-links {
-        gap: 14px !important;
+        gap: 16px !important;
         justify-content: center !important;
         letter-spacing: 0;
     }
@@ -433,7 +429,6 @@ h3 {
     .section-title {
         height: 35vh !important;
         padding-top: 20px !important;
-
     }
 
     h3 {
