@@ -438,16 +438,14 @@
 
     .platform-image {
         display: block !important;
-        width: 100% !important;
-        max-width: 100% !important;
         margin: 10px auto !important;
         overflow: hidden;
     }
 
     .platform-image img {
         display: block !important;
-        width: 300px !important;
-        height: 150px !important;
+        width: 400px !important;
+        height: 200px !important;
         object-fit: contain !important;
 
         /* Se per caso fosse rimasto un background impostato prima: */
@@ -593,3 +591,4 @@
     }
 
 }
+
