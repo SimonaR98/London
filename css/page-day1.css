@@ -349,23 +349,21 @@
 
     /*Madame Tussauds & Sherlock: Immagini Circolari */
     .attraction-section {
-        padding: 15px 0 !important;
-        margin: 20px 0 !important;
+        padding: 10px 0 !important;
         width: 100% !important;
     }
 
     .attraction-container {
-        display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
         text-align: center !important;
-        width: 100% !important;
-        margin: 0 !important;
+        gap: 15px !important;
     }
 
     .attraction-image-wrapper {
-        margin: 0 auto 15px auto !important;
-        width: 100% !important;
+        order: -1 !important;
+        /* Sempre sopra il testo */
+        margin: 0 auto !important;
     }
 
     .circle-img {
@@ -474,6 +472,26 @@
         font-size: 18px !important;
     }
 
+    /*Note Mastro Hobbit*/
+    .note-ranger {
+        width: 90% !important;
+        margin: 30px auto !important;
+        padding: 15px !important;
+        transform: rotate(0deg) !important;
+        box-shadow: 5px 5px 0px rgba(235, 184, 102, 0.1) !important;
+    }
+
+    .title-ranger {
+        font-size: 18px !important;
+        text-align: center;
+    }
+
+    .note-ranger p {
+        font-size: 14px !important;
+        text-align: center;
+        line-height: 1.4;
+    }
+
     /* Box HP e Binario 9 3/4 */
     .hp-image img {
         min-height: 150px !important;
@@ -491,7 +509,6 @@
     }
 
     .platform-container {
-        display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
         padding: 20px !important;
@@ -499,22 +516,33 @@
 
     .platform-text {
         text-align: center !important;
-        order: 1;
+        order: 3;
+    }
+
+    .platform-title {
+        order: 1 !important;
+        font-size: 30px !important;
+        margin-top: 0 !important;
+        margin-bottom: 15px !important;
     }
 
     .platform-image {
         order: 2;
-        max-width: 200px !important;
-        margin-top: 20px;
+        width: 100% !important;
+        max-width: 320px !important;
+        margin-bottom: 20px !important;
     }
 
-    .platform-title {
-        font-size: 26px !important;
+    .platform-image img {
+        height: 130px !important;
+        background-image: url('../img/day1/binary-london.avif');
+        border-radius: 8px;
     }
 
     .platform-list {
         text-align: left !important;
         font-size: 14px;
+        display: inline-block;
     }
 
     /* Pub e Hotel */

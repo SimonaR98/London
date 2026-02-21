@@ -332,7 +332,7 @@ h3 {
     }
 
     .header-title h1 {
-        font-size: 35px !important;
+        font-size: 38px !important;
         padding: 0 15px !important;
         margin: 0 !important;
     }
@@ -407,7 +407,6 @@ h3 {
 
     .attraction-text {
         width: 100% !important;
-        margin: 0 !important;
         padding: 0 20px !important;
     }
 
@@ -443,7 +442,7 @@ h3 {
 
     /* Footer Navigazione */
     .nav-footer {
-        gap: 30px !important;
+        gap: 40px !important;
         margin-top: 20px;
         padding: 20px 0;
     }
