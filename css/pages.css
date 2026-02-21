@@ -419,8 +419,9 @@ h3 {
 
     /* 3. Voci del menu più compatte per stare su una riga */
     .menu-links {
-        gap: 12px !important;
+        gap: 14px !important;
         justify-content: center !important;
+        letter-spacing: 0;
     }
 
     .menu-links a {
