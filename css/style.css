@@ -280,8 +280,8 @@ body {
 
     /* Menu e Testata */
     .section-title {
-        height: 8vh !important;
-        padding-top: 26px !important;
+        height: 20vh !important;
+        padding-top: 25px !important;
     }
 
     .header-title h1 {
@@ -314,7 +314,7 @@ body {
 
     .flip-clock {
         gap: 6px !important;
-        transform: scale(0.65);
+        transform: scale(0.7);
     }
 
     .flip-unit span {
@@ -373,5 +373,4 @@ body {
         gap: 10px;
         padding: 15px !important;
     }
-
 }

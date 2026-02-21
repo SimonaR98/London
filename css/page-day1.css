@@ -302,82 +302,52 @@
 /* --- RESPONSIVE DAY 1 --- */
 @media (max-width: 768px) {
 
-    .menubar {
-        position: absolute !important;
-        top: 0 !important;
-        left: 0 !important;
-        width: 100% !important;
-        padding: 5px 0 !important;
-        background: rgba(28, 26, 27, 0.6) !important;
-        backdrop-filter: blur(15px) !important;
-        -webkit-backdrop-filter: blur(15px) !important;
-        z-index: 9999 !important;
-    }
-
-    .menu-links {
-        gap: 10px !important;
-    }
-
-    .menu-links a {
-        font-size: 12px !important;
-    }
-
     .londra-day1 {
-        height: 35vh !important;
+        height: 20vh !important;
         background-position: center !important;
     }
 
-    /*Titoli: cambio delle dimensioni */
-    .header-title {
-        font-size: 25px !important;
-        text-align: center !important;
-        margin-top: 20px !important;
+    /* Immagine Volo */
+    .fly {
         width: 100% !important;
-    }
-
-    /*Linee metro*/
-    img[src*="victoria"],
-    img[src*="jubilee"],
-    img[src*="northern"] {
-        height: 200px !important;
-        width: auto !important;
+        height: auto !important;
+        max-width: 300px;
         margin: 20px auto !important;
-        object-fit: contain !important;
     }
 
     /*Madame Tussauds & Sherlock: Immagini Circolari */
     .attraction-container {
         flex-direction: column !important;
         text-align: center !important;
-        gap: 15px !important;
+        gap: 20px !important;
     }
 
     .attraction-image-wrapper {
         order: -1 !important;
         width: 100% !important;
+        display: flex;
+        justify-content: center !important;
+    }
+
+    .attraction-container.reverse,
+    .attraction-container .reverse,
+    .reverse {
+        flex-direction: column !important;
     }
 
     .circle-img {
-        width: 240px !important;
-        height: 240px !important;
+        width: 260px !important;
+        height: 260px !important;
+        border-width: 4px !important;
     }
 
     .tip-box {
         border-radius: 10px;
-        margin-top: 15px;
+        margin: 15px 10px 0 10px;
+        text-align: left;
     }
 
-    .attraction-container.reverse,
-    .attraction-container .reverse {
-        flex-direction: column !important;
-    }
-
-    .reverse .attraction-image-wrapper {
-        justify-content: center !important;
-    }
-
-
-    /* 5. Sezione Binario 9 3/4 e HP Curiosity */
+    /* Sezione Binario 9 3/4 e HP Curiosity */
     .platform-container,
     .hp-curiosity-content {
         flex-direction: column !important;
@@ -395,64 +365,66 @@
 
     .binary-phrase {
         font-size: 28px !important;
+        padding: 0 10px;
     }
 
     /*Zoo di Londra */
+    .zoo-section {
+        margin: 40px auto;
+    }
+
+    .zoo-details-grid {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 20px !important;
+    }
+
     .zoo-hero-img {
         height: 250px;
     }
 
-    .zoo-details-grid {
-        gap: 15px;
-        flex-wrap: wrap;
+    .zoo-info-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    /* 3. Box Curiosità Harry Potter */
-    .hp-curiosity-content {
-        flex-direction: column;
+    /* Box HP e Binario 9 3/4 */
+    .hp-image,
+    .platform-image {
+        width: 100% !important;
+        min-width: 100% !important;
     }
 
     .hp-text {
-        padding: 20px;
-        text-align: center;
+        text-align: center !important;
+        padding: 20px !important;
     }
 
-    /* 4. Binario 9 3/4 */
+    .hp-curiosity-content,
     .platform-container {
         flex-direction: column;
         text-align: center;
-        gap: 20px;
     }
 
     .platform-title {
-        font-size: 32px;
+        font-size: 30px !important;
     }
 
     .platform-list {
-        text-align: left;
+        text-align: left !important;
         display: inline-block;
+        padding-right: 20px;
     }
 
-    /* 5. Frase finale Harry Potter */
-    .binary-phrase {
-        font-size: 28px;
-    }
-
-    /* 6. Pub e Hotel */
+    /* Pub e Hotel */
     .grapes-pub {
         padding: 30px 15px;
         border-radius: 10px;
-    }
-}
-
-/* Fix per schermi micro */
-@media (max-width: 400px) {
-    .circle-img {
-        width: 160px;
-        height: 160px;
+        margin: 0 10px;
     }
 
-    .platform-title {
-        font-size: 28px;
+    .title-pub {
+        font-size: 28px !important;
     }
 }
