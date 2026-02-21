@@ -198,7 +198,7 @@ body {
     color: #002147;
     font-family: "League Spartan", sans-serif;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 1px;
     font-size: 35px;
     margin-bottom: 8px;
@@ -315,14 +315,14 @@ body {
 
     .flip-clock {
         gap: 6px !important;
-        transform: scale(0.6);
+        transform: scale(0.5);
     }
 
     .flip-unit span {
         font-size: 8px !important;
     }
 
-    /* 3. Dedica (Un'inaspettata avventura) */
+    /* Dedica */
     .title-adv {
         font-size: 24px !important;
         margin-top: 35px !important;
@@ -345,17 +345,26 @@ body {
     /* Card itinerario */
     .card-box {
         grid-template-columns: 1fr !important;
-        gap: 20px !important;
+        gap: 30px !important;
         padding: 20px !important;
         margin-top: 20px !important;
     }
 
     .card {
-        border: 2px solid #ebb866 !important;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4) !important;
+        border: 3px solid #ebb866 !important;
+        transform: none !important;
+        margin-bottom: 10px;
     }
 
     .card-title {
-        font-size: 20px !important;
+        font-size: 22px !important;
+    }
+
+    .btn-card {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4) !important;
+        width: auto !important;
+        padding: 10px 30px !important;
     }
 
     /* Footer Index (i bottoni sotto) */
@@ -365,5 +374,4 @@ body {
         gap: 10px;
         padding: 15px !important;
     }
-
 }
