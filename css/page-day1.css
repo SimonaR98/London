@@ -438,21 +438,27 @@
 
     .platform-image {
         order: 2 !important;
-        display: flex !important;
+        display: block !important;
         width: 100% !important;
         max-width: 100% !important;
-        margin-top: 5px !important;
-        margin: 10px auto !important;
+        margin: 5px auto !important;
         overflow: hidden;
-        justify-content: center !important;
+        text-align: center !important;
+    }
+
+    .platform-image picture {
+        display: block !important;
+        width: 100% !important;
+        margin: 0 auto !important;
     }
 
     .platform-image img {
+        display: inline-block !important;
+        margin: 0 auto !important;
         width: 95% !important;
         height: auto !important;
         max-height: 250px !important;
         object-fit: cover !important;
-        border-radius: 8px;
 
         /* Se per caso fosse rimasto un background impostato prima: */
         background-image: none !important;
