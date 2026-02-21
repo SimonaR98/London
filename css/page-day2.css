@@ -763,6 +763,10 @@
 
 /* --- RESPONSIVE DAY 2 --- */
 @media (max-width: 768px) {
+    .londra-day2 {
+        height: 23vh !important;
+        background-position: center !important;
+    }
 
     /* Cambio della Guardia */
     .guard-ceremony-section {
