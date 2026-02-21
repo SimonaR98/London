@@ -365,6 +365,7 @@
     }
 
     .attraction-image-wrapper {
+        order: -1 !important;
         flex: none !important;
         width: 100% !important;
         display: flex !important;
@@ -385,8 +386,7 @@
         text-align: left;
     }
 
-    .attraction-container.reverse,
-    .attraction-container .reverse {
+    .attraction-container.reverse {
         flex-direction: column !important;
     }
 
@@ -436,18 +436,16 @@
     }
 
     .platform-image {
-        order: 2 !important;
-        width: 90% !important;
-        max-width: 350px !important;
-        margin: 0 auto 20px auto !important;
+        width: 100% !important;
+        max-width: 400px !important;
+        margin: 0 auto !important;
     }
 
     .platform-image img {
         width: 100% !important;
-        height: 140px !important;
-        background-image: url("../img/day1/binary-london.avif");
-        object-fit: cover;
-        border-radius: 8px;
+        height: auto !important;
+        object-fit: contain !important;
+        border-radius: 10px;
     }
 
     .platform-text {
