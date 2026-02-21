@@ -280,8 +280,8 @@ body {
 
     /* Menu e Testata */
     .section-title {
-        height: 10vh !important;
-        padding-top: 40px !important;
+        height: 8vh !important;
+        padding-top: 25px !important;
     }
 
     .header-title h1 {
@@ -314,7 +314,7 @@ body {
 
     .flip-clock {
         gap: 6px !important;
-        transform: scale(0.5);
+        transform: scale(0.7);
     }
 
     .flip-unit span {
@@ -323,12 +323,12 @@ body {
 
     /* Dedica */
     .title-adv {
-        font-size: 24px !important;
+        font-size: 23px !important;
         margin-top: 35px !important;
     }
 
     .adv-description {
-        font-size: 16px !important;
+        font-size: 15px !important;
         padding: 0 25px !important;
         line-height: 1.5 !important;
     }
