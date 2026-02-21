@@ -295,7 +295,6 @@ body {
         padding: 8px 0 !important;
         background: rgba(28, 26, 27, 0.5) !important;
         backdrop-filter: blur(10px) !important;
-        -webkit-backdrop-filter: blur(10px) !important;
     }
 
     .menu-links {
