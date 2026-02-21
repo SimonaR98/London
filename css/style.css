@@ -279,10 +279,14 @@ body {
 @media (max-width: 768px) {
 
     /* Menu e Testata */
-    .section-title,
-    .main-header {
-        height: 30vh !important;
-        padding-top: 40px !important;
+    .section-title {
+        height: 25vh !important;
+        padding-top: 50px !important;
+    }
+
+    .header-title h1 {
+        font-size: 28px !important;
+        padding: 0 15px !important;
     }
 
     .menubar {
@@ -299,28 +303,60 @@ body {
     }
 
     .menu-links a {
-        font-size: 13px !important;
+        font-size: 14px !important;
     }
 
-    /* Titoli */
-    .header-title h1,
-    .header-title {
-        font-size: 24px !important;
-        text-align: center !important;
+    /*Countdown*/
+    .countdown-title {
+        font-size: 20px !important;
+        margin-top: 25px !important;
+        letter-spacing: 1px !important;
     }
 
-    /* Via le ombre ovunque su Mobile */
-    .card,
-    .footer-style,
-    .btn-card,
-    .btn-restaurant {
-        box-shadow: none !important;
-        transform: none !important;
+    .flip-clock {
+        gap: 6px !important;
+        transform: scale(0.85);
     }
 
-    /* Griglia Index */
+    .flip-unit span {
+        font-size: 8px !important;
+    }
+
+    /* 3. Dedica (Un'inaspettata avventura) */
+    .title-adv {
+        font-size: 20px !important;
+        margin-top: 35px !important;
+    }
+
+    .adv-description {
+        font-size: 15px !important;
+        padding: 0 25px !important;
+        line-height: 1.5 !important;
+    }
+
+    .adv-description img {
+        display: block !important;
+        margin: 20px auto !important;
+        width: 70% !important;
+        height: auto !important;
+        border-radius: 8px;
+    }
+
+    /* Card itinerario */
     .card-box {
         grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        padding: 20px !important;
+        margin-top: 20px !important;
+    }
+
+    .card {
+        box-shadow: none !important;
+        border: 2px solid #ebb866 !important;
+    }
+
+    .card-title {
+        font-size: 20px !important;
     }
 
     /* Footer Index (i bottoni sotto) */
