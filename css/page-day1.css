@@ -348,7 +348,8 @@
     }
 
     /*Madame Tussauds & Sherlock: Immagini Circolari */
-    .attraction-section {
+    .attraction-section,
+    .hotel-section {
         padding: 20px 0 !important;
         margin: 20px 0 !important;
         width: 100% !important;
@@ -452,6 +453,11 @@
         /* Se per caso fosse rimasto un background impostato prima: */
         background-image: none !important;
         background-repeat: no-repeat !important;
+    }
+
+    picture {
+        display: block;
+        width: 100%;
     }
 
     .platform-text {
