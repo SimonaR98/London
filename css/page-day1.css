@@ -331,7 +331,7 @@
 }
 
 
-/* --- RESPONSIVE DAY 1 --- */
+/* ADATTAMENTO PER SMARTPHONE */
 @media (max-width: 768px) {
 
     .londra-day1 {
@@ -349,7 +349,7 @@
 
     /*Madame Tussauds & Sherlock: Immagini Circolari */
     .attraction-section {
-        padding: 10px !important;
+        padding: 15px 0 !important;
         margin: 20px 0 !important;
         width: 100% !important;
     }
@@ -358,15 +358,14 @@
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
-        justify-content: center !important;
         text-align: center !important;
+        width: 100% !important;
+        margin: 0 !important;
     }
 
     .attraction-image-wrapper {
-        order: -1 !important;
+        margin: 0 auto 15px auto !important;
         width: 100% !important;
-        display: flex;
-        justify-content: center !important;
     }
 
     .circle-img {
@@ -387,8 +386,13 @@
         align-items: center !important;
     }
 
+    .reverse .attraction-image-wrapper,
+    .reverse {
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
     /* Sezione Binario 9 3/4 e HP Curiosity */
-    .platform-container,
     .hp-curiosity-content {
         flex-direction: column !important;
         text-align: center !important;
@@ -399,8 +403,39 @@
         padding: 20px !important;
     }
 
+    .platform-container {
+        flex-direction: column !important;
+        padding: 10px 20px !important;
+    }
+
     .platform-title {
-        font-size: 32px !important;
+        font-size: 34px !important;
+        margin-top: 5px !important;
+        margin-bottom: 15px !important;
+        text-align: center;
+    }
+
+    .platform-image {
+        order: 1 !important;
+        width: 90% !important;
+        max-width: 350px !important;
+        margin: 0 auto 20px auto !important;
+    }
+
+    .platform-image img {
+        height: 120px !important;
+        object-fit: cover;
+    }
+
+    .platform-text {
+        order: 2 !important;
+        text-align: center !important;
+    }
+
+    .platform-list {
+        display: inline-block;
+        text-align: left;
+        margin-top: 10px;
     }
 
     .binary-phrase {
@@ -414,20 +449,29 @@
     }
 
     .zoo-details-grid {
-        flex-direction: column !important;
-        align-items: center !important;
-        gap: 20px !important;
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        justify-content: center !important;
+        align-items: flex-start !important;
+        gap: 15px !important;
+        width: 100% !important;
     }
 
     .zoo-hero-img {
-        height: 180px !important;
+        height: 190px !important;
         width: 100% !important;
         object-fit: cover;
     }
 
     .zoo-info-item {
-        display: flex;
-        align-items: center;
+        flex: 1;
+        max-width: 80px;
+        font-size: 11px !important;
+    }
+
+    .zoo-info-item i {
+        font-size: 18px !important;
     }
 
     /* Box HP e Binario 9 3/4 */

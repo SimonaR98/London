@@ -320,15 +320,6 @@ h3 {
     visibility: visible;
 }
 
-/* Adattamento Mobile */
-@media (max-width: 768px) {
-    .back-to-top {
-        bottom: 20px;
-        right: 20px;
-        width: 45px;
-        height: 45px;
-    }
-}
 
 /* --- RESPONSIVE PAGINE INTERNE (Day 1-4) --- */
 @media (max-width: 768px) {
@@ -415,8 +406,9 @@ h3 {
     }
 
     .attraction-text {
-        padding: 0 15px !important;
-        margin: 0 auto !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 20px !important;
     }
 
     /* Ristorante e info */
