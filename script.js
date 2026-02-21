@@ -1,26 +1,41 @@
-const targetDate = new Date("August 18, 2026 07:30:00").getTime();
-
 function updateCountdown() {
-    const now = new Date().getTime();
-    const gap = targetDate - now;
+    const now = new Date();
+    const target = new Date("August 18, 2026 07:30:00");
+    const gap = target - now;
 
     if (gap <= 0) return;
 
-    // Costanti di tempo
+    // Calcolo "da calendario"
+    let diffMesi = (target.getFullYear() - now.getFullYear()) * 12 + (target.getMonth() - now.getMonth());
+
+    // Data temporanea per calcolare i giorni rimanenti dopo i mesi
+    let tempData = new Date(now);
+    tempData.setMonth(now.getMonth() + diffMesi);
+
+    // Se aggiungendo i mesi abbiamo superato il target, scaliamo di uno
+    if (tempData > target) {
+        diffMesi--;
+        tempData = new Date(now);
+        tempData.setMonth(now.getMonth() + diffMesi);
+    }
+
+    // Differenza residua in millisecondi dopo aver tolto i mesi esatti
+    const restoMilli = target - tempData;
+
     const second = 1000;
     const minute = second * 60;
     const hour = minute * 60;
     const day = hour * 24;
-    const month = day * 30.4375; // Media giorni in un mese
 
     const timeValues = {
-        months: Math.floor(gap / month),
-        days: Math.floor((gap % month) / day),
-        hours: Math.floor((gap % day) / hour),
-        minutes: Math.floor((gap % hour) / minute),
-        seconds: Math.floor((gap % minute) / second)
+        months: diffMesi,
+        days: Math.floor(restoMilli / day),
+        hours: Math.floor((restoMilli % day) / hour),
+        minutes: Math.floor((restoMilli % hour) / minute),
+        seconds: Math.floor((restoMilli % minute) / second)
     };
 
+    // Animazione card 
     for (const unit in timeValues) {
         const card = document.getElementById(unit);
         if (!card) continue;
