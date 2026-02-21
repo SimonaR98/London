@@ -13,6 +13,7 @@ p {
     font-size: 16px;
     margin-left: 10px;
     margin-right: 10px;
+    line-height: 1.4;
 }
 
 /* Stile itinerario */
@@ -172,6 +173,11 @@ h3 {
 .attraction-description {
     line-height: 1.6;
     margin-bottom: 20px;
+}
+
+.narrative-connection {
+    text-align: left;
+    line-height: 1.4;
 }
 
 /*Pause pranzo, ristoranti*/
