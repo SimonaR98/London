@@ -8,6 +8,7 @@ body {
 
 body {
     font-family: 'Poppins', sans-serif;
+    font-size: 16px;
     margin: 0;
     padding: 0;
     color: black;
@@ -29,9 +30,50 @@ body {
 
 .header-title {
     font: 40px 'Great Vibes';
-    /* Ombra sulla foto */
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     margin: 0;
+}
+
+/*Stile menù - menubar, menu-container, menu-links*/
+.menubar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    /* Effetto Vetro (Glassmorphism) */
+    background: rgba(28, 26, 27, 0.3);
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(28, 26, 27, 0.3);
+    padding: 15px 0;
+    margin-top: 0;
+    margin-bottom: 16px;
+    z-index: 1000;
+}
+
+.menu-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 80px;
+}
+
+.menu-links a {
+    text-decoration: none;
+    color: white;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    transition: 0.3s;
+}
+
+.menu-links a:active {
+    color: #ebb866;
 }
 
 /* Countdown */
@@ -233,62 +275,59 @@ body {
     transition: transform 0.3s ease;
 }
 
-/* --- RESPONSIVE INDEX --- */
+/* --- RESPONSIVE UNIFICATO (Index + Pagine) --- */
 @media (max-width: 768px) {
 
-    .countdown-title,
-    .footer-title {
-        font-size: 28px;
-        margin-top: 30px;
+    /* Menu e Testata */
+    .section-title,
+    .main-header {
+        height: 30vh !important;
+        padding-top: 40px !important;
     }
 
-    /*Countdown: rimpiccioliamo le card per farle stare su una riga */
-    .flip-clock {
-        gap: 8px;
-    }
-
-    .flip-card {
-        width: 55px;
-        height: 75px;
-    }
-
-    .card-front,
-    .card-back {
-        font-size: 28px;
-    }
-
-    /*La Griglia dei Giorni: da 2 colonne a 1 colonna */
-    .card-box {
-        grid-template-columns: 1fr;
-        gap: 25px;
-        padding: 15px;
-    }
-
-    .card {
-        box-shadow: none !important;
-        border: 2px solid #ebb866;
-        transform: none !important;
-    }
-
-}
-
-/* Ottimizzazione extra per schermi molto piccoli*/
-@media (max-width: 400px) {
-    .flip-card {
-        width: 45px;
-        height: 65px;
-    }
-
-    .card-front,
-    .card-back {
-        font-size: 22px;
+    .menubar {
+        position: absolute !important;
+        top: 0 !important;
+        padding: 8px 0 !important;
+        background: rgba(28, 26, 27, 0.5) !important;
+        backdrop-filter: blur(10px) !important;
+        -webkit-backdrop-filter: blur(10px) !important;
     }
 
     .menu-links {
-        gap: 10px;
+        gap: 15px !important;
     }
 
     .menu-links a {
-        font-size: 14px;
+        font-size: 13px !important;
+    }
+
+    /* Titoli */
+    .header-title h1,
+    .header-title {
+        font-size: 24px !important;
+        text-align: center !important;
+    }
+
+    /* Via le ombre ovunque su Mobile */
+    .card,
+    .footer-style,
+    .btn-card,
+    .btn-restaurant {
+        box-shadow: none !important;
+        transform: none !important;
+    }
+
+    /* Griglia Index */
+    .card-box {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Footer Index (i bottoni sotto) */
+    .footer-style {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px !important;
     }
 }
