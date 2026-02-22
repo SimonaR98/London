@@ -1027,7 +1027,7 @@
 
     .vintage-tag,
     .market-label {
-        font-size: 20px !important;
+        font-size: 18px !important;
         display: block;
         margin-bottom: 5px;
     }
@@ -1059,6 +1059,10 @@
         height: auto !important;
         border-radius: 15px !important;
         display: block;
+    }
+
+    .corner-decoration {
+        display: none;
     }
 
     .magic-callout {
@@ -1108,34 +1112,48 @@
     }
 
     /* Ponti e Passeggiata Serale */
+    .skyline-walk {
+        padding: 40px 20px !important;
+        text-align: center !important;
+    }
+
     .walk-intro p {
         font-size: 28px;
     }
 
-    .walk-steps,
-    .walk-steps-night {
+    .walk-steps {
+        display: flex !important;
         flex-direction: column !important;
-        align-items: center;
-        gap: 40px;
+        gap: 40px !important;
+        align-items: center !important;
     }
 
-    .step,
-    .step-night {
-        width: 100%;
+    .step {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
     }
 
     .step-visual {
-        width: 250px;
-        height: 250px;
+        width: 65% !important;
+        max-width: 220px !important;
+        margin-bottom: 15px !important;
     }
 
-    .step-visual-night {
-        width: 220px;
-        height: 220px;
+    .step-visual img {
+        width: 100% !important;
+        height: auto !important;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     }
 
     .step-info h4 {
-        margin-top: 10px;
+        margin: 5px 0 !important;
+    }
+
+    .step-info p {
+        max-width: 250px;
+        margin: 0 auto !important;
     }
 
     /* 6. Leicester Square */
