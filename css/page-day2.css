@@ -1143,9 +1143,8 @@
 
     /* Passeggiata serale */
     .night {
-        padding: 40px 10px !important;
+        padding: 40px 0px !important;
         width: 100% !important;
-        box-sizing: border-box !important;
     }
 
     .night-title {
@@ -1156,10 +1155,10 @@
     .night-text {
         width: 100% !important;
         max-width: 100% !important;
-        padding: 0 5px !important;
+        margin: 0 auto 40px auto !important;
+        padding: 0 15px !important;
         box-sizing: border-box !important;
-        text-align: center !important;
-        font-size: 17px !important;
+        display: block !important;
     }
 
     .walk-steps-night {
