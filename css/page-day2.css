@@ -1099,7 +1099,7 @@
         font-size: 45px;
     }
 
-    /* Ponti e Passeggiata Serale */
+    /* Ponti */
     .skyline-walk {
         margin: 30px auto !important;
         padding: 0 10px !important;
@@ -1127,7 +1127,7 @@
     }
 
     .step-info h4 {
-        font-size: 16px !important;
+        font-size: 18px !important;
         margin: 5px 0 !important;
         min-height: 36px;
         display: flex;
@@ -1141,13 +1141,72 @@
         padding: 0 5px !important;
     }
 
-    /* 6. Leicester Square */
-    .night-title {
-        font-size: 48px;
+    /* Passeggiata serale */
+    .night {
+        padding: 40px 10px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
     }
 
-    .lead-text-square,
-    .sub-text-square {
-        padding: 0 15px;
+    .night-title {
+        font-size: 48px !important;
+        text-align: center !important;
     }
+
+    .night-text {
+        font-size: 16px !important;
+        padding: 0 15px !important;
+        text-align: center !important;
+        margin-bottom: 35px !important;
+    }
+
+    .walk-steps-night {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 45px !important;
+        width: 100% !important;
+    }
+
+    .step-night {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        min-width: 0 !important;
+    }
+
+    .step-visual-night {
+        width: 200px !important;
+        height: 200px !important;
+        margin: 0 auto 15px auto !important;
+        display: block !important;
+    }
+
+    .step-visual-night img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+
+    .step-info {
+        text-align: center !important;
+    }
+
+    .step-info h4 {
+        font-size: 20px !important;
+        margin: 5px 0 !important;
+    }
+
+    .step-info p {
+        font-size: 14px !important;
+        padding: 0 20px !important;
+        line-height: 1.3 !important;
+    }
+}
+
+/* Leicester Square */
+.lead-text-square,
+.sub-text-square {
+    padding: 0 15px;
 }
