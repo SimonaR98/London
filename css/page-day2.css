@@ -921,61 +921,54 @@
     }
 
     /* Sky Garden */
-    .sky-garden-section,
-    .sky-container {
+    .sky-garden-section {
         width: 100vw !important;
-        margin-left: -50vw !important;
+        max-width: 100vw !important;
+        margin: 40px 0 !important;
         left: 50%;
-        position: relative;
-        padding: 0 !important;
-        display: block !important;
+        right: 50%;
+        margin-left: -50vw !important;
+        margin-right: -50vw !important;
         border-radius: 0 !important;
+        background-attachment: scroll !important;
+        min-height: auto !important;
+    }
+
+    .sky-container {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 30px !important;
+        width: 100% !important;
+        grid-template-columns: 1fr !important;
+        text-align: center !important;
     }
 
     .sky-content {
-        width: 100% !important;
-        height: 600px !important;
-        display: flex !important;
-        flex-direction: column !important;
-        justify-content: center !important;
-        align-items: center !important;
-        padding: 40px 20px !important;
-        background-color: transparent !important;
-        border-radius: 0 !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sky-content p {
+        max-width: 100% !important;
+        margin-bottom: 20px;
     }
 
     .sky-label {
-        position: relative;
-        top: 0;
-        left: 0;
-        margin-bottom: 20px;
-        font-size: 18px;
-        color: #ebb866;
+        font-size: 16px !important;
     }
 
     .sky-overlay {
-        position: absolute !important;
-        top: 0;
-        left: 0;
         width: 100% !important;
-        height: 100% !important;
-        z-index: 0;
-        border-radius: 0 !important;
-        padding: 0 !important;
-        margin: 0 !important;
-        display: block !important;
-    }
-
-    .sky-text {
-        font-size: 16px !important;
-        max-width: 90%;
-        margin: 0 auto !important;
+        min-height: 650px !important;
+        padding: 40px 20px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
     }
 
     .sky-title {
-        font-size: 36px !important;
-        letter-spacing: 2px;
-        width: 100% !important;
+        font-size: 48px !important;
         margin: 10px 0 !important;
     }
 
@@ -983,22 +976,25 @@
         background: rgba(255, 255, 255, 0.2) !important;
         backdrop-filter: blur(5px);
         border: 1px solid #ebb866 !important;
-        font-size: 12px !important;
-        border-radius: 20px !important;
-        margin: 25px auto 0 auto !important;
-        padding: 8px 15px !important;
-        width: 85% !important;
-        max-width: 300px;
+        border-radius: 25px !important;
+        margin: 0 auto !important;
+        height: auto !important;
+        max-width: 90% !important;
+        padding: 25px !important;
     }
 
     .sky-reminder i {
-        font-size: 14px;
-        margin-right: 5px;
+        font-size: 12px !important;
+        margin-bottom: 5px !important;
+    }
+
+    .sky-reminder h4 {
+        margin-bottom: 10px !important;
     }
 
     /* Leadenhall Market */
     .market-title {
-        font-size: 2.8rem;
+        font-size: 32px;
         line-height: 1;
     }
 
