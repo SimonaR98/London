@@ -921,43 +921,60 @@
     }
 
     /* Sky Garden e Leadenhall Market */
-    .sky-garden-section,
+    .sky-garden-section {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 30px 0 !important;
+        padding: 0 !important;
+        border-radius: 0 !important;
+        display: block !important;
+    }
+
     .sky-container {
         width: 100% !important;
         max-width: 100% !important;
         padding: 0 !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
+        margin: 0 !important;
         border-radius: 0 !important;
     }
 
     .sky-content {
         width: 100% !important;
-        height: 450px !important;
+        min-height: 450px !important;
+        height: auto !important;
         border-radius: 0 !important;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 20px;
+        padding: 40px 20px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        position: relative;
     }
 
     .sky-overlay {
+        position: absolute !important;
+        top: 0;
+        left: 0;
         width: 100% !important;
-        height: 500px !important;
-        padding: 0 !important;
+        height: 100% !important;
+        z-index: 1;
         border-radius: 0 !important;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .sky-title,
+    .sky-text,
+    .sky-reminder {
+        position: relative;
+        z-index: 2;
+        width: 100% !important;
+        text-align: center !important;
     }
 
     .sky-title {
         font-size: 36px !important;
         letter-spacing: 2px;
-        text-align: center;
         margin-bottom: 15px;
     }
 
@@ -967,7 +984,8 @@
         border: 1px solid #ebb866 !important;
         font-size: 12px !important;
         border-radius: 20px !important;
-        margin-top: 20px !important;
+        margin: 20px auto 0 auto !important;
+        padding: 8px 15px !important;
         width: fit-content !important;
     }
 
