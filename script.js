@@ -99,7 +99,7 @@ document.addEventListener('touchstart', () => {
 
 window.addEventListener('scroll', () => {
     const rect = section.getBoundingClientRect();
-    const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+    const isVisible = rect.top < (window.innerHeight - 100);
 
     if (isVisible && !hasPlayed) {
         audio.volume = 0;
