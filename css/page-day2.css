@@ -1125,29 +1125,29 @@
     .walk-steps {
         display: flex !important;
         flex-direction: row !important;
+        flex-wrap: nowrap !important;
         justify-content: center !important;
         align-items: flex-start !important;
         width: 100% !important;
-        gap: 20px !important;
+        gap: 10px !important;
         margin: 0 auto !important;
         padding: 0 !important;
-        overflow: hidden;
     }
 
     .step {
-        flex: 0 0 140px !important;
-        min-width: 140px !important;
-        margin: 0 !important;
+        flex: 0 0 160px !important;
+        min-width: 160px !important;
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
+        margin: 0 !important;
         text-align: center !important;
     }
 
     .step-visual {
-        width: 120px !important;
-        height: 120px !important;
-        margin: 0 auto 12px auto !important;
+        width: 130px !important;
+        height: 130px !important;
+        margin: 0 auto 10px auto !important;
         display: block !important;
     }
 
@@ -1156,15 +1156,20 @@
     }
 
     .step-info h4 {
-        font-size: 15px !important;
+        font-size: 16px !important;
         margin: 0 0 5px 0 !important;
+        line-height: 1.2 !important;
+        min-height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         white-space: nowrap;
     }
 
     .step-info p {
         font-size: 12px !important;
         line-height: 1.2 !important;
-        padding: 0 !important;
+        padding: 0 5px !important;
         margin: 0 !important;
     }
 
