@@ -88,28 +88,41 @@ const audio = document.getElementById('shire-theme');
 const section = document.querySelector('.leaf-container');
 let hasPlayed = false;
 let audioUnlocked = false;
-let fadeInterval; // Variabile per gestire i fade senza conflitti
+let fadeInterval;
 
-// Sblocco audio per Mobile
-const unlockAudio = () => {
-    if (!audioUnlocked) {
-        audio.play().then(() => { audio.pause(); audioUnlocked = true; });
-        document.removeEventListener('touchstart', unlockAudio);
-        document.removeEventListener('click', unlockAudio);
-    }
+// 1. Funzione che sblocca effettivamente l'audio
+function forceUnlock() {
+    if (audioUnlocked) return;
+    audio.play().then(() => {
+        audio.pause();
+        audioUnlocked = true;
+        console.log("Audio sbloccato!");
+    }).catch(e => console.log("Permesso negato, serve un tocco."));
+}
+
+// 2. Ascoltiamo TUTTI gli eventi possibili per sbloccare
+document.addEventListener('click', forceUnlock);
+document.addEventListener('touchstart', forceUnlock);
+document.addEventListener('mousedown', forceUnlock);
+window.addEventListener('scroll', forceUnlock, { once: true });
+
+// 3. Gestione del ritorno alla pagina (Tasto Indietro)
+window.onpageshow = function (event) {
+    // Se la pagina viene ricaricata o presa dalla cache, resettiamo
+    audioUnlocked = false;
+    hasPlayed = false;
+    audio.pause();
+    audio.currentTime = 0;
 };
-document.addEventListener('touchstart', unlockAudio);
-document.addEventListener('click', unlockAudio);
 
+// 4. Logica dello Scroll per il Fade
 window.addEventListener('scroll', () => {
-    if (!section || !audioUnlocked) return;
+    if (!section || !audio) return;
 
     const rect = section.getBoundingClientRect();
-    // La sezione è considerata "attiva" quando è visibile nello schermo
     const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
 
-    if (isVisible && !hasPlayed) {
-        // --- ENTRATA NELLA SEZIONE: FADE IN ---
+    if (isVisible && !hasPlayed && audioUnlocked) {
         clearInterval(fadeInterval);
         hasPlayed = true;
         audio.volume = 0;
@@ -117,23 +130,21 @@ window.addEventListener('scroll', () => {
 
         fadeInterval = setInterval(() => {
             if (audio.volume < 0.45) {
-                audio.volume += 0.05;
+                audio.volume = Math.min(audio.volume + 0.05, 0.45);
             } else {
                 clearInterval(fadeInterval);
             }
         }, 200);
 
     } else if (!isVisible && hasPlayed) {
-        // --- USCITA DALLA SEZIONE: FADE OUT ---
         clearInterval(fadeInterval);
-        hasPlayed = false; // Reset per permettere alla musica di ripartire se rientri
+        hasPlayed = false;
 
         fadeInterval = setInterval(() => {
             if (audio.volume > 0.05) {
-                audio.volume -= 0.05;
+                audio.volume = Math.max(audio.volume - 0.05, 0);
             } else {
                 audio.pause();
-                audio.currentTime = 0; // Opzionale: resetta la canzone dall'inizio
                 clearInterval(fadeInterval);
             }
         }, 150);
