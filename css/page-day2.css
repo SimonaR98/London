@@ -594,7 +594,7 @@
     max-width: 1000px;
     margin: 60px auto;
     text-align: center;
-    position: relative;
+    padding: 0 20px;
 }
 
 .walk-intro p {
@@ -607,15 +607,16 @@
 
 .walk-steps {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
     align-items: flex-start;
-    gap: 20px;
-    flex-wrap: wrap;
+    gap: 40px;
+    width: 100%;
 }
 
 .step {
-    flex: 1;
-    min-width: 200px;
+    flex: 0 1 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -628,12 +629,8 @@
     border-radius: 50%;
     overflow: hidden;
     border: 3px solid #ebb866;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: white;
 }
 
 .step-visual img {
@@ -1112,63 +1109,44 @@
 
     /* Ponti e Passeggiata Serale */
     .skyline-walk {
-        width: 100% !important;
-        margin: 40px 0 !important;
+        margin: 30px auto !important;
         padding: 0 10px !important;
-        box-sizing: border-box !important;
     }
 
     .walk-intro p {
-        font-size: 24px !important;
-        text-align: center !important;
-        margin-bottom: 30px !important;
+        font-size: 22px !important;
+        margin-bottom: 25px !important;
     }
 
     .walk-steps {
-        display: grid !important;
-        grid-template-columns: 1fr 1fr !important;
         gap: 15px !important;
-        width: 100% !important;
-        justify-items: center !important;
-        align-items: start !important;
     }
 
     .step {
-        width: 100% !important;
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        min-width: 0 !important;
+        flex: 1 1 50% !important;
     }
 
     .step-visual {
-        width: 35vw !important;
-        height: 35vw !important;
-        max-width: 140px !important;
-        max-height: 140px !important;
-        margin: 0 auto 10px auto !important;
-        border-radius: 50% !important;
-    }
-
-    .step-info {
-        width: 100% !important;
-        text-align: center !important;
+        width: 38vw !important;
+        height: 38vw !important;
+        max-width: 150px !important;
+        max-height: 150px !important;
+        border-width: 2px !important;
     }
 
     .step-info h4 {
         font-size: 15px !important;
-        margin-bottom: 5px !important;
-        line-height: 1.2 !important;
-        min-height: 36px !important;
+        margin: 5px 0 !important;
+        min-height: 36px;
         display: flex;
         align-items: center;
-        text-align: center;
+        justify-content: center;
     }
 
     .step-info p {
         font-size: 11px !important;
         line-height: 1.2 !important;
-        padding: 0 !important;
+        padding: 0 5px !important;
     }
 
     /* 6. Leicester Square */
