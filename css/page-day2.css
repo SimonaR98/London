@@ -802,7 +802,7 @@
 
     /* Natural History Museum */
     .museum-hero {
-        height: 250px;
+        height: 350px;
     }
 
     .museum-main-title {
@@ -814,8 +814,8 @@
     }
 
     .museum-container {
-        margin-top: 0;
-        padding: 10px;
+        margin-top: -20px;
+        padding: 0 10px;
     }
 
     .museum-grid {
@@ -855,11 +855,20 @@
     }
 
     /* Kyoto Garden & Lego Store */
+    .kyoto-garden-section {
+        background-color: #d8f3dc;
+        padding: 40px 15px;
+        margin: 40px auto;
+        max-width: 95%;
+        text-align: center;
+    }
+
     .kyoto-wrapper,
     .lego-wrapper {
         flex-direction: column !important;
+        align-items: center !important;
         text-align: center;
-        gap: 30px;
+        gap: 20px;
     }
 
     .kyoto-wrapper.reverse,
@@ -869,21 +878,38 @@
 
     .kyoto-image,
     .lego-image {
-        order: -1;
+        /* Per tenere il badge ancorato alla foto */
+        position: relative;
         width: 100%;
+        max-width: 400px;
+    }
+
+    .kyoto-image img {
+        height: 250px;
+        margin-bottom: 0;
+    }
+
+    .kyoto-content {
+        margin-top: -10px;
     }
 
     .kyoto-title {
         font-size: 32px;
+        margin-bottom: 5px;
     }
 
     .zen-badge {
-        position: relative;
-        top: 0;
-        left: 0 !important;
-        right: 0 !important;
-        margin-bottom: 10px;
-        display: inline-block;
+        position: absolute;
+        top: 10px;
+        left: 10px !important;
+        margin-bottom: 0;
+        font-size: 14px;
+        padding: 5px 15px;
+        z-index: 5;
+    }
+
+    .park-divider {
+        padding: 30px 0;
     }
 
     /* Sky Garden e Leadenhall Market */
