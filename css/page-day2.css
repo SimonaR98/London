@@ -590,10 +590,6 @@
 }
 
 /*Tower bridge e Millennium bridge*/
-.timeline-line {
-    display: none;
-}
-
 .skyline-walk {
     max-width: 1000px;
     margin: 60px auto;
@@ -1116,8 +1112,10 @@
 
     /* Ponti e Passeggiata Serale */
     .skyline-walk {
-        padding: 40px 20px !important;
         width: 100% !important;
+        margin: 40px 0 !important;
+        padding: 0 10px !important;
+        box-sizing: border-box !important;
     }
 
     .walk-intro p {
@@ -1127,42 +1125,28 @@
     }
 
     .walk-steps {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        position: relative !important;
-        gap: 50px !important;
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 15px !important;
         width: 100% !important;
-        margin: 0 auto !important;
-    }
-
-    .timeline-line {
-        display: block !important;
-        position: absolute;
-        top: 20px;
-        bottom: 100px;
-        width: 2px;
-        background: #ebb866;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 0;
+        justify-items: center !important;
+        align-items: start !important;
     }
 
     .step {
-        position: relative;
-        z-index: 1;
         width: 100% !important;
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
+        min-width: 0 !important;
     }
 
     .step-visual {
-        width: 180px !important;
-        height: 180px !important;
-        margin: 0 auto 15px auto !important;
-        background-color: white !important;
-        border: 4px solid #ebb866 !important;
+        width: 35vw !important;
+        height: 35vw !important;
+        max-width: 140px !important;
+        max-height: 140px !important;
+        margin: 0 auto 10px auto !important;
         border-radius: 50% !important;
     }
 
@@ -1172,15 +1156,19 @@
     }
 
     .step-info h4 {
-        font-size: 22px !important;
-        margin-bottom: 10px !important;
+        font-size: 15px !important;
+        margin-bottom: 5px !important;
+        line-height: 1.2 !important;
+        min-height: 36px !important;
+        display: flex;
+        align-items: center;
+        text-align: center;
     }
 
     .step-info p {
-        font-size: 15px !important;
+        font-size: 11px !important;
         line-height: 1.2 !important;
-        max-width: 250px;
-        padding: 0 15% !important;
+        padding: 0 !important;
     }
 
     /* 6. Leicester Square */
