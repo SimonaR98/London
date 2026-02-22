@@ -82,3 +82,31 @@ backToTop.addEventListener("click", (e) => {
         behavior: "smooth"
     });
 });
+
+// Canzone Contea
+const audio = document.getElementById('shire-theme');
+const section = document.querySelector('.leaf-container');
+let hasPlayed = false;
+
+window.addEventListener('scroll', () => {
+    const rect = section.getBoundingClientRect();
+    const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+
+    if (isVisible && !hasPlayed) {
+        audio.volume = 0;
+        audio.play();
+
+        // Effetto Fade-in (aumenta il volume gradualmente)
+        let vol = 0;
+        const fadeIn = setInterval(() => {
+            if (vol < 0.5) { // Arriva al 50% del volume per non essere troppo invasivo
+                vol += 0.05;
+                audio.volume = vol;
+            } else {
+                clearInterval(fadeIn);
+            }
+        }, 200);
+
+        hasPlayed = true; // La musica continuerà a girare
+    }
+});
