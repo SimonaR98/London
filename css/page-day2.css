@@ -921,12 +921,14 @@
     }
 
     /* Sky Garden e Leadenhall Market */
-    .sky-garden-section {
+    .sky-garden-section,
+    .sky-container {
         width: 100% !important;
-        margin: 30px 0 !important;
+        max-width: 100% !important;
         padding: 0 !important;
-        position: relative;
-        overflow: hidden;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        border-radius: 0 !important;
     }
 
     .sky-content {
@@ -942,19 +944,21 @@
     }
 
     .sky-overlay {
-        padding: 30px 15px;
-    }
-
-    .sky-container {
-        grid-template-columns: 1fr;
-        width: 100%;
+        width: 100% !important;
+        height: 500px !important;
+        padding: 0 !important;
+        border-radius: 0 !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .sky-title {
         font-size: 36px !important;
         letter-spacing: 2px;
+        text-align: center;
         margin-bottom: 15px;
-        width: 100%;
     }
 
     .sky-reminder {
@@ -962,7 +966,7 @@
         backdrop-filter: blur(5px);
         border: 1px solid #ebb866 !important;
         font-size: 12px !important;
-        border-radius: 10px !important;
+        border-radius: 20px !important;
         margin-top: 20px !important;
         width: fit-content !important;
     }
