@@ -249,7 +249,7 @@
 /*Kyoto Garden e Chess Playground*/
 .kyoto-garden-section {
     padding: 50px 20px;
-    background-color: #7ce95b;
+    background-color: #bbecc2;
     border-radius: 40px;
     margin: 60px auto;
     max-width: 900px;
@@ -400,7 +400,7 @@
     border-radius: 20px;
     color: white;
     text-align: center;
-    height: 150px;
+    height: auto;
     max-width: 300px;
 }
 
@@ -925,28 +925,34 @@
         width: 100% !important;
         max-width: 100% !important;
         margin: 40px 0 !important;
-        left: 0;
-        margin-left: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        padding: 0 !important;
         border-radius: 0 !important;
         min-height: auto !important;
+        overflow: visible !important;
+
         background-attachment: fixed !important;
-        background-size: cover !important;
-        background-position: center center !important;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+            url(../img/day2/sky-garden.webp) !important;
     }
 
     .sky-container {
-        display: block !important;
+        display: flex !important;
         flex-direction: column !important;
         gap: 30px !important;
         width: 100% !important;
         max-width: 100% !important;
-        grid-template-columns: 1fr !important;
-        text-align: center !important;
+        margin: 0 auto !important;
+        align-items: center !important;
     }
 
     .sky-content {
         text-align: center !important;
-        margin-bottom: 40px;
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .sky-content p {
@@ -956,14 +962,13 @@
 
     .sky-label {
         font-size: 16px !important;
-        display: block;
-        margin-bottom: 5px;
+        padding: 0 10px;
     }
 
     .sky-overlay {
         width: 100% !important;
         min-height: 650px !important;
-        padding: 60px 20px !important;
+        padding: 50px 0 !important;
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
@@ -973,13 +978,14 @@
     .sky-title {
         font-size: 48px !important;
         margin: 10px 0 !important;
+        width: 100%;
     }
 
     .sky-info {
         justify-content: center !important;
-        display: flex;
+        display: flex !important;
         gap: 15px;
-        flex-wrap: wrap;
+        width: 100%;
     }
 
     .sky-reminder {
@@ -989,9 +995,10 @@
         border-radius: 25px !important;
         margin: 0 auto !important;
         height: auto !important;
-        width: 90% !important;
-        max-width: 350px !important;
-        padding: 30px 20px !important;
+        width: 100% !important;
+        max-width: 320px !important;
+        padding: 25px !important;
+        position: static !important;
     }
 
     .sky-reminder i {
