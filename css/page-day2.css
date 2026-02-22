@@ -1150,8 +1150,8 @@
     }
 
     .step-visual {
-        width: 140px !important;
-        height: 140px !important;
+        width: 130px !important;
+        height: 130px !important;
         margin: 0 auto 10px auto !important;
         display: flex !important;
         justify-content: center !important;
