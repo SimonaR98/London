@@ -1137,11 +1137,12 @@
         width: 100% !important;
         gap: 10px !important;
         margin: 0 auto !important;
+        padding: 0 !important;
     }
 
     .step {
-        flex: 0 0 45% !important;
-        max-width: 160px !important;
+        width: 150px !important;
+        flex-shrink: 0 !important;
         margin: 0 !important;
         display: flex !important;
         flex-direction: column !important;
@@ -1152,6 +1153,9 @@
         width: 140px !important;
         height: 140px !important;
         margin: 0 auto 10px auto !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
     }
 
     .step-visual img {
