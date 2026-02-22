@@ -203,8 +203,78 @@
 /*Primrose Hills*/
 .panoramic-step {
     text-align: center;
-    margin: 60px auto;
-    max-width: 600px;
+    margin: 30px auto;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.contea-title {
+    font-family: "Cinzel Decorative", serif;
+    color: #2E8B57;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px #9ACD32;
+    text-transform: uppercase;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.contea-subtitle {
+    color: #8b4513;
+    font-size: 20px;
+    font-family: "Cinzel", serif;
+    font-style: italic;
+}
+
+/* Animazione foglie che cadono */
+.leaf-container {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #e8f5e9, #ffffff);
+    padding: 50px 20px;
+    border-top: 3px solid #2E8B57;
+}
+
+.leaf {
+    position: absolute;
+    color: #4F7942;
+    font-size: 1.5rem;
+    animation: fall 10s linear infinite;
+    opacity: 0.7;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-10%) rotate(0deg);
+        left: 10%;
+    }
+
+    100% {
+        transform: translateY(110%) rotate(360deg);
+        left: 20%;
+    }
+}
+
+/*Bottone audio*/
+.btn-shire {
+    background-color: #2E8B57;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 25px;
+    font-family: 'Cinzel', serif;
+    border: none;
+    box-shadow: 0 4px 15px rgba(46, 139, 87, 0.4);
+    transition: 0.3s;
+}
+
+.btn-shire:hover {
+    background-color: #3cb371;
+    transform: translateY(-3px);
+}
+
+.primrose-title {
+    color: #2E8B57;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px #9ACD32;
 }
 
 /*Frase Harry*/

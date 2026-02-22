@@ -249,7 +249,7 @@
 /*Kyoto Garden e Chess Playground*/
 .kyoto-garden-section {
     padding: 50px 20px;
-    background-color: #c0f596;
+    background-color: #7ce95b;
     border-radius: 40px;
     margin: 60px auto;
     max-width: 900px;
@@ -764,7 +764,7 @@
 /* --- RESPONSIVE DAY 2 --- */
 @media (max-width: 768px) {
     .londra-day2 {
-        height: 23vh !important;
+        height: 25vh !important;
         background-position: center !important;
     }
 
