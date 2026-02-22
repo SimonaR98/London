@@ -88,6 +88,15 @@ const audio = document.getElementById('shire-theme');
 const section = document.querySelector('.leaf-container');
 let hasPlayed = false;
 
+document.addEventListener('touchstart', () => {
+    if (!hasPlayed) {
+        audio.play().then(() => {
+            audio.pause();
+            audio.currentTime = 0;
+        }).catch(e => console.log("In attesa di interazione..."));
+    }
+}, { once: true });
+
 window.addEventListener('scroll', () => {
     const rect = section.getBoundingClientRect();
     const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
