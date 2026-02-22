@@ -1000,12 +1000,17 @@
 
     /* Leadenhall Market */
     .leadenhall-open {
-        padding: 40px 0 !important;
+        width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
 
     .leadenhall-container {
-        width: 95% !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 20px !important;
         margin: 0 auto !important;
+        box-sizing: border-box !important;
     }
 
     .leadenhall-header {
@@ -1039,9 +1044,8 @@
 
     .leadenhall-visual {
         width: 100% !important;
-        max-width: 500px !important;
-        position: relative;
-        margin: 30px auto 0 auto !important;
+        padding: 0 10px !important;
+        box-sizing: border-box !important;
     }
 
     .main-img {
@@ -1071,8 +1075,9 @@
 
     .leadenhall-text {
         width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 !important;
         text-align: center !important;
-        padding: 0 10px !important;
     }
 
     .market-details {
@@ -1200,9 +1205,7 @@
     .lead-text-square,
     .sub-text-square {
         width: 100% !important;
-        display: block !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
+        text-align: center !important;
     }
 
     /*M&M's e Lego*/
