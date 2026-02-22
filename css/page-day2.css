@@ -920,35 +920,37 @@
         padding: 50px 0;
     }
 
-    /* Sky Garden e Leadenhall Market */
-    .sky-garden-section {
-        width: 100% !important;
-        max-width: 100% !important;
-        margin: 30px 0 !important;
-        padding: 0 !important;
-        border-radius: 0 !important;
-        display: block !important;
-    }
-
+    /* Sky Garden */
+    .sky-garden-section,
     .sky-container {
-        width: 100% !important;
-        max-width: 100% !important;
+        width: 100vw !important;
+        margin-left: -50vw !important;
+        left: 50%;
+        position: relative;
         padding: 0 !important;
-        margin: 0 !important;
+        display: block !important;
         border-radius: 0 !important;
     }
 
     .sky-content {
         width: 100% !important;
-        min-height: 450px !important;
-        height: auto !important;
-        border-radius: 0 !important;
-        padding: 40px 20px !important;
+        height: 600px !important;
         display: flex !important;
         flex-direction: column !important;
         justify-content: center !important;
         align-items: center !important;
+        padding: 40px 20px !important;
+        background-color: transparent !important;
+        border-radius: 0 !important;
+    }
+
+    .sky-label {
         position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 20px;
+        font-size: 18px;
+        color: #ebb866;
     }
 
     .sky-overlay {
@@ -957,25 +959,24 @@
         left: 0;
         width: 100% !important;
         height: 100% !important;
-        z-index: 1;
+        z-index: 0;
         border-radius: 0 !important;
         padding: 0 !important;
         margin: 0 !important;
+        display: block !important;
     }
 
-    .sky-title,
-    .sky-text,
-    .sky-reminder {
-        position: relative;
-        z-index: 2;
-        width: 100% !important;
-        text-align: center !important;
+    .sky-text {
+        font-size: 16px !important;
+        max-width: 90%;
+        margin: 0 auto !important;
     }
 
     .sky-title {
         font-size: 36px !important;
         letter-spacing: 2px;
-        margin-bottom: 15px;
+        width: 100% !important;
+        margin: 10px 0 !important;
     }
 
     .sky-reminder {
@@ -984,9 +985,10 @@
         border: 1px solid #ebb866 !important;
         font-size: 12px !important;
         border-radius: 20px !important;
-        margin: 20px auto 0 auto !important;
+        margin: 25px auto 0 auto !important;
         padding: 8px 15px !important;
-        width: fit-content !important;
+        width: 85% !important;
+        max-width: 300px;
     }
 
     .sky-reminder i {
@@ -994,6 +996,7 @@
         margin-right: 5px;
     }
 
+    /* Leadenhall Market */
     .market-title {
         font-size: 2.8rem;
         line-height: 1;
