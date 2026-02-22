@@ -929,6 +929,9 @@
         margin-left: 0 !important;
         border-radius: 0 !important;
         min-height: auto !important;
+        background-attachment: scroll !important;
+        background-size: cover !important;
+        background-position: center center !important;
     }
 
     .sky-container {
