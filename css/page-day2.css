@@ -1002,7 +1002,7 @@
     }
 
     .sky-reminder i {
-        font-size: 12px !important;
+        font-size: 18px !important;
         margin-bottom: 5px !important;
     }
 
@@ -1011,25 +1011,80 @@
     }
 
     /* Leadenhall Market */
+    .leadenhall-open {
+        padding: 40px 0 !important;
+    }
+
+    .leadenhall-container {
+        width: 95% !important;
+        margin: 0 auto !important;
+    }
+
+    .leadenhall-header {
+        text-align: center !important;
+        margin-bottom: 30px !important;
+    }
+
+    .vintage-tag,
+    .market-label {
+        font-size: 20px !important;
+        display: block;
+        margin-bottom: 5px;
+    }
+
     .market-title {
-        font-size: 32px;
-        line-height: 1;
+        font-size: 32px !important;
+        margin: 10px 0 !important;
+    }
+
+    .title-underline {
+        margin: 0 auto !important;
     }
 
     .market-main {
-        grid-template-columns: 1fr;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 30px !important;
     }
 
-    .corner-decoration {
-        display: none;
+    .leadenhall-visual {
+        width: 100% !important;
+        max-width: 500px !important;
+        position: relative;
+    }
+
+    .main-img {
+        width: 100% !important;
+        height: auto !important;
+        border-radius: 15px !important;
+        display: block;
     }
 
     .magic-callout {
-        position: relative;
-        right: 0;
-        margin: 15px auto;
-        width: fit-content;
-        transform: rotate(0);
+        position: absolute !important;
+        bottom: 15px !important;
+        right: 15px !important;
+        padding: 8px 15px !important;
+        border-radius: 8px !important;
+        box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.4);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        z-index: 10;
+        white-space: nowrap;
+    }
+
+    .leadenhall-text {
+        width: 100% !important;
+        text-align: center !important;
+        padding: 0 10px !important;
+    }
+
+    .market-details {
+        justify-content: center !important;
+        display: flex;
+        margin-top: 20px;
     }
 
     /* Post-it Meal Deal */
