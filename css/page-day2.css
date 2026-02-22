@@ -1026,7 +1026,7 @@
     }
 
     .title-underline {
-        width: 60px !important;
+        width: 100px !important;
         margin: 0 auto !important;
     }
 
@@ -1041,6 +1041,7 @@
         width: 100% !important;
         max-width: 500px !important;
         position: relative;
+        margin: 30px auto 0 auto !important;
     }
 
     .main-img {
@@ -1196,16 +1197,12 @@
     }
 
     /* Leicester Square */
-    .lead-text-square {
-        font-size: 18px !important;
-        margin-bottom: 15px !important;
-        text-align: center !important;
-    }
-
+    .lead-text-square,
     .sub-text-square {
-        font-size: 15px !important;
-        text-align: center !important;
-        line-height: 1.6 !important;
+        width: 100% !important;
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
 
     /*M&M's e Lego*/
