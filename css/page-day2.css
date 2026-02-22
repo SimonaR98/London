@@ -856,7 +856,7 @@
 
     /* Kyoto Garden & Lego Store */
     .kyoto-garden-section {
-        background-color: #d8f3dc;
+        background-color: #5cc087;
         padding: 40px 15px;
         margin: 40px auto;
         max-width: 95%;
@@ -878,7 +878,7 @@
 
     .kyoto-image,
     .lego-image {
-        /* Per tenere il badge ancorato alla foto */
+        order: -1 !important;
         position: relative;
         width: 100%;
         max-width: 400px;
@@ -896,20 +896,28 @@
     .kyoto-title {
         font-size: 32px;
         margin-bottom: 5px;
+        display: inline-block;
     }
 
     .zen-badge {
         position: absolute;
         top: 10px;
         left: 10px !important;
-        margin-bottom: 0;
+        right: auto !important;
+        width: max-content;
+        white-space: nowrap;
         font-size: 14px;
         padding: 5px 15px;
         z-index: 5;
     }
 
+    .badge-right {
+        left: 15px !important;
+        right: auto !important;
+    }
+
     .park-divider {
-        padding: 30px 0;
+        padding: 50px 0;
     }
 
     /* Sky Garden e Leadenhall Market */
