@@ -1155,7 +1155,7 @@
 
     .night-text {
         font-size: 16px !important;
-        padding: 0 15px !important;
+        padding: 0 !important;
         text-align: center !important;
         margin-bottom: 35px !important;
     }
