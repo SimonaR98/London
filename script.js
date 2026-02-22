@@ -87,35 +87,55 @@ backToTop.addEventListener("click", (e) => {
 const audio = document.getElementById('shire-theme');
 const section = document.querySelector('.leaf-container');
 let hasPlayed = false;
+let audioUnlocked = false;
+let fadeInterval; // Variabile per gestire i fade senza conflitti
 
-document.addEventListener('touchstart', () => {
-    if (!hasPlayed) {
-        audio.play().then(() => {
-            audio.pause();
-            audio.currentTime = 0;
-        }).catch(e => console.log("In attesa di interazione..."));
+// Sblocco audio per Mobile
+const unlockAudio = () => {
+    if (!audioUnlocked) {
+        audio.play().then(() => { audio.pause(); audioUnlocked = true; });
+        document.removeEventListener('touchstart', unlockAudio);
+        document.removeEventListener('click', unlockAudio);
     }
-}, { once: true });
+};
+document.addEventListener('touchstart', unlockAudio);
+document.addEventListener('click', unlockAudio);
 
 window.addEventListener('scroll', () => {
+    if (!section || !audioUnlocked) return;
+
     const rect = section.getBoundingClientRect();
-    const isVisible = rect.top < (window.innerHeight - 100);
+    // La sezione è considerata "attiva" quando è visibile nello schermo
+    const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
 
     if (isVisible && !hasPlayed) {
+        // --- ENTRATA NELLA SEZIONE: FADE IN ---
+        clearInterval(fadeInterval);
+        hasPlayed = true;
         audio.volume = 0;
         audio.play();
 
-        // Effetto Fade-in (aumenta il volume gradualmente)
-        let vol = 0;
-        const fadeIn = setInterval(() => {
-            if (vol < 0.5) { // Arriva al 50% del volume per non essere troppo invasivo
-                vol += 0.05;
-                audio.volume = vol;
+        fadeInterval = setInterval(() => {
+            if (audio.volume < 0.45) {
+                audio.volume += 0.05;
             } else {
-                clearInterval(fadeIn);
+                clearInterval(fadeInterval);
             }
         }, 200);
 
-        hasPlayed = true; // La musica continuerà a girare
+    } else if (!isVisible && hasPlayed) {
+        // --- USCITA DALLA SEZIONE: FADE OUT ---
+        clearInterval(fadeInterval);
+        hasPlayed = false; // Reset per permettere alla musica di ripartire se rientri
+
+        fadeInterval = setInterval(() => {
+            if (audio.volume > 0.05) {
+                audio.volume -= 0.05;
+            } else {
+                audio.pause();
+                audio.currentTime = 0; // Opzionale: resetta la canzone dall'inizio
+                clearInterval(fadeInterval);
+            }
+        }, 150);
     }
 });
