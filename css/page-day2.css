@@ -590,6 +590,10 @@
 }
 
 /*Tower bridge e Millennium bridge*/
+.timeline-line {
+    display: none;
+}
+
 .skyline-walk {
     max-width: 1000px;
     margin: 60px auto;
@@ -1112,11 +1116,8 @@
 
     /* Ponti e Passeggiata Serale */
     .skyline-walk {
+        padding: 40px 20px !important;
         width: 100% !important;
-        max-width: 100% !important;
-        margin: 40px 0 !important;
-        padding: 0 !important;
-        overflow: hidden !important;
     }
 
     .walk-intro p {
@@ -1127,38 +1128,42 @@
 
     .walk-steps {
         display: flex !important;
-        flex-direction: row !important;
-        flex-wrap: nowrap !important;
-        justify-content: center !important;
-        align-items: flex-start !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        position: relative !important;
+        gap: 50px !important;
         width: 100% !important;
-        gap: 5px !important;
-        padding: 0 5px !important;
-        box-sizing: border-box !important;
+        margin: 0 auto !important;
+    }
+
+    .timeline-line {
+        display: block !important;
+        position: absolute;
+        top: 20px;
+        bottom: 100px;
+        width: 2px;
+        background: #ebb866;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 0;
     }
 
     .step {
-        flex: 0 0 47% !important;
-        min-width: 0 !important;
+        position: relative;
+        z-index: 1;
+        width: 100% !important;
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
-        text-align: center !important;
     }
 
     .step-visual {
-        width: 100% !important;
-        max-width: 130px !important;
-        aspect-ratio: 1 / 1 !important;
-        height: auto !important;
+        width: 180px !important;
+        height: 180px !important;
+        margin: 0 auto 15px auto !important;
+        background-color: white !important;
+        border: 4px solid #ebb866 !important;
         border-radius: 50% !important;
-        margin: 0 auto 10px auto !important;
-    }
-
-    .step-visual img {
-        width: 100% !important;
-        height: 100% !important;
-        object-fit: cover !important;
     }
 
     .step-info {
@@ -1167,16 +1172,15 @@
     }
 
     .step-info h4 {
-        font-size: 16px !important;
-        margin: 0 0 5px 0 !important;
-        line-height: 1.2 !important;
-        min-height: 35px !important;
+        font-size: 22px !important;
+        margin-bottom: 10px !important;
     }
 
     .step-info p {
-        font-size: 12px !important;
+        font-size: 15px !important;
         line-height: 1.2 !important;
-        padding: 0 5px !important;
+        max-width: 250px;
+        padding: 0 15% !important;
     }
 
     /* 6. Leicester Square */
