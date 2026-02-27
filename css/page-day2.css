@@ -822,6 +822,10 @@
         height: 200px;
     }
 
+    .lead {
+        font-size: 18px;
+    }
+
     /* Kensington Palace & Parks Gallery */
     .parks-grid {
         grid-template-columns: 1fr;
@@ -1054,7 +1058,7 @@
         width: 100% !important;
         height: auto !important;
         display: block !important;
-        border-radius: 20px !important;
+        border-radius: 15px !important;
     }
 
     .corner-decoration {
@@ -1085,13 +1089,14 @@
     .market-details {
         justify-content: center !important;
         display: flex;
-        margin-top: 20px;
+        margin-top: 15px;
     }
 
     /* Post-it Meal Deal */
     .meal-deal-note {
         transform: rotate(0);
-        margin: 20px 10px;
+        margin: 30px 10px;
+        margin-bottom: 35px;
     }
 
     .note-content {
@@ -1208,6 +1213,10 @@
     .sub-text-square {
         width: 100% !important;
         text-align: center !important;
+    }
+
+    .lead-text-square {
+        font-size: 16px;
     }
 
     /*M&M's e Lego*/
