@@ -1078,8 +1078,8 @@
 
     .magic-callout {
         position: absolute !important;
-        bottom: 15px !important;
-        right: 15px !important;
+        bottom: 8px !important;
+        right: 10px !important;
         padding: 8px 15px !important;
         border-radius: 8px !important;
         box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.4);
@@ -1088,6 +1088,8 @@
         gap: 8px;
         z-index: 10;
         white-space: nowrap;
+        transform: scale(0.9) !important;
+        transform-origin: bottom right !important;
     }
 
     .leadenhall-text {
