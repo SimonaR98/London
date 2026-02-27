@@ -1075,7 +1075,7 @@
     .magic-callout {
         position: absolute !important;
         bottom: 5px !important;
-        right: 5px !important;
+        right: 8px !important;
         padding: 8px 15px !important;
         border-radius: 8px !important;
         box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.4);
@@ -1268,4 +1268,5 @@
         gap: 8px !important;
         margin-top: 15px !important;
     }
+
 }
