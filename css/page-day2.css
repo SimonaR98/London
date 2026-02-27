@@ -823,7 +823,7 @@
     }
 
     .lead {
-        font-size: 18px;
+        font-size: 17px;
     }
 
     /* Kensington Palace & Parks Gallery */
@@ -873,13 +873,21 @@
     .lego-image {
         order: -1 !important;
         position: relative;
-        width: 100%;
-        max-width: 400px;
+        width: 100% !important;
+        max-width: 400px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        padding: 0 !important;
+        display: block !important;
     }
 
-    .kyoto-image img {
-        height: 250px;
-        margin-bottom: 0;
+    .kyoto-image img,
+    .lego-image img {
+        display: block !important;
+        margin: 0 auto !important;
+        width: 100% !important;
+        max-width: 90vw !important;
+        border-radius: 15px !important;
     }
 
     .kyoto-content {
@@ -1015,6 +1023,9 @@
         padding: 0 20px !important;
         margin: 0 auto !important;
         box-sizing: border-box !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
     }
 
     .leadenhall-header {
@@ -1081,7 +1092,7 @@
 
     .leadenhall-text {
         width: 100% !important;
-        max-width: 100% !important;
+        margin: 0 auto !important;
         padding: 0 !important;
         text-align: center !important;
     }
@@ -1212,11 +1223,13 @@
     .lead-text-square,
     .sub-text-square {
         width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
         text-align: center !important;
     }
 
     .lead-text-square {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     /*M&M's e Lego*/
