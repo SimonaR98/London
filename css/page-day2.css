@@ -1175,13 +1175,13 @@
     }
 
     .night-text {
+        font-size: 18px !important;
         width: 100% !important;
         max-width: 100% !important;
         margin: 0 auto 40px auto !important;
         padding: 0 15px !important;
         box-sizing: border-box !important;
         display: block !important;
-        font-size: 16px !important;
     }
 
     .walk-steps-night {
