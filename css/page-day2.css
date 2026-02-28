@@ -1029,23 +1029,6 @@
         margin-bottom: 30px !important;
     }
 
-    .vintage-tag,
-    .market-label {
-        font-size: 12px !important;
-        display: block;
-        margin-bottom: 5px;
-    }
-
-    .market-title {
-        font-size: 32px !important;
-        margin: 10px 0 !important;
-    }
-
-    .title-underline {
-        width: 100px !important;
-        margin: 0 auto !important;
-    }
-
     .market-main {
         display: flex !important;
         flex-direction: column !important;
