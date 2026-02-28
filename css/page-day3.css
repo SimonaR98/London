@@ -755,7 +755,7 @@
 
     /* 1. Torre di Londra - Header e Griglia icone */
     .market-title {
-        font-size: 2.8rem;
+        font-size: 44px;
     }
 
     .tower-grid {
@@ -856,16 +856,5 @@
 
     .anniversary-phrase {
         font-size: 28px;
-    }
-}
-
-/* Fix per schermi molto piccoli */
-@media (max-width: 400px) {
-    .magic-title {
-        font-size: 34px;
-    }
-
-    .tower-info-centered {
-        font-size: 14px;
     }
 }
