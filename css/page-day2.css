@@ -1181,7 +1181,7 @@
         padding: 0 15px !important;
         box-sizing: border-box !important;
         display: block !important;
-        font-size: 14px !important;
+        font-size: 16px !important;
     }
 
     .walk-steps-night {
@@ -1268,5 +1268,4 @@
         gap: 8px !important;
         margin-top: 15px !important;
     }
-
 }
