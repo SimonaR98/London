@@ -1115,6 +1115,7 @@
         margin-bottom: 25px !important;
     }
 
+    /*
     .walk-steps {
         gap: 15px !important;
     }
@@ -1129,7 +1130,7 @@
         max-width: 200px !important;
         max-height: 200px !important;
         border-width: 2px !important;
-    }
+    }*/
 
     .step-info h4 {
         font-size: 18px !important;
@@ -1167,6 +1168,7 @@
         display: block !important;
     }
 
+    .walk-steps,
     .walk-steps-night {
         display: flex !important;
         flex-direction: column !important;
@@ -1175,6 +1177,7 @@
         width: 100% !important;
     }
 
+    .step,
     .step-night {
         width: 100% !important;
         display: flex !important;
@@ -1183,6 +1186,7 @@
         min-width: 0 !important;
     }
 
+    .step-visual,
     .step-visual-night {
         width: 200px !important;
         height: 200px !important;
@@ -1190,6 +1194,7 @@
         display: block !important;
     }
 
+    .step-visual img,
     .step-visual-night img {
         width: 100% !important;
         height: 100% !important;

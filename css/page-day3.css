@@ -758,19 +758,33 @@
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
-        gap: 30px !important;
+        gap: 45px !important;
+        width: 100% !important;
+    }
+
+    .tower-visit {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        min-width: 0 !important;
     }
 
     .tower-grid-image {
         width: 200px !important;
         height: 200px !important;
-        border-width: 2px !important;
+        margin: 0 auto 15px auto !important;
+        display: block !important;
     }
 
     .tower-grid-image img {
         width: 100% !important;
         height: 100% !important;
         object-fit: cover !important;
+    }
+
+    .tower-info {
+        text-align: center !important;
     }
 
     .tower-info h4 {
