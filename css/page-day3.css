@@ -862,6 +862,11 @@
         width: 100%;
     }
 
+    .tower-intro-text {
+        max-width: 100% !important;
+        margin-bottom: 20px;
+    }
+
     .sky-row-bottom {
         grid-template-columns: 1fr;
         gap: 30px;
