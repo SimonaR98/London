@@ -1,6 +1,6 @@
 .main-header {
     position: relative;
-    height: 45vh;
+    height: 65vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -327,7 +327,7 @@ h3 {
     /* Menu e Testata */
     .main-header,
     .section-title {
-        height: 25vh !important;
+        height: 30vh !important;
         padding-top: 25px !important;
     }
 
