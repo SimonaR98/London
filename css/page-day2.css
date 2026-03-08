@@ -1115,23 +1115,6 @@
         margin-bottom: 25px !important;
     }
 
-    /*
-    .walk-steps {
-        gap: 15px !important;
-    }
-
-    .step {
-        flex: 1 1 50% !important;
-    }
-
-    .step-visual {
-        width: 38vw !important;
-        height: 38vw !important;
-        max-width: 200px !important;
-        max-height: 200px !important;
-        border-width: 2px !important;
-    }*/
-
     .step-info h4 {
         font-size: 18px !important;
         margin: 5px 0 !important;
