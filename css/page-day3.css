@@ -753,7 +753,7 @@
 /* --- RESPONSIVE DAY 3 --- */
 @media (max-width: 768px) {
 
-    /* 1. Torre di Londra - Header e Griglia icone */
+    /* Torre di Londra - Header e Griglia icone */
     .tower-grid {
         display: flex !important;
         flex-direction: column !important;
@@ -806,14 +806,62 @@
         font-size: 18px;
     }
 
-    /* 2. Sezione Yeoman (Box Fotografico) */
+    /* Sezione Yeoman stile Sky Garden */
+    .sky-garden-section {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 40px 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        padding: 0 !important;
+        border-radius: 0 !important;
+        min-height: auto !important;
+        overflow: visible !important;
+
+        background-attachment: fixed !important;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+            url(../img/day3/tower-london.jpg) !important;
+    }
+
     .sky-overlay {
-        padding: 40px 15px;
+        width: 100% !important;
+        min-height: 650px !important;
+        padding: 50px 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-direction: column !important;
+    }
+
+    .tower-container-centered {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 30px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+        align-items: center !important;
+    }
+
+    .tower-header-main {
+        text-align: center !important;
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sky-title {
+        font-size: 48px !important;
+        margin: 10px 0 !important;
+        width: 100%;
     }
 
     .tower-info-centered {
-        gap: 30px;
-        flex-wrap: wrap;
+        justify-content: center !important;
+        display: flex !important;
+        gap: 15px;
+        width: 100%;
     }
 
     .sky-row-bottom {
