@@ -883,6 +883,18 @@
         gap: 30px;
     }
 
+    .yeoman-visual {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 10px !important;
+        margin: 25px auto !important;
+        box-sizing: border-box !important;
+    }
+
+    .corner-decoration {
+        display: none;
+    }
+
     .yeoman-text {
         text-align: center;
     }
@@ -892,9 +904,19 @@
     }
 
     .magic-callout {
-        position: static;
-        margin: 15px auto;
-        transform: rotate(0deg);
+        position: absolute !important;
+        bottom: 5px !important;
+        right: 8px !important;
+        padding: 8px 15px !important;
+        border-radius: 8px !important;
+        box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.4);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        z-index: 10;
+        white-space: nowrap;
+        transform: scale(0.8) !important;
+        transform-origin: bottom right !important;
     }
 
     /* 3. Harry Potter Studios Hero */
