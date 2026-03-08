@@ -755,16 +755,22 @@
 
     /* 1. Torre di Londra - Header e Griglia icone */
     .tower-grid {
-        flex-direction: column;
-        align-items: center;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 30px !important;
     }
 
     .tower-grid-image {
-        width: 38vw !important;
-        height: 38vw !important;
-        max-width: 150px !important;
-        max-height: 150px !important;
+        width: 200px !important;
+        height: 200px !important;
         border-width: 2px !important;
+    }
+
+    .tower-grid-image img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
     }
 
     .tower-info h4 {
@@ -780,6 +786,10 @@
         font-size: 13px !important;
         line-height: 1 !important;
         padding: 0 5px !important;
+    }
+
+    .tower-text {
+        font-size: 18px;
     }
 
     /* 2. Sezione Yeoman (Box Fotografico) */
