@@ -824,18 +824,20 @@
         min-height: auto !important;
         overflow: visible !important;
 
-        background-attachment: fixed !important;
+        background-attachment: scroll !important;
+        background-position: center center !important;
+        background-size: cover !important;
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
             url(../img/day3/tower-london.jpg) !important;
     }
 
     .sky-overlay {
         width: 100% !important;
-        padding: 50px 0 !important;
+        padding: 80px 20px !important;
+        min-height: auto !important;
         display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
         flex-direction: column !important;
+        align-items: center !important;
     }
 
     .tower-container-centered {
@@ -865,6 +867,15 @@
     .tower-intro-text {
         max-width: 100% !important;
         margin-bottom: 20px;
+    }
+
+    .tower-london-info {
+        justify-content: center !important;
+        display: flex !important;
+        gap: 20px !important;
+        width: 100%;
+        margin-bottom: 50px !important;
+        margin-top: 10px !important;
     }
 
     .sky-row-bottom {
