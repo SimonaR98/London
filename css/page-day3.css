@@ -825,14 +825,14 @@
         overflow: visible !important;
 
         background-attachment: fixed !important;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
             url(../img/day3/tower-london.jpg) !important;
     }
 
     .sky-overlay {
         width: 100% !important;
         min-height: 650px !important;
-        padding: 50px 10px !important;
+        padding: 50px 0 !important;
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
