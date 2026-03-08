@@ -267,19 +267,6 @@
     z-index: 2;
 }
 
-.yeoman-detail {
-    display: flex;
-    justify-content: flex-start;
-    gap: 30px;
-    color: white;
-    font-weight: 500;
-    margin-top: 20px;
-}
-
-.yeoman-detail i {
-    color: #ebb866;
-}
-
 /*Meal deal*/
 .meal-deal-note {
     max-width: 800px;
@@ -898,8 +885,8 @@
         text-align: center;
     }
 
-    .yeoman-detail {
-        justify-content: center;
+    .yeo-lead-text {
+        font-size: 18px;
     }
 
     .magic-callout {
@@ -917,6 +904,7 @@
         gap: 8px;
         z-index: 10 !important;
         white-space: nowrap;
+        font-size: 14px;
         transform: rotate(-2deg) !important;
     }
 
