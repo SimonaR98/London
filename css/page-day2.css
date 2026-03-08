@@ -929,7 +929,9 @@
         min-height: auto !important;
         overflow: visible !important;
 
-        background-attachment: fixed !important;
+        background-attachment: scroll !important;
+        background-position: center center !important;
+        background-size: cover !important;
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
             url(../img/day2/sky-garden.webp) !important;
     }
@@ -964,12 +966,11 @@
 
     .sky-overlay {
         width: 100% !important;
-        min-height: 650px !important;
-        padding: 50px 0 !important;
+        padding: 50px 0px !important;
+        min-height: auto !important;
         display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
         flex-direction: column !important;
+        align-items: center !important;
     }
 
     .sky-title {
