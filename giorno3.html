@@ -45,19 +45,28 @@
     </header>
 
     <h3>Giovedì 20 agosto:</h3>
-    <div class="anniversary">
-        <p class="anniversary-phrase"> <i class="bi bi-suit-heart-fill"></i>
-            Auguri tato per il nostro secondo anniversario!
-            <i class="bi bi-suit-heart-fill"></i>
-        </p>
+    <section id="anniversario-secret">
+        <div id="map-container" class="map-closed">
+            <div id="map-trigger">
+                <button onclick="revealMap()" class="magic-btn">Giuro solennemente di non avere buone
+                    intenzioni</button>
+            </div>
 
-    </div>
-
-    <p>Nuovo giorno, nuova avventura! Non c'era giorno migliore se non questo per
-        andare a visitare gli <em>Studios</em> che tanto desideravamo!
-    </p>
-    <p>Quindi che la giornata abbia inizio 🎉🎉</p>
-    <p>La sveglia suona un po' presto perché dobbiamo arrivare alla Torre di Londra tra le 09:00 e le 09:30</p>
+            <div id="map-content" class="hidden-content">
+                <h2 id="anniversary-title">Buon 2° Anniversario tato! ❤️</h2>
+                <p class="map-prose">
+                    Per festeggiare, abbiamo una Passaporta speciale che ci attende:
+                    oggi esploreremo i set dove la magia è diventata realtà.
+                    Ma prima di saltare sull'Espresso per Hogwarts, abbiamo appuntamento
+                    in una fortezza millenaria (09:00 - 09:30) che nasconde segreti reali.
+                    <br>
+                    Bacchette pronte, si parte! ⚡<br>
+                    <br><i style="font-family: 'Great Vibes', cursive; font-size: 36px;">
+                        Fatto il misfatto!</i>
+                </p>
+            </div>
+        </div>
+    </section>
 
     <div class="itinerary-timeline">
         <img class="itinerary-image" src="./img/subway/dlr-line.jpg" width="650px" height="300px"
@@ -238,6 +247,10 @@
 
     <!-- Studios -->
     <section class="hogwarts-studios">
+        <audio id="harry-potter-theme" loop preload="auto">
+            <source src="./img/day3/harry-potter.mp3" type="audio/mpeg">
+        </audio>
+
         <div class="hogwarts-hero-box">
             <div class="magic-overlay">
                 <div class="hogwarts-header">
@@ -516,5 +529,6 @@
     </div>
 </body>
 <script src="./script.js"></script>
+<script src="./harry-potter-audio.js"></script>
 
 </html>

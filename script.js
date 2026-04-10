@@ -90,7 +90,7 @@ let hasPlayed = false;
 let audioUnlocked = false;
 let fadeInterval;
 
-// 1. Funzione che sblocca effettivamente l'audio
+// Funzione che sblocca effettivamente l'audio
 function forceUnlock() {
     if (audioUnlocked) return;
     audio.play().then(() => {
@@ -100,7 +100,7 @@ function forceUnlock() {
     }).catch(e => console.log("Permesso negato, serve un tocco."));
 }
 
-// 2. Ascoltiamo TUTTI gli eventi possibili per sbloccare
+// Ascoltiamo TUTTI gli eventi possibili per sbloccare
 document.addEventListener('click', forceUnlock);
 document.addEventListener('touchstart', forceUnlock);
 document.addEventListener('mousedown', forceUnlock);
@@ -115,7 +115,7 @@ window.onpageshow = function (event) {
     audio.currentTime = 0;
 };
 
-// 4. Logica dello Scroll per il Fade
+// Logica dello Scroll per il Fade
 window.addEventListener('scroll', () => {
     if (!section || !audio) return;
 
@@ -150,3 +150,19 @@ window.addEventListener('scroll', () => {
         }, 150);
     }
 });
+
+//Sezione anniversario mappa
+function revealMap() {
+    const container = document.getElementById('map-container');
+    const trigger = document.getElementById('map-trigger');
+
+    container.classList.add('map-open');
+
+    trigger.style.transition = "opacity 0.5s ease";
+    trigger.style.opacity = "0";
+
+    //Tolgo il bottone
+    setTimeout(() => {
+        trigger.style.display = 'none';
+    }, 500);
+}
