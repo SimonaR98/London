@@ -6,18 +6,140 @@
     background-position: center;
 }
 
-/*Frase Anniversario*/
-.anniversary-phrase {
-    text-align: center;
-    font-size: 40px;
-    font-family: "Great Vibes", cursive;
-    letter-spacing: 2px;
-    margin-top: 32px;
-    margin-bottom: 24px;
+/*Anniversario*/
+#anniversario-secret {
+    perspective: 1500px;
+    overflow: hidden;
+    padding: 20px 0;
 }
 
-.anniversary i {
-    color: #df0101;
+#map-container {
+    position: relative;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.9);
+    transition: all 0.8s ease;
+    background-color: #f4e4bc;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#map-container::before,
+#map-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-image: url("../img/day3/copertina-mappa.webp");
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    z-index: 5;
+    transition: transform 4s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 5px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#map-container::before {
+    left: 0;
+    transform-origin: left;
+    background-position: left center;
+}
+
+#map-container::after {
+    right: 0;
+    transform-origin: right;
+    background-position: right center;
+}
+
+.magic-btn {
+    background-color: #5d4237;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-family: "Great Vibes", cursive;
+    font-size: 36px;
+    word-spacing: 3px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.hidden-content {
+    display: none;
+    opacity: 0;
+    z-index: 1;
+}
+
+.map-open {
+    background-image: url("../img/day3/mappa.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #8b4513 !important;
+    background-color: rgba(174, 177, 148, 0.6);
+    background-blend-mode: overlay;
+}
+
+.map-open .hidden-content {
+    display: block;
+    animation: fadeIn 1.5s forwards;
+    padding: 10px;
+}
+
+.map-open::before {
+    transform: rotateY(-115deg);
+}
+
+.map-open::after {
+    transform: rotateY(115deg);
+}
+
+#map-trigger {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 600px;
+    z-index: 10;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.map-open #map-trigger {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+#anniversary-title {
+    color: black;
+    font-family: 'Cinzel', sans-serif;
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.map-prose {
+    line-height: 1.5;
+    font-weight: 550;
+    color: black;
+    font-size: 16px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /*Torre di Londra*/
@@ -746,6 +868,32 @@
 /* --- RESPONSIVE DAY 3 --- */
 @media (max-width: 768px) {
 
+    /*Anniversario*/
+    .map-open {
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #map-container {
+        min-height: 350px;
+        margin: 10px;
+    }
+
+    .magic-btn {
+        font-size: 26px;
+    }
+
+    #anniversary-title {
+        font-size: 18px;
+    }
+
+    .map-prose {
+        font-size: 14px;
+        padding: 0 5px;
+    }
+
     /* Torre di Londra - Header e Griglia icone */
     .tower-grid {
         display: flex !important;
@@ -853,6 +1001,7 @@
     .tower-intro-text {
         max-width: 100% !important;
         margin-bottom: 20px;
+        font-size: 14px;
     }
 
     .tower-london-info {
@@ -908,7 +1057,19 @@
         transform: rotate(-2deg) !important;
     }
 
-    /* 3. Harry Potter Studios Hero */
+    /*Meal Deal*/
+    .meal-deal-note {
+        transform: rotate(0);
+        margin: 30px 10px;
+        margin-bottom: 35px;
+    }
+
+    .note-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /*Harry Potter Studios Hero */
     .magic-title {
         font-size: 42px;
     }
@@ -923,7 +1084,7 @@
         display: none;
     }
 
-    /* 4. Magic Cards (Set di Hogwarts) */
+    /*Cards*/
     .magic-grid {
         grid-template-columns: 1fr;
         padding: 0 10px;
@@ -933,7 +1094,7 @@
         height: 180px;
     }
 
-    /* 5. Anniversario Pietra Filosofale */
+    /* Anniversario Pietra Filosofale */
     .anniversary-grid {
         grid-template-columns: 1fr;
         gap: 30px;
@@ -963,9 +1124,5 @@
     .attraction-container {
         flex-direction: column;
         text-align: center;
-    }
-
-    .anniversary-phrase {
-        font-size: 28px;
     }
 }
