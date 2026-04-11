@@ -885,16 +885,17 @@
 
     #map-container::before,
     #map-container::after {
-        background-size: 800px 100% !important;
+        background-image: url("../img/day3/mappa-malandrino.jpg") !important;
+        background-size: 200% 100% !important;
         background-repeat: no-repeat;
     }
 
     #map-container::before {
-        background-position: right center !important;
+        background-position: left center !important;
     }
 
     #map-container::after {
-        background-position: left center !important;
+        background-position: right center !important;
     }
 
     .magic-btn {
