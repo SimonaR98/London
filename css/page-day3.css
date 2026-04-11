@@ -1125,49 +1125,55 @@
     .anniversary-section {
         display: flex !important;
         flex-direction: column !important;
-        text-align: center;
+        padding: 40px 20px !important;
     }
 
     .anniversary-content {
         order: 1 !important;
         margin-bottom: 20px !important;
+        text-align: center;
     }
 
     .anniversary-grid {
         display: flex !important;
         flex-direction: column !important;
+        order: 2 !important;
+        gap: 20px !important;
+    }
+
+    .anniversary-visual {
+        order: 1 !important;
+        display: flex !important;
+        justify-content: center !important;
+        width: 100% !important;
+    }
+
+    .anniversary-visual img {
+        width: 100% !important;
+        max-width: 350px !important;
+        height: auto !important;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     }
 
     .anniversary-title {
         font-size: 30px;
     }
 
-    .anniversary-visual {
-        order: -1 !important;
-        display: block !important;
-        margin-bottom: 20px !important;
-        width: 100%;
-    }
-
-    .anniversary-visual img {
-        display: block !important;
-        width: 95% !important;
-        margin: 0 auto !important;
-        height: auto !important;
-        border-radius: 10px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    }
-
     .anniversary-text {
-        display: block !important;
-        order: 1 !important;
-        text-align: center;
+        display: flex !important;
+        flex-direction: column !important;
+        order: 2 !important;
+        text-align: center !important;
     }
 
     .anniversary-details {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
+        order: 3 !important;
+        margin-top: 20px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 15px !important;
     }
 
     /* 6. Dickens Inn Pub */
