@@ -65,8 +65,10 @@
     font-family: "Great Vibes", cursive;
     font-size: 36px;
     word-spacing: 3px;
-    width: 100%;
     cursor: pointer;
+    width: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
 }
 
 .hidden-content {
@@ -877,20 +879,47 @@
     }
 
     #map-container {
-        min-height: 350px;
+        min-height: 400px;
         margin: 10px;
     }
 
+    #map-container::before,
+    #map-container::after {
+        background-size: 200% 100% !important;
+        background-attachment: scroll;
+    }
+
     .magic-btn {
-        font-size: 26px;
+        font-size: 24px !important;
+        padding: 12px 20px !important;
+        min-width: 250px;
+        margin: 0 auto;
+        width: auto !important;
+        min-width: 280px;
+        max-width: 90% !important;
+    }
+
+    .magic-btn:hover {
+        transform: scale(1.05);
+        background-color: #4a342c;
+    }
+
+    #map-trigger {
+        position: relative;
+        z-index: 10;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0 20px;
+        margin-top: 20px;
     }
 
     #anniversary-title {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .map-prose {
-        font-size: 14px;
+        font-size: 16px;
         padding: 0 5px;
     }
 
@@ -1096,12 +1125,26 @@
 
     /* Anniversario Pietra Filosofale */
     .anniversary-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
+        display: flex !important;
+        flex-direction: column !important;
     }
 
     .anniversary-title {
         font-size: 30px;
+        order: 2 !important;
+    }
+
+    .anniversary-visual {
+        order: 1 !important;
+        margin-bottom: 20px !important;
+        /* Distanza dal testo che segue */
+    }
+
+    .anniversary-visual img {
+        width: 100% !important;
+        height: auto !important;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     }
 
     .anniversary-details {
