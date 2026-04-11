@@ -885,8 +885,18 @@
 
     #map-container::before,
     #map-container::after {
-        background-size: 200% 100% !important;
-        background-attachment: scroll;
+        background-size: auto 100% !important;
+        background-repeat: no-repeat;
+    }
+
+    #map-container::before {
+        left: 0;
+        background-position: left center !important;
+    }
+
+    #map-container::after {
+        right: 0;
+        background-position: right center !important;
     }
 
     .magic-btn {
