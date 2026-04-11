@@ -885,16 +885,16 @@
 
     #map-container::before,
     #map-container::after {
-        background-size: 200% 100% !important;
+        background-size: 800px 100% !important;
         background-repeat: no-repeat;
     }
 
     #map-container::before {
-        background-position: 25% center !important;
+        background-position: right center !important;
     }
 
     #map-container::after {
-        background-position: 75% center !important;
+        background-position: left center !important;
     }
 
     .magic-btn {
