@@ -1125,7 +1125,8 @@
     .anniversary-section {
         display: flex !important;
         flex-direction: column !important;
-        padding: 40px 20px !important;
+        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
     }
 
     .anniversary-content {
