@@ -891,12 +891,12 @@
 
     #map-container::before {
         left: 0;
-        background-position: left center !important;
+        background-position: right center !important;
     }
 
     #map-container::after {
         right: 0;
-        background-position: right center !important;
+        background-position: left center !important;
     }
 
     .magic-btn {
