@@ -879,7 +879,7 @@
     }
 
     #map-container {
-        min-height: 400px;
+        min-height: 350px;
         margin: 10px;
     }
 
@@ -919,7 +919,7 @@
     }
 
     .map-prose {
-        font-size: 16px;
+        font-size: 14px;
         padding: 0 5px;
     }
 
