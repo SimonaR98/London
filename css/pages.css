@@ -301,7 +301,7 @@ h3 {
 /* Stile Bottone Torna Su */
 .back-to-top {
     position: fixed;
-    bottom: 30px;
+    bottom: 90px;
     right: 30px;
     width: 50px;
     height: 50px;
@@ -332,6 +332,38 @@ h3 {
     visibility: visible;
 }
 
+/*Freccia per andare giù*/
+.go-to-bottom {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #ebb866;
+    color: #333;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-decoration: none;
+    z-index: 9999;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    opacity: 1;
+}
+
+.go-to-bottom:hover {
+    background-color: #c8102e;
+    color: white;
+    transform: translateY(5px);
+}
+
+/* Scompare a fine pagina */
+.go-to-bottom.hide {
+    opacity: 0;
+    visibility: hidden;
+}
 
 /* --- RESPONSIVE PAGINE INTERNE (Day 1-4) --- */
 @media (max-width: 768px) {
