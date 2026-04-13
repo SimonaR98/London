@@ -514,22 +514,25 @@ h3 {
     }
 
     /*Frecce*/
-    .back-to-top,
-    .go-to-bottom {
+    body .back-to-top,
+    body .go-to-bottom {
         width: 45px !important;
         height: 45px !important;
         right: 15px !important;
         font-size: 24px !important;
+        left: auto !important;
     }
 
     /* Posizione Freccia su*/
-    .back-to-top {
+    body .back-to-top {
         bottom: 80px !important;
     }
 
     /* Posizione Freccia giù*/
-    .go-to-bottom {
+    body .go-to-bottom {
         bottom: 25px !important;
+        opacity: 1 !important;
+        visibility: visible !important;
     }
 
     /* Eliminiamo l'effetto hover:hover che su mobile a volte "s'incanta" 
