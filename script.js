@@ -83,6 +83,25 @@ backToTop.addEventListener("click", (e) => {
     });
 });
 
+//Freccia per andare giù
+const goToBottom = document.getElementById("goToBottom");
+
+goToBottom.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.scrollTo({
+        top: document.documentElement.scrollHeight,
+        behavior: "smooth"
+    });
+});
+
+window.addEventListener("scroll", () => {
+    if ((window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight - 100) {
+        goToBottom.classList.add("hide");
+    } else {
+        goToBottom.classList.remove("hide");
+    }
+});
+
 // Canzone Contea
 const audio = document.getElementById('shire-theme');
 const section = document.querySelector('.leaf-container');
