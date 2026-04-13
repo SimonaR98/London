@@ -1087,8 +1087,10 @@
     /* Post-it Meal Deal */
     .meal-deal-note {
         transform: rotate(0);
-        margin: 30px 10px;
-        margin-bottom: 35px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .note-content {
@@ -1189,16 +1191,36 @@
     }
 
     /* Leicester Square */
-    .lead-text-square,
-    .sub-text-square {
-        width: 100% !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        text-align: center !important;
+    section.leadenhall-open .leadenhall-container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
     }
 
-    .lead-text-square {
-        font-size: 18px;
+    section.leadenhall-open .leadenhall-visual {
+        order: 2 !important;
+        width: 100% !important;
+        margin-top: 10px !important;
+        margin-bottom: 25px !important;
+    }
+
+    section.leadenhall-open .leadenhall-text {
+        order: 3 !important;
+        width: 100% !important;
+    }
+
+    section.leadenhall-open .leadenhall-header {
+        order: 1 !important;
+    }
+
+    section.leadenhall-open .main-img {
+        width: 100% !important;
+        height: auto !important;
+        border-radius: 15px !important;
+    }
+
+    section.leadenhall-open {
+        padding-bottom: 20px !important;
     }
 
     /*M&M's e Lego*/

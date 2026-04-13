@@ -1,6 +1,6 @@
 .main-header {
     position: relative;
-    height: 65vh;
+    height: 55vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -283,6 +283,18 @@ h3 {
 .quick-info i {
     color: #ebb866;
     margin-right: 5px;
+}
+
+/*Linea decorativa*/
+.magic-divider {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right,
+            rgba(235, 184, 102, 0),
+            rgba(235, 184, 102, 1) 50%,
+            rgba(235, 184, 102, 0));
+    margin: 25px auto;
+    width: 80%;
 }
 
 /*Freccia per tornare su*/

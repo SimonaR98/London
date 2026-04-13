@@ -109,7 +109,6 @@
     gap: 30px;
     margin-top: 30px;
     padding-top: 20px;
-    border-top: 1px solid #002147;
 }
 
 .zoo-info-item {
@@ -126,7 +125,7 @@
 
 .zoo-info-item span {
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 14px;
     color: #555;
 }
 
@@ -205,14 +204,13 @@
     position: relative;
     overflow: hidden;
     background: linear-gradient(to bottom, #e8f5e9, #ffffff);
-    padding: 50px 20px;
+    padding: 40px 20px;
     border-top: 3px solid #2E8B57;
 }
 
 /*Primrose Hills*/
 .panoramic-step {
     text-align: center;
-    margin: 30px auto;
     display: inline-block;
     padding-bottom: 5px;
 }
@@ -225,6 +223,7 @@
     text-transform: uppercase;
     font-size: 32px;
     margin-bottom: 15px;
+    margin-top: 0;
 }
 
 .contea-subtitle {
@@ -487,7 +486,6 @@
         max-height: 250px !important;
         object-fit: cover !important;
 
-        /* Se per caso fosse rimasto un background impostato prima: */
         background-image: none !important;
         background-repeat: no-repeat !important;
         float: none !important;
