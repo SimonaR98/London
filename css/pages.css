@@ -513,11 +513,30 @@ h3 {
         font-size: 26px;
     }
 
+    /*Frecce*/
+    .back-to-top,
+    .go-to-bottom {
+        width: 45px !important;
+        height: 45px !important;
+        right: 15px !important;
+        font-size: 24px !important;
+    }
+
+    /* Posizione Freccia su*/
     .back-to-top {
-        bottom: 20px;
-        right: 20px;
-        width: 45px;
-        height: 45px;
-        font-size: 25px;
+        bottom: 80px !important;
+    }
+
+    /* Posizione Freccia giù*/
+    .go-to-bottom {
+        bottom: 25px !important;
+    }
+
+    /* Eliminiamo l'effetto hover:hover che su mobile a volte "s'incanta" 
+       e lasciamo solo un feedback al tocco (opzionale ma consigliato) */
+    .back-to-top:active,
+    .go-to-bottom:active {
+        background-color: #c8102e !important;
+        transform: scale(0.9);
     }
 }
