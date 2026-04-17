@@ -606,133 +606,168 @@
 
 /* --- RESPONSIVE DAY 4 --- */
 @media (max-width: 768px) {
+    .londra-day4 {
+        height: 25vh !important;
+        background-position: center !important;
+    }
 
-    /* 1. Sea Life - Acquario */
+    /*Acquario */
+    .sea-life-section {
+        padding: 40px 15px !important;
+    }
+
     .sea-hero-box {
-        min-height: auto;
-        flex-direction: column;
-        border-radius: 20px;
-        margin: 0 10px;
+        flex-direction: column !important;
+        min-height: auto !important;
+        padding-bottom: 120px !important;
+        border-radius: 25px !important;
     }
 
     .ocean-overlay {
-        padding: 30px 20px;
+        padding: 30px 20px !important;
         text-align: center;
     }
 
     .sea-title {
-        font-size: 2.5rem;
+        font-size: 2.8rem !important;
+    }
+
+    .bubble-divider {
+        margin: 0 auto 20px !important;
     }
 
     .sea-arrival-info {
-        width: 100%;
+        margin: 0 auto !important;
+        flex-wrap: wrap;
         justify-content: center;
-        border-radius: 15px;
     }
 
-    /* Box VR (Spostato sotto l'immagine per non coprire nulla) */
+    /* Box VR Delfini (Posizionamento Mobile) */
     .vr-experience-card {
-        position: static;
-        width: 90%;
-        margin: -20px auto 30px;
-        right: 0;
-        bottom: 0;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        position: relative !important;
+        right: 0 !important;
+        bottom: -60px !important;
+        width: 85% !important;
+        margin: 0 auto !important;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
     }
 
-    /* 2. South Bank Walk (La linea a puntini) */
+    /*South Bank Walk (La linea a puntini) */
     .walk-steps {
-        flex-direction: column;
-        gap: 20px;
+        flex-direction: column !important;
+        gap: 0 !important;
     }
 
     .step-line {
-        display: none;
+        width: 2px !important;
+        height: 40px !important;
+        max-width: none !important;
+        margin: 0 auto !important;
+        border-left: 2px dashed #ebb866 !important;
+        border-top: none !important;
     }
 
-    /* 3. Borough Market */
-    .lunch-stop .market-container {
-        flex-direction: column;
-        text-align: center;
+    /*Big Ben & London Eye*/
+    .attraction-container {
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+
+    .attraction-text {
+        text-align: center !important;
+        order: 2 !important;
+    }
+
+    .attraction-image-wrapper {
+        order: 1 !important;
+    }
+
+    .circle-img {
+        width: 220px !important;
+        height: 220px !important;
+    }
+
+    .reverse .text-left {
+        text-align: center !important;
+    }
+
+    /*Borough Market */
+    .market-container {
+        flex-direction: column !important;
     }
 
     .market-frame {
-        width: 100%;
-        height: 200px;
+        width: 100% !important;
+        height: auto !important;
     }
 
-    .attraction-text h3 {
-        font-size: 2.2rem;
+    .market-title {
+        font-size: 32px !important;
     }
 
-    /* 4. Uber Boat */
+    /*Uber Boat */
     .boat-content h2 {
-        font-size: 32px;
+        font-size: 32px !important;
     }
 
     .boat-details {
-        flex-direction: column;
-        gap: 15px;
-        border-radius: 20px;
-        width: 90%;
+        flex-direction: column !important;
+        gap: 10px !important;
+        border-radius: 20px !important;
     }
 
-    /* 5. Osservatorio Greenwich (Scacchiera) */
+    /*Osservatorio Greenwich (Scacchiera) */
     .observatory-hero {
-        height: 300px;
+        height: 350px !important;
+    }
+
+    .observatory-container {
+        margin-top: -50px !important;
     }
 
     .observatory-body {
-        padding: 40px 20px;
+        padding: 40px 20px !important;
     }
 
     .meridian-divider {
-        left: 20px;
-        /* Spostiamo la linea del meridiano tutta a sinistra */
-    }
-
-    .coord-tag {
-        left: 20px;
-        transform: none;
+        display: none;
+        /* Rimuoviamo la linea centrale su mobile */
     }
 
     .grid-item {
-        grid-template-columns: 1fr;
-        gap: 10px;
-        margin-bottom: 40px;
-        text-align: left !important;
-        padding-left: 40px;
+        display: flex !important;
+        flex-direction: column !important;
+        margin-bottom: 40px !important;
     }
 
-    .grid-item:nth-child(even) {
-        direction: ltr;
+    .grid-visual {
+        order: 1 !important;
+        margin-bottom: 15px !important;
     }
 
-    .grid-visual img {
-        height: 180px;
-        margin-top: 10px;
+    .grid-content {
+        order: 2 !important;
+        text-align: center !important;
     }
 
-    /* 6. Trasporti e Volo */
+    .grid-content h4 {
+        font-size: 1.5rem !important;
+    }
+
+    /* Trasporti e Volo */
     .grid-transport img {
-        width: 100%;
-        height: auto;
-        margin-left: 0;
+        width: 100% !important;
+        height: auto !important;
+        margin-left: 0 !important;
     }
 
     .text-final {
-        font-size: 18px;
-        padding: 0 20px;
-    }
-}
-
-/* Fix per schermi micro */
-@media (max-width: 400px) {
-    .sea-title {
-        font-size: 2rem;
+        font-size: 20px !important;
+        padding: 20px !important;
     }
 
-    .observatory-main-title {
-        font-size: 28px;
+    .fly {
+        width: 90% !important;
+        height: auto !important;
     }
 }
