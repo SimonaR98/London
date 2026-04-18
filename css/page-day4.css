@@ -664,7 +664,7 @@
 
     .step-line {
         width: 2px !important;
-        height: 40px !important;
+        height: 50px !important;
         max-width: none !important;
         margin: 0 auto !important;
         border-left: 2px dashed #ebb866 !important;
