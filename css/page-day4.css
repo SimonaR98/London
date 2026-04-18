@@ -621,6 +621,7 @@
         width: 100% !important;
         min-height: auto !important;
         padding-bottom: 100px !important;
+        border-radius: 0 !important;
     }
 
     .ocean-overlay {
@@ -647,13 +648,18 @@
         position: relative !important;
         right: auto !important;
         bottom: -40px !important;
-        width: 90% !important;
+        width: 85% !important;
         margin: 0 auto !important;
+        padding: 25px !important;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
         padding: 25px !important;
         border-left: none !important;
         border-radius: 20px !important;
         text-align: center !important;
+    }
+
+    .vr-badge {
+        text-align: left;
     }
 
     /*South Bank Walk (La linea a puntini) */
