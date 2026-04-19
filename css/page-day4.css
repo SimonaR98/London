@@ -671,6 +671,10 @@
         padding: 20px 0 !important;
     }
 
+    .southbank-walk {
+        padding: 60px 20px !important;
+    }
+
     .southbank-walk .step {
         display: inline-flex !important;
         flex-direction: row !important;
@@ -690,12 +694,12 @@
 
     .southbank-walk .step-line {
         width: 2px !important;
-        height: 40px !important;
+        height: 50px !important;
         border-left: 2px dashed #ebb866 !important;
         border-top: none !important;
         border-right: none !important;
         border-bottom: none !important;
-        margin: 5px auto !important;
+        margin: 10px auto !important;
         display: block !important;
         flex: none !important;
         max-width: 2px !important;
@@ -708,10 +712,10 @@
 
     /*Big Ben & London Eye*/
     .attraction-section {
-        max-width: 800px !important;
+        max-width: 100% !important;
         width: 100% !important;
-        margin: 20px 0 !important;
-        padding: 10px !important;
+        padding: 40px 10px !important;
+        margin: 0 auto !important;
     }
 
     .attraction-container {
@@ -720,13 +724,14 @@
         align-items: center !important;
         width: 100% !important;
         max-width: 100% !important;
-        gap: 25px !important;
+        padding: 0 !important;
+        gap: 30px !important;
     }
 
     .attraction-text {
         width: 100% !important;
         max-width: 100% !important;
-        padding: 0 15px !important;
+        padding: 0 10px !important;
         text-align: center !important;
         order: 2 !important;
     }
@@ -734,7 +739,7 @@
     .detective-tip {
         width: 100% !important;
         margin: 20px 0 !important;
-        padding: 20px !important;
+        padding: 20px 15px !important;
         box-sizing: border-box !important;
         text-align: left !important;
         border-radius: 15px !important;
@@ -745,6 +750,14 @@
         width: 100% !important;
         display: flex;
         justify-content: center;
+    }
+
+    .quick-info {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 12px !important;
+        margin-top: 20px !important;
     }
 
     .circle-img {
