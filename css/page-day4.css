@@ -712,19 +712,20 @@
 
     /*Big Ben & London Eye*/
     .attraction-section {
-        max-width: 100% !important;
         width: 100% !important;
-        padding: 40px 10px !important;
-        margin: 0 auto !important;
+        max-width: 100vw !important;
+        margin: 20px 0 !important;
+        padding: 0 !important;
+        overflow: hidden;
     }
 
     .attraction-container {
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
-        text-align: center !important;
+        justify-content: center !important;
         width: 100% !important;
-        max-width: 100% !important;
+        margin: 0 auto !important;
         padding: 0 !important;
         gap: 30px !important;
     }
@@ -735,7 +736,8 @@
         align-items: center !important;
         width: 100% !important;
         max-width: 100% !important;
-        padding: 0 10px !important;
+        margin: 0 auto !important;
+        padding: 0 20px !important;
         text-align: center !important;
         order: 2 !important;
     }
@@ -743,15 +745,15 @@
     .attraction-description {
         width: 100% !important;
         max-width: 100% !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
         text-align: center !important;
+        margin: 15px auto !important;
+        width: 100% !important;
     }
 
     .detective-tip {
-        width: 95% !important;
+        width: 90% !important;
         margin: 25px auto !important;
-        padding: 20px 15px !important;
+        padding: 20px !important;
         box-sizing: border-box !important;
         text-align: left !important;
         border-radius: 15px !important;
@@ -759,9 +761,9 @@
 
     .attraction-image-wrapper {
         order: 1 !important;
-        width: 100% !important;
-        display: flex;
-        justify-content: center;
+        margin: 0 auto 20px !important;
+        display: flex !important;
+        justify-content: center !important;
     }
 
     .quick-info {
@@ -771,6 +773,7 @@
         justify-content: center !important;
         width: 100% !important;
         gap: 12px !important;
+        padding: 0 !important;
         margin: 20px auto !important;
     }
 
@@ -784,6 +787,7 @@
     .circle-img {
         width: 220px !important;
         height: 220px !important;
+        margin: 0 auto !important;
     }
 
     .reverse .text-left {
