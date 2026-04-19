@@ -690,7 +690,7 @@
 
     .southbank-walk .step-line {
         width: 2px !important;
-        height: 30px !important;
+        height: 40px !important;
         border-left: 2px dashed #ebb866 !important;
         border-top: none !important;
         border-right: none !important;
@@ -707,18 +707,44 @@
     }
 
     /*Big Ben & London Eye*/
+    .attraction-section {
+        max-width: 800px !important;
+        width: 100% !important;
+        margin: 20px 0 !important;
+        padding: 10px !important;
+    }
+
     .attraction-container {
+        display: flex !important;
         flex-direction: column !important;
-        gap: 20px !important;
+        align-items: center !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        gap: 25px !important;
     }
 
     .attraction-text {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 15px !important;
         text-align: center !important;
         order: 2 !important;
     }
 
+    .detective-tip {
+        width: 100% !important;
+        margin: 20px 0 !important;
+        padding: 20px !important;
+        box-sizing: border-box !important;
+        text-align: left !important;
+        border-radius: 15px !important;
+    }
+
     .attraction-image-wrapper {
         order: 1 !important;
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
     }
 
     .circle-img {
