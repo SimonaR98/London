@@ -727,12 +727,14 @@
         width: 100% !important;
         max-width: 100% !important;
         margin: 0 !important;
-        padding: 0 !important;
+        padding: 10px 0 !important;
+        gap: 20px !important;
         left: 0 !important;
         transform: none !important;
     }
 
     .attraction-text {
+        order: 2 !important;
         width: 100% !important;
         max-width: 100% !important;
         margin: 0 !important;
@@ -770,7 +772,7 @@
         width: 100% !important;
         display: flex !important;
         justify-content: center !important;
-        margin: 0 0 20px 0 !important;
+        margin: 0 0 15px 0 !important;
         padding: 0 !important;
     }
 
