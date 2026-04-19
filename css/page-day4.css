@@ -663,15 +663,12 @@
     }
 
     /*South Bank Walk (La linea a puntini) */
-    .step {
-        margin-bottom: 8px !important;
-    }
-
     .walk-steps {
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
         width: 100% !important;
+        padding: 20px 0 !important;
     }
 
     .southbank-walk .step {
@@ -686,32 +683,27 @@
 
     .southbank-walk .step p {
         margin: 0 !important;
-        padding-bottom: 5px !important;
+        padding: 0 !important;
         white-space: nowrap;
+        text-align: left !important;
     }
 
     .southbank-walk .step-line {
         width: 2px !important;
-        height: 25px !important;
+        height: 30px !important;
         border-left: 2px dashed #ebb866 !important;
         border-top: none !important;
-        margin: 4px auto !important;
+        border-right: none !important;
+        border-bottom: none !important;
+        margin: 5px auto !important;
         display: block !important;
         flex: none !important;
+        max-width: 2px !important;
     }
 
     .step-icon {
-        margin: 0 auto 10px !important;
+        margin: 0 !important;
         flex-shrink: 0 !important;
-    }
-
-    .step-line {
-        width: 2px !important;
-        height: 50px !important;
-        max-width: none !important;
-        margin: 0 auto !important;
-        border-left: 2px dashed #ebb866 !important;
-        border-top: none !important;
     }
 
     /*Big Ben & London Eye*/
