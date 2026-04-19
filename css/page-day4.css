@@ -671,25 +671,23 @@
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
-        justify-content: center !important;
         width: 100% !important;
-        margin: 0 auto !important;
     }
 
     .southbank-walk .step {
-        display: flex !important;
-        flex-direction: column !important;
+        display: inline-flex !important;
+        flex-direction: row !important;
         align-items: center !important;
-        text-align: center !important;
-        width: 100% !important;
+        justify-content: center !important;
+        gap: 15px !important;
+        width: fit-content !important;
         margin: 0 !important;
-        flex: none !important;
     }
 
     .southbank-walk .step p {
         margin: 0 !important;
         padding-bottom: 5px !important;
-        line-height: 1.2 !important;
+        white-space: nowrap;
     }
 
     .southbank-walk .step-line {
@@ -697,13 +695,14 @@
         height: 25px !important;
         border-left: 2px dashed #ebb866 !important;
         border-top: none !important;
-        margin: 5px auto !important;
+        margin: 4px auto !important;
         display: block !important;
-        max-width: 2px !important;
+        flex: none !important;
     }
 
     .step-icon {
         margin: 0 auto 10px !important;
+        flex-shrink: 0 !important;
     }
 
     .step-line {
