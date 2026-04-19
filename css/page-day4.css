@@ -722,6 +722,7 @@
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
+        text-align: center !important;
         width: 100% !important;
         max-width: 100% !important;
         padding: 0 !important;
@@ -729,6 +730,9 @@
     }
 
     .attraction-text {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
         width: 100% !important;
         max-width: 100% !important;
         padding: 0 10px !important;
@@ -736,9 +740,17 @@
         order: 2 !important;
     }
 
-    .detective-tip {
+    .attraction-description {
         width: 100% !important;
-        margin: 20px 0 !important;
+        max-width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: center !important;
+    }
+
+    .detective-tip {
+        width: 95% !important;
+        margin: 25px auto !important;
         padding: 20px 15px !important;
         box-sizing: border-box !important;
         text-align: left !important;
@@ -756,8 +768,17 @@
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
         gap: 12px !important;
-        margin-top: 20px !important;
+        margin: 20px auto !important;
+    }
+
+    .quick-info span {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
     }
 
     .circle-img {
