@@ -829,25 +829,27 @@
     }
 
     .observatory-container {
-        width: 95% !important;
+        width: 92% !important;
         margin: -50px auto 0 auto !important;
-        max-width: 95% !important;
+        max-width: 92% !important;
         border-radius: 10px !important;
         padding: 0 !important;
         box-shadow: none !important;
         overflow: hidden !important;
+        position: relative !important;
+        left: 0 !important;
+        right: 0 !important;
     }
 
     .observatory-body {
         background-image: url('../img/day4/stelle-telefono.jpeg') !important;
-        background-size: cover !important;
-        background-position: center center !important;
+        background-size: 100% auto !important;
+        background-position: top center !important;
         background-repeat: no-repeat !important;
-        border-radius: 0 !important;
-        padding: 30px 15px !important;
+        padding: 40px 20px !important;
         width: 100% !important;
-        display: block !important;
         box-sizing: border-box !important;
+        text-align: center !important;
     }
 
     .meridian-divider {
@@ -862,8 +864,11 @@
     }
 
     .grid-item {
+        width: 100% !important;
         display: flex !important;
         flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
         margin-bottom: 40px !important;
     }
 
@@ -874,7 +879,9 @@
 
     .grid-content {
         order: 2 !important;
+        width: 100% !important;
         text-align: center !important;
+        padding: 0 !important;
     }
 
     .grid-content h4 {
