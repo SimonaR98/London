@@ -830,18 +830,19 @@
 
     .observatory-container {
         width: 100% !important;
+        margin: -50px 0 0 0 !important;
         max-width: 100% !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
         border-radius: 0 !important;
         padding: 0 !important;
         box-shadow: none !important;
+        overflow: hidden !important;
     }
 
     .observatory-body {
         background-image: url('../img/day4/stelle-telefono.jpeg') !important;
         background-size: cover !important;
         background-position: center !important;
+        background-repeat: no-repeat !important;
         border-radius: 0 !important;
         padding: 40px 20px !important;
         width: 100% !important;
@@ -854,12 +855,8 @@
 
     .observatory-intro {
         width: 100% !important;
-        padding: 20px !important;
-        background-size: cover !important;
-        background-position: center !important;
-        margin-left: -15px !important;
-        margin-right: -15px !important;
-        width: calc(100% + 30px) !important;
+        padding: 0 0 30px !important;
+        margin: 0 !important;
     }
 
     .grid-item {
@@ -879,7 +876,7 @@
     }
 
     .grid-content h4 {
-        font-size: 1.5rem !important;
+        font-size: 24px !important;
     }
 
     /* Trasporti e Volo */
