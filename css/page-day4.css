@@ -834,20 +834,18 @@
         margin-left: 0 !important;
         margin-right: 0 !important;
         border-radius: 0 !important;
+        padding: 0 !important;
         box-shadow: none !important;
     }
 
     .observatory-body {
-        padding: 40px 15px !important;
-        box-sizing: border-box !important;
-        border-radius: 0 !important;
-        margin-top: -30px !important;
-        width: 100vw !important;
-        margin-left: calc(-50vw + 50%) !important;
         background-image: url('../img/day4/stelle-telefono.jpeg') !important;
         background-size: cover !important;
         background-position: center !important;
-        background-repeat: no-repeat !important;
+        border-radius: 0 !important;
+        padding: 40px 20px !important;
+        width: 100% !important;
+        margin: 0 !important;
     }
 
     .meridian-divider {
