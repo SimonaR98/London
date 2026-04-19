@@ -829,16 +829,39 @@
     }
 
     .observatory-container {
-        margin-top: -50px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
     }
 
     .observatory-body {
-        padding: 40px 20px !important;
+        padding: 40px 15px !important;
+        box-sizing: border-box !important;
+        border-radius: 0 !important;
+        margin-top: -30px !important;
+        width: 100vw !important;
+        margin-left: calc(-50vw + 50%) !important;
+        background-image: url('../img/day4/stelle-telefono.jpeg') !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
     }
 
     .meridian-divider {
         display: none;
-        /* Rimuoviamo la linea centrale su mobile */
+    }
+
+    .observatory-intro {
+        width: 100% !important;
+        padding: 20px !important;
+        background-size: cover !important;
+        background-position: center !important;
+        margin-left: -15px !important;
+        margin-right: -15px !important;
+        width: calc(100% + 30px) !important;
     }
 
     .grid-item {
@@ -862,6 +885,29 @@
     }
 
     /* Trasporti e Volo */
+    .grid-item:has(.grid-transport) {
+        margin-top: 50px !important;
+        padding: 0 15px !important;
+    }
+
+    .text-right {
+        text-align: center !important;
+        padding: 20px 0 !important;
+    }
+
+    .transport-badge {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 15px auto !important;
+        width: fit-content !important;
+        padding: 10px 20px !important;
+    }
+
+    .grid-transport {
+        margin-bottom: 25px !important;
+    }
+
     .grid-transport img {
         width: 100% !important;
         height: auto !important;
