@@ -185,3 +185,34 @@ function revealMap() {
         trigger.style.display = 'none';
     }, 500);
 }
+
+//Sezione carosello attrazioni
+let currentIndex = 0;
+const cards = document.querySelectorAll('.slider-card');
+
+function moveSlider(direction) {
+    // Rimuovi classe active dalla card attuale
+    cards[currentIndex].classList.remove('active');
+
+    // Calcola il nuovo indice (Ciclo Infinito)
+    currentIndex += direction;
+    if (currentIndex < 0) {
+        currentIndex = cards.length - 1;
+    } else if (currentIndex >= cards.length) {
+        currentIndex = 0;
+    }
+
+    // Aggiungi classe active alla nuova card
+    cards[currentIndex].classList.add('active');
+
+    // Centra la card nel contenitore
+    const track = document.getElementById('sliderTrack');
+    const cardWidth = cards[0].offsetWidth + 20; // Larghezza + gap
+    const offset = -currentIndex * cardWidth + (window.innerWidth / 2 - cardWidth / 2);
+
+    // Su mobile serve un aggiustamento extra per centrare
+    track.style.transform = `translateX(${offset}px)`;
+}
+
+// Inizializza la posizione al caricamento
+window.onload = () => moveSlider(0);
