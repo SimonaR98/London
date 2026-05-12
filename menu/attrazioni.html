@@ -14,6 +14,7 @@
 
     <title>Attrazioni</title>
     <link rel="icon" type="image/ico" href="../icon.jpg">
+
 </head>
 
 <!-- Freccia per tornare ad inizio pagina -->
@@ -48,32 +49,40 @@
             Che tu stia cercando antichi tomi o giardini segreti, ricorda:
             non sono le mappe a mostrare la via, ma la curiosità di chi sa guardare oltre."
         </p>
-        <br>
+    </section>
 
-        <!-- Pre menu per facilitare la navigazione della pagina-->
-        <div class="restaurant">
-            <span class="quick-info" style="justify-content: center; text-transform: uppercase; font-weight: bold;">
-                <i class="bi bi-compass"></i> Indice delle Meraviglie
-            </span>
+    <section class="slider-wrapper">
+        <div class="slider-container">
+            <button class="prev-btn" onclick="moveSlider(-1)">&#10094;</button>
 
-            <div class="nav-links-menu">
-                <div class="dropdown">
-                    <button class="btn-restaurant dropdown-toggle tag-attraction"
-                        style="margin: 0; padding: 10px 20px; font-size: 15px; border: none; cursor: pointer;">
-                        Musei <i class="bi bi-chevron-down" style="margin-left: 8px;"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="#british-museum">British Museum</a>
-                        <a href="#natural-history">Natural History Museum</a>
-                        <a href="#tate-modern">Tate Modern</a>
-                        <a href="#v-and-a">V&A Museum</a>
+            <div class="slider-track" id="sliderTrack">
+                <!-- Card 1 -->
+                <div class="slider-card active" id="card1">
+                    <img src="../img/menu-img/tate-modern.webp" alt="Tate Modern">
+                    <div class="card-label">
+                        <h3>Tate Modern</h3>
+                        <a href="#tate">Scopri di più</a>
                     </div>
                 </div>
-                <a href="#leadenhall" class="btn-restaurant tag-attraction">Leadenhall Market</a>
-                <a href="#stdunstan" class="btn-restaurant tag-attraction">St.
-                    Dunstan in the East</a>
-                <a href="#sky-garden" class="btn-restaurant tag-attraction">Sky Garden</a>
+                <!-- Card 2 -->
+                <div class="slider-card" id="card2">
+                    <img src="../img/menu-img/british-museum.jpg" alt="British Museum">
+                    <div class="card-label">
+                        <h3>British Museum</h3>
+                        <a href="#british">Scopri di più</a>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="slider-card" id="card3">
+                    <img src="img/pixar.jpg" alt="Mundo Pixar">
+                    <div class="card-label">
+                        <h3>Mundo Pixar</h3>
+                        <a href="#pixar">Scopri di più</a>
+                    </div>
+                </div>
             </div>
+
+            <button class="next-btn" onclick="moveSlider(1)">&#10095;</button>
         </div>
     </section>
 
