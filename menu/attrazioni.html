@@ -52,40 +52,152 @@
     </section>
 
     <!-- Carosello immagini-->
-    <section class="slider-wrapper">
-        <div class="slider-container">
-            <button class="prev-btn" onclick="moveSlider(-1)">&#10094;</button>
-
-            <div class="slider-track" id="sliderTrack">
-                <!-- Card 1 -->
-                <div class="slider-card active" id="card1">
-                    <img src="../img/menu-img/tate-modern.webp" alt="Tate Modern">
-                    <div class="card-label">
-                        <h3>Tate Modern</h3>
-                        <a href="#tate">Scopri di più</a>
+    <main class="container">
+        <!-- SEZIONE MUSEI -->
+        <h2 class="category-title">I Musei</h2>
+        <div class="slider-wrapper">
+            <div class="slider-container">
+                <button class="prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+                <div class="slider-track">
+                    <!-- Card 1 -->
+                    <div class="slider-card active">
+                        <img src="../img/menu-img/tate-modern.webp" alt="Tate Modern">
+                        <div class="card-label">
+                            <h3>Tate Modern</h3>
+                            <a href="#tate-info" class="btn-details">Scopri di più</a>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="slider-card">
+                        <img src="../img/menu-img/british-museum.jpg" alt="British Museum">
+                        <div class="card-label">
+                            <h3>British Museum</h3>
+                            <a href="#british-info" class="btn-details">Scopri di più</a>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="slider-card">
+                        <img src="../img/menu-img/churchill-war-room.webp" alt="Churchill War Room">
+                        <div class="card-label">
+                            <h3>Churchill War Room</h3>
+                            <a href="#war-room-info" class="btn-details">Scopri di più</a>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="slider-card">
+                        <img src="../img/menu-img/kensington-palace.jpg" alt="Kensington Palace">
+                        <div class="card-label">
+                            <h3>Kensington Palace</h3>
+                            <a href="#palace-info" class="btn-details">Scopri di più</a>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="slider-card">
+                        <img src="../img/menu-img/science-museum.jpg" alt="Science Museum">
+                        <div class="card-label">
+                            <h3>Science Museum</h3>
+                            <a href="#science-info" class="btn-details">Scopri di più</a>
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="slider-card">
+                        <img src="../img/menu-img/national-gallery.jpg" alt="National Gallery">
+                        <div class="card-label">
+                            <h3>National Gallery</h3>
+                            <a href="#gallery-info" class="btn-details">Scopri di più</a>
+                        </div>
+                    </div>
+                    <!-- Card 7 -->
+                    <div class="slider-card">
+                        <img src="../img/menu-img/v-a-museum.jpg" alt="Victoria & Albert Museum">
+                        <div class="card-label">
+                            <h3>Victoria & Albert Museum</h3>
+                            <a href="#va-museum-info" class="btn-details">Scopri di più</a>
+                        </div>
                     </div>
                 </div>
-                <!-- Card 2 -->
-                <div class="slider-card" id="card2">
-                    <img src="../img/menu-img/british-museum.jpg" alt="British Museum">
+                <!-- Card 8 -->
+                <div class="slider-card">
+                    <img src="../img/menu-img/tate-britain.avif" alt="Tate Britain">
                     <div class="card-label">
-                        <h3>British Museum</h3>
-                        <a href="#british">Scopri di più</a>
+                        <h3>Tate Britain</h3>
+                        <a href="#tate-britain-info" class="btn-details">Scopri di più</a>
                     </div>
                 </div>
-                <!-- Card 3 -->
-                <div class="slider-card" id="card3">
-                    <img src="../img/menu-img/paradox.jpeg" alt="Paradox Museum">
-                    <div class="card-label">
-                        <h3>Paradox Museum</h3>
-                        <a href="#pixar">Scopri di più</a>
-                    </div>
-                </div>
+                <button class="next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
             </div>
-
-            <button class="next-btn" onclick="moveSlider(1)">&#10095;</button>
         </div>
-    </section>
+        <br>
+        <hr class="magic-divider">
+
+        <!-- SEZIONE ESPERIENZE EXTRA -->
+        <h2 class="category-title" style="margin-top: 60px;">Esperienze Extra</h2>
+        <div class="slider-wrapper">
+            <div class="slider-container">
+                <button class="prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+                <div class="slider-track">
+                    <!-- Card 1 -->
+                    <div class="slider-card active">
+                        <img src="../img/menu-img/mundo-pixar.avif" alt="Mundo Pixar">
+                        <div class="card-label">
+                            <h3>Mundo Pixar</h3>
+                            <a href="#pixar-info" class="btn-details">Scopri di più</a>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="slider-card">
+                        <img src="../img/menu-img/tower-bridge.avif" alt="Tower Bridge">
+                        <div class="card-label">
+                            <h3>Tower Bridge</h3>
+                            <a href="#tower-info" class="btn-details">Scopri di più</a>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="slider-card">
+                        <img src="../img/menu-img/cable-london-eye.jpg" alt="Cabin London Eye">
+                        <div class="card-label">
+                            <h3>London Eye</h3>
+                            <a href="#cabin-info" class="btn-details">Scopri di più</a>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="slider-card">
+                        <img src="../img/menu-img/the-shard.jpg" alt="The Shard">
+                        <div class="card-label">
+                            <h3>The Shard</h3>
+                            <a href="#shard-info" class="btn-details">Scopri di più</a>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="slider-card">
+                        <img src="../img/menu-img/hopon-hopoff-bus.jpg" alt="Autobus Hop-on Hop-off">
+                        <div class="card-label">
+                            <h3>Autobus Hop-on Hop-off</h3>
+                            <a href="#bus-info" class="btn-details">Scopri di più</a>
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="slider-card">
+                        <img src="../img/menu-img/bunga90.jpg" alt="Bunga 90">
+                        <div class="card-label">
+                            <h3>Bunga 90</h3>
+                            <a href="#bunga-info" class="btn-details">Scopri di più</a>
+                        </div>
+                    </div>
+                    <!-- Card 7 -->
+                    <div class="slider-card">
+                        <img src="../img/menu-img/house-of-minalima.webp" alt="House of Minalima">
+                        <div class="card-label">
+                            <h3>House of Minalima</h3>
+                            <a href="#war-room-info" class="btn-details">Scopri di più</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+            </div>
+        </div>
+    </main>
+
 
     <!-- Bristish Museum -->
     <section class="restaurant-section">
