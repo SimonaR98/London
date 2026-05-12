@@ -188,55 +188,37 @@ function revealMap() {
 
 //Sezione carosello attrazioni
 function moveSlider(btn, direction) {
-    // Troviamo il contenitore specifico
     const container = btn.closest('.slider-container');
     const track = container.querySelector('.slider-track');
-    const cards = Array.from(track.querySelectorAll('.slider-card'));
 
-    // Trova l'indice della card attiva
-    let currentIndex = cards.findIndex(card => card.classList.contains('active'));
-
-    // Se stiamo cambiando foto (direzione != 0)
-    if (direction !== 0) {
-        cards[currentIndex].classList.remove('active');
-        currentIndex += direction;
-
-        // Ciclo infinito
-        if (currentIndex < 0) currentIndex = cards.length - 1;
-        if (currentIndex >= cards.length) currentIndex = 0;
-
-        cards[currentIndex].classList.add('active');
+    // Se clicchiamo "avanti"
+    if (direction === 1) {
+        const firstCard = track.firstElementChild;
+        track.appendChild(firstCard); // Sposta la prima card alla fine
+    }
+    // Se clicchiamo "indietro"
+    else {
+        const lastCard = track.lastElementChild;
+        track.prepend(lastCard); // Sposta l'ultima card all'inizio
     }
 
-    // CALCOLO POSIZIONE CENTRALE
-    const containerWidth = container.offsetWidth;
-    const cardWidth = cards[0].offsetWidth;
-    const gap = 15; // Deve corrispondere al gap nel tuo CSS
-
-    // Formula per centrare la card attiva
-    const offset = -currentIndex * (cardWidth + gap) + (containerWidth / 2 - cardWidth / 2);
-
-    // Applichiamo lo spostamento
-    track.style.transform = `translateX(${offset}px)`;
+    updateActiveCard(track);
 }
 
-// Funzione per inizializzare tutti gli slider della pagina
-function initAllSliders() {
-    const allContainers = document.querySelectorAll('.slider-container');
-    allContainers.forEach(container => {
-        // Usiamo il tasto "next" come riferimento per far partire la funzione
-        const refBtn = container.querySelector('.next-btn');
-        if (refBtn) {
-            moveSlider(refBtn, 0); // Direzione 0 = centra solo l'attuale
-        }
-    });
+function updateActiveCard(track) {
+    const cards = Array.from(track.querySelectorAll('.slider-card'));
+    cards.forEach(c => c.classList.remove('active'));
+
+    // In questo sistema, la card centrale è sempre quella "in mezzo"
+    // Se hai 3 o più card, la centrale sarà la seconda o terza
+    // Ma per semplicità mettiamo active sulla card che sta visivamente al centro
+    const middleIndex = Math.floor(cards.length / 2);
+    cards[middleIndex].classList.add('active');
 }
 
-// Esecuzione al caricamento
+// Inizializzazione: mette active sulla card centrale all'avvio
 window.addEventListener('load', () => {
-    // Un piccolo ritardo (100ms) aiuta il browser a calcolare le misure reali
-    setTimeout(initAllSliders, 100);
+    document.querySelectorAll('.slider-track').forEach(track => {
+        updateActiveCard(track);
+    });
 });
-
-// Centra nuovamente se l'utente ruota lo smartphone
-window.addEventListener('resize', initAllSliders);
