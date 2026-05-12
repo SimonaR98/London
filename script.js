@@ -188,13 +188,14 @@ function revealMap() {
 
 //Sezione carosello attrazioni
 let currentIndex = 0;
+const track = document.getElementById('sliderTrack');
 const cards = document.querySelectorAll('.slider-card');
 
 function moveSlider(direction) {
-    // Rimuovi classe active dalla card attuale
-    cards[currentIndex].classList.remove('active');
+    // 1. Rimuovi lo stato attivo da tutte le card
+    cards.forEach(card => card.classList.remove('active'));
 
-    // Calcola il nuovo indice (Ciclo Infinito)
+    // 2. Calcola il nuovo indice con ciclo infinito
     currentIndex += direction;
     if (currentIndex < 0) {
         currentIndex = cards.length - 1;
@@ -202,17 +203,33 @@ function moveSlider(direction) {
         currentIndex = 0;
     }
 
-    // Aggiungi classe active alla nuova card
+    // 3. Applica la classe active alla card corrente
     cards[currentIndex].classList.add('active');
 
-    // Centra la card nel contenitore
-    const track = document.getElementById('sliderTrack');
-    const cardWidth = cards[0].offsetWidth + 20; // Larghezza + gap
-    const offset = -currentIndex * cardWidth + (window.innerWidth / 2 - cardWidth / 2);
+    // 4. CALCOLO DELLA CENTRALITÀ
+    // Larghezza del contenitore (lo schermo)
+    const containerWidth = document.querySelector('.slider-container').offsetWidth;
+    // Larghezza della singola card
+    const cardWidth = cards[0].offsetWidth;
+    // Il gap che hai messo nel CSS (20px)
+    const gap = 20;
 
-    // Su mobile serve un aggiustamento extra per centrare
+    /* 
+       LOGICA: 
+       Per centrare la card, dobbiamo spostare la track di:
+       (posizione della card) - (metà dello schermo) + (metà della card)
+    */
+    const offset = -currentIndex * (cardWidth + gap) + (containerWidth / 2 - cardWidth / 2);
+
     track.style.transform = `translateX(${offset}px)`;
 }
 
-// Inizializza la posizione al caricamento
-window.onload = () => moveSlider(0);
+// Inizializza la posizione al caricamento per centrare la prima card
+window.addEventListener('load', () => {
+    moveSlider(0);
+});
+
+// Opzionale: ri-centra se si ruota il telefono
+window.addEventListener('resize', () => {
+    moveSlider(0);
+});
