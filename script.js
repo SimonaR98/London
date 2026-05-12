@@ -187,49 +187,66 @@ function revealMap() {
 }
 
 //Sezione carosello attrazioni
-let currentIndex = 0;
-const track = document.getElementById('sliderTrack');
-const cards = document.querySelectorAll('.slider-card');
+/**
+ * Funzione principale per muovere lo slider
+ * @param {Element} btn - Il bottone cliccato (prev o next)
+ * @param {Number} direction - 1 per avanti, -1 per indietro, 0 per centrare l'attuale
+ */
+function moveSlider(btn, direction) {
+    // Risaliamo al contenitore padre per trovare gli elementi di questo specifico slider
+    const container = btn.closest('.slider-container');
+    const track = container.querySelector('.slider-track');
+    const cards = Array.from(track.querySelectorAll('.slider-card'));
 
-function moveSlider(direction) {
-    // 1. Rimuovi lo stato attivo da tutte le card
-    cards.forEach(card => card.classList.remove('active'));
+    // 1. Trova l'indice della card che ha attualmente la classe 'active'
+    let currentIndex = cards.findIndex(card => card.classList.contains('active'));
 
-    // 2. Calcola il nuovo indice con ciclo infinito
-    currentIndex += direction;
-    if (currentIndex < 0) {
-        currentIndex = cards.length - 1;
-    } else if (currentIndex >= cards.length) {
-        currentIndex = 0;
+    // 2. Se stiamo effettivamente cambiando foto (direzione diversa da 0)
+    if (direction !== 0) {
+        cards[currentIndex].classList.remove('active');
+
+        // Calcolo dell'indice infinito
+        currentIndex += direction;
+        if (currentIndex < 0) {
+            currentIndex = cards.length - 1;
+        } else if (currentIndex >= cards.length) {
+            currentIndex = 0;
+        }
+
+        cards[currentIndex].classList.add('active');
     }
 
-    // 3. Applica la classe active alla card corrente
-    cards[currentIndex].classList.add('active');
-
-    // 4. CALCOLO DELLA CENTRALITÀ
-    // Larghezza del contenitore (lo schermo)
-    const containerWidth = document.querySelector('.slider-container').offsetWidth;
-    // Larghezza della singola card
+    // 3. CALCOLO POSIZIONE PER IL CENTRAMENTO (Come in foto corretta.jpg)
+    const containerWidth = container.offsetWidth;
     const cardWidth = cards[0].offsetWidth;
-    // Il gap che hai messo nel CSS (20px)
-    const gap = 20;
+    const gap = 15; // Deve essere uguale al gap nel CSS
 
-    /* 
-       LOGICA: 
-       Per centrare la card, dobbiamo spostare la track di:
-       (posizione della card) - (metà dello schermo) + (metà della card)
-    */
+    // Formula magica: calcola lo spazio per portare la card attiva al centro esatto
     const offset = -currentIndex * (cardWidth + gap) + (containerWidth / 2 - cardWidth / 2);
 
+    // Muove la traccia
     track.style.transform = `translateX(${offset}px)`;
 }
 
-// Inizializza la posizione al caricamento per centrare la prima card
+/**
+ * Funzione di inizializzazione al caricamento della pagina
+ */
+function initSliders() {
+    const allContainers = document.querySelectorAll('.slider-container');
+
+    allContainers.forEach(container => {
+        // Cerchiamo il bottone "next" per usarlo come riferimento nella funzione
+        const refBtn = container.querySelector('.next-btn');
+        // Chiamiamo moveSlider con direzione 0 per centrare la card 'active' di partenza
+        moveSlider(refBtn, 0);
+    });
+}
+
+// Eseguiamo l'inizializzazione quando la pagina (e il CSS) è pronta
 window.addEventListener('load', () => {
-    moveSlider(0);
+    // Un piccolo delay assicura che il browser abbia calcolato correttamente le larghezze
+    setTimeout(initSliders, 150);
 });
 
-// Opzionale: ri-centra se si ruota il telefono
-window.addEventListener('resize', () => {
-    moveSlider(0);
-});
+// Ri-centra tutto se l'utente ruota il telefono o cambia dimensione finestra
+window.addEventListener('resize', initSliders);
