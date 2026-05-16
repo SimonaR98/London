@@ -135,29 +135,6 @@
 }
 
 .prev-btn {
-    left: 5px;
-}
-
-.next-btn {
-    right: 5px;
-}
-
-/* Frecce Oro */
-.prev-btn,
-.next-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.7);
-    color: #d4af37;
-    border: 1px solid #d4af37;
-    padding: 15px;
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 100;
-}
-
-.prev-btn {
     left: 15px;
 }
 
@@ -172,14 +149,6 @@
     text-transform: uppercase;
     font-size: 40px;
     margin-bottom: 15px;
-}
-
-/*Immagine attrazioni*/
-.att-image {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url('../img/menu-img/attrazioni.jpg');
-    background-size: cover;
-    background-position: center;
 }
 
 /*Lista delle descrizioni delle attrazioni*/
@@ -202,6 +171,35 @@
     background: rgba(0, 0, 0, 0.1);
     margin: 50px auto;
     width: 60%;
+}
+
+/*Linea di fine */
+/* Linea di chiusura con pallino centrale */
+.end-divider-circle {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(235, 184, 102, 0.5), #ebb866, rgba(235, 184, 102, 0.5), transparent);
+    margin: 60px auto;
+    /* Ampio margine sopra e sotto */
+    width: 60%;
+    position: relative;
+    overflow: visible;
+    /* Importante per far vedere il pallino */
+}
+
+.end-divider-circle::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: #ebb866;
+    /* Il tuo oro */
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(235, 184, 102, 0.6);
+    /* Un leggero bagliore */
 }
 
 /* Classe per il testo tecnico allineato a sinistra */
