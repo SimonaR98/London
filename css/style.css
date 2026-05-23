@@ -382,6 +382,81 @@ body {
     margin-bottom: 20px;
 }
 
+/*Valigia*/
+/* Stile per le checkbox della valigia */
+.technical-info input[type="checkbox"] {
+    accent-color: #ebb866;
+    cursor: pointer;
+    transform: scale(1.2);
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.technical-info label {
+    cursor: pointer;
+    vertical-align: middle;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* Effetto sbiadito quando l'oggetto è spuntato */
+.technical-info input[type="checkbox"]:checked+label {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+/*Note per Mastro Hobbit */
+.note-ranger {
+    max-width: 700px;
+    margin: 40px auto;
+    background: #fdf5e6;
+    border-left: 5px solid #8b4513;
+    border-right: 5px solid #8b4513;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 0px rgba(235, 184, 102, 0.1);
+    position: relative;
+    transform: rotate(-1deg);
+}
+
+.title-ranger {
+    display: block;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    color: #8b4513;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.note-ranger p {
+    margin-bottom: 0;
+    font-style: italic;
+    color: black;
+    line-height: 1.5;
+}
+
+/*Citazione Bilbo*/
+.scena-avventura-box {
+    max-width: 600px;
+    margin: 40px auto 20px auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.scena-img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid rgba(235, 184, 102, 0.3);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    filter: sepia(20%) brightness(90%);
+}
+
+
 /* --- RESPONSIVE UNIFICATO (Index + Pagine) --- */
 @media (max-width: 768px) {
 
