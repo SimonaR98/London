@@ -188,6 +188,13 @@
     background-position: center;
 }
 
+.trip-page {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('../img/menu-img/trip-image.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
 /*Lista delle descrizioni delle attrazioni*/
 .att-list {
     font-family: "Montserrat", sans-serif;

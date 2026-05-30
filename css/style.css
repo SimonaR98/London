@@ -268,7 +268,7 @@ body {
     font-family: "Anton", sans-serif;
     font-weight: 300;
     letter-spacing: 2px;
-    font-size: 50px;
+    font-size: 45px;
     text-align: center;
 }
 
@@ -767,6 +767,12 @@ body {
     }
 
     /* Footer Index (i bottoni di navigazione) */
+    .footer-title {
+        font-size: 24px !important;
+        margin-top: 25px !important;
+        letter-spacing: 1px !important;
+    }
+
     .footer-grid {
         flex-direction: column;
         align-items: center;
