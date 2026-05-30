@@ -59,6 +59,73 @@
     border-radius: 0 10px 10px 0;
 }
 
+/*Consiglio e Curiosità su gite*/
+.tip-box-trip {
+    background-color: #f3eadc;
+    padding: 15px 15px 15px 45px;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 4px 20px 4px 20px;
+    margin: 25px 0 15px 0;
+    position: relative;
+    border-left: 5px solid;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tip-box-trip p {
+    margin: 0 !important;
+    color: #4a4a4a;
+}
+
+.curiosity-tip {
+    border-left-color: #ebb866;
+    background-color: rgba(235, 184, 102, 0.05);
+}
+
+/* Inserisce l'icona della lampadina automaticamente prima del testo */
+.curiosity-tip::before {
+    content: "\f589";
+    /* Codice Bootstrap Icon per bi-stars */
+    font-family: "bootstrap-icons";
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    color: #ebb866;
+    font-size: 24px;
+}
+
+/* Consigli Pratici / Avvertenze */
+.warning-tip {
+    background: linear-gradient(135deg, #fff5f5 0%, #f7e9e9 100%);
+    border: 2px solid #c8102e;
+    border-radius: 12px;
+
+    width: 100%;
+    margin: 30px 0;
+    padding: 20px 25px 20px 60px;
+    box-sizing: border-box;
+}
+
+.warning-tip::before {
+    content: "\f483";
+    /* Codice Bootstrap Icon per bi-megaphone-fill */
+    font-family: "bootstrap-icons";
+    position: absolute;
+    left: 22px;
+    top: 20px;
+    color: #c8102e;
+    font-size: 24px;
+}
+
+.warning-tip p {
+    color: #1a1a1a !important;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 !important;
+}
+
+
 /*Sherlock Holmes*/
 /* Invertire l'ordine dell'immagine e del paragrafo*/
 .attraction-container .reverse {
