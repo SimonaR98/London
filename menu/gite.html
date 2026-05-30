@@ -8,12 +8,14 @@
         @import url('https://fonts.googleapis.com/css2?family=Anton&family=Cinzel+Decorative:wght@400;700;900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Great+Vibes&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
     </style>
+
     <link type="text/css" rel="stylesheet" href="../css/style.css">
     <link type="text/css" rel="stylesheet" href="../css/pages.css">
+    <link type="text/css" rel="stylesheet" href="../css/page-day1.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <title>Dove mangiare</title>
-    <link rel="icon" type="image/ico" href="./icon.jpg">
+    <title>Gite fuori porta</title>
+    <link rel="icon" type="image/ico" href="../icon.jpg">
 </head>
 
 <!-- Freccia per tornare ad inizio pagina -->
@@ -23,94 +25,231 @@
 
 
 <body>
-    <header class="main-header main-picture1">
+    <header class="main-header trip-page">
         <div class="header-title">
-            <h1>Dove mangiare</h1>
+            <h1>Viaggi inaspettati</h1>
         </div>
+
+        <!-- Barra menù -->
+        <menu type="toolbar" class="menubar">
+            <div class="menu-container">
+                <div class="menu-links">
+                    <a href="../footer/valigia.html">Valigia</a>
+                    <a href="./gite.html">Attrazioni</a>
+                    <a href="./internet.html">Internet</a>
+                    <a href="../footer/app.html">App</a>
+                </div>
+            </div>
+        </menu>
+        </section>
     </header>
 
-    <section class="restaurant-section">
+    <!-- Oxford -->
+    <main class="restaurant-section">
         <div class="restaurant">
-            <h2 class="countdown-title">Le Meraviglie Celate</h2>
-
             <p class="adv-description">
-                "Oltre i sentieri battuti dai babbani e lontano dai rintocchi del Grande Orologio,
-                si celano angoli di Londra dove il tempo sembra essersi fermato.
-                Che tu stia cercando antichi tomi o giardini segreti, ricorda:
-                non sono le mappe a mostrare la via, ma la curiosità di chi sa guardare oltre."
+                Oltre i confini della nebbiosa metropoli si estendono terre di antica sapienza e cerchi di pietra
+                ancestrale. Due fughe da mezza giornata pensate per spezzare il ritmo della città e inseguire pura
+                magia.
             </p>
+        </div>
 
-            <hr class="magic-divider">
+        <hr class="magic-divider">
+
+        <section class="zoo-section">
+            <div class="zoo-image">
+                <img src="../img/menu-img/oxford.jpg" alt="Oxford" class="zoo-hero-img">
+            </div>
+
+            <div class="zoo-content">
+                <h2 class="attraction-title">Oxford: la città delle Guglie Sognanti</h2>
+                <p class="attraction-description">
+                    Culla del genio letterario e custode di segreti secolari. Oxford non è una semplice gita, ma un
+                    portale dove la realtà accademica babbana si fonde con le leggende della Terra di Mezzo e gli
+                    incantesimi di Hogwarts. Una mezza giornata strategica da vivere a piedi, concentrandosi solo su ciò
+                    che accende l'immaginazione.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Attrazioni a Oxford -->
+    <!-- Christ Church College -->
+    <section class="attraction-section">
+        <div class="attraction-container">
+            <div class="attraction-text">
+                <h2 class="attraction-title">Christ Church College</h2>
+                <p class="attraction-description">
+                    Il cuore cinematografico di Hogwarts. Salendo le monumentali scale gotiche ti ricorderai
+                    l'accoglienza
+                    della McGranitt nel primo film, per poi varcare la soglia della <em>Great Hall</em>: la mensa
+                    universitaria reale
+                    che ha ispirato e dato vita alla leggendaria Sala Grande dello schermo.
+                </p>
+
+                <div class="quick-info">
+                    <span><i class="bi bi-headset"></i> Audioguida ufficiale</span>
+                    <span><i class="bi bi-clock"></i> Tra le 11:45 e le 14:00 diventa mensa del college</span>
+                </div>
+
+                <div class="tip-box">
+                    <p><strong>Curiosità:</strong> Verso il grande caminetto monumentale, guardando attentamente gli
+                        alari di ferro del camino, questi hanno dei colli lunghissimi di ottone. Gli
+                        alari originali che hanno ispirato Lewis Carroll a scrivere di Alice che allunga il collo dopo
+                        aver mangiato il fungo! In
+                        più, guardate le vetrate colorate della sala: in una ci sono i ritratti nascosti di Alice, del
+                        Cappellaio Matto e del Bianconiglio.
+                    </p>
+                </div>
+            </div>
+
+            <div class="attraction-image-wrapper">
+                <img src="../img/menu-img/christ-church.jpg" alt="Chirst Church College" class="circle-img">
+            </div>
         </div>
     </section>
 
-    <section class="restaurant-section">
-        <div class="restaurant">
+    <!-- Bodleian Library -->
+    <section class="attraction-section">
+        <div class="attraction-container reverse">
 
-            <h2 class="attraction-title">Pub a Londra</h2>
-
-            <div class="itinerary-image-wrapper">
-                <img src="./img/latua-immagine.jpg" alt="Descrizione" class="itinerary-image">
+            <div class="attraction-image-wrapper">
+                <img src="../img/menu-img/library.png" alt="Bodleian Library" class="circle-img">
             </div>
 
             <div class="attraction-text">
+                <h2 class="attraction-title">Bodleian Library</h2>
                 <p class="attraction-description">
-                    I pub londinesi non sono solo posti dove bere birra:
-                    sono veri e propri templi della cultura gastronomica britannica.
-                    Dai classici fish & chips alle pies tradizionali, ogni pub racconta una storia.
+                    I sotterranei del sapere medievale. Camminerai tra i soffitti gotici della <em>Divinity School</em>
+                    (l'infermeria nei film) e ti tufferai nell'oscurità della <em>Duke Humfrey's Library</em>, lo
+                    scrigno dei libri incatenati usato come sezione proibita.
                 </p>
-            </div>
 
-            <hr class="magic-divider">
+                <div class="quick-info">
+                    <span><i class="bi bi-person-video3"></i> Tour guidato obbligatorio</span>
+                    <span><i class="bi bi-book-fill"></i> Sezione proibita</span>
+                    <span><i class="bi bi-hospital"></i> Infermeria</span>
+                </div>
+
+                <div class="tip-box detective-tip">
+                    <p>
+                        Non si può introdurre nulla, e soprattutto non si possono fare foto all'interno della <b>Duke
+                            Humfrey's Library</b>(sezione proibita) per proteggere i manoscritti.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="restaurant-section">
-        <div class="restaurant">
-
-            <h2 class="attraction-title">Bar a Londra</h2>
-
-            <div class="itinerary-image-wrapper">
-                <img src="./img/latua-immagine.jpg" alt="Descrizione" class="itinerary-image">
-            </div>
-
+    <!-- The Eagle and Child -->
+    <section class="attraction-section">
+        <div class="attraction-container">
             <div class="attraction-text">
+                <h2 class="attraction-title">The Eagle and Child</h2>
                 <p class="attraction-description">
-                    Oltre ai pub, Londra è famosa per i suoi bar creativi e innovativi.
-                    Dai rooftop bar con vista sul Tamigi ai locali nascosti con cocktail d'autore, la scena dei bar
-                    londinesi è in continua evoluzione.
+                    Il leggendario pub soprannominato "Il Bimbo e l'Uccellino". Tra queste mura, nella saletta privata,
+                    il Professore e C.S. Lewis si incontravano ogni martedì per leggere le prime bozze del <em>Signore
+                        degli Anelli</em>. Attualmente chiuso per restauri.
                 </p>
+
+                <div class="quick-info">
+                    <span><i class="bi bi-camera"></i> Sosta obbligatoria davanti all'insegna per la foto.</span>
+                </div>
             </div>
 
-            <hr class="magic-divider">
+            <div class="attraction-image-wrapper">
+                <img src="../img/menu-img/eagle-and-child.webp" alt="The Eagle and Child" class="circle-img">
+            </div>
         </div>
     </section>
 
-    <!-- Consigli -->
-    <section class="restaurant-section">
-        <div class="restaurant">
+    <!-- La tomba di Beren & Lùthien -->
+    <section class="attraction-section">
+        <div class="attraction-container reverse">
 
-            <h2 class="attraction-title">Consigli pratici:</h2>
-
-            <div class="attraction-text">
-                <p class="attraction-description">
-                    Ci sono un sacco di posti a Londra ,
-                    ma con qualche accorgimento diventa un'esperienza memorabile:
-                </p>
+            <div class="attraction-image-wrapper">
+                <img src="../img/menu-img/tomb.jpg" alt="La tomba di Beren & Lúthien" class="circle-img">
             </div>
 
-            <hr class="magic-divider">
+            <div class="attraction-text">
+                <h2 class="attraction-title">La tomba di Beren & Lúthien</h2>
+                <p class="attraction-description">
+                    Nel silenzio del <em>Wolvercote Cemetery</em> riposa J.R.R. Tolkien insieme alla moglie Edith. Sulla
+                    pietra
+                    della lapide sono incisi i nomi immortali di Beren e Lúthien, sigillo della storia d'amore più pura
+                    del suo Legendarium.
+                </p>
+
+                <div class="quick-info">
+                    <span><i class="bi bi-taxi-front"></i> Taxi/Uber</span>
+                </div>
+
+                <!-- <div class="tip-box detective-tip">
+                    <p><strong>🔎 Ricordiamoci:</strong> Dobbiamo arrivare 10 minuti prima (13:50) per il controllo dei
+                        biglietti!</p>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <hr class="magic-divider">
+
+    <!-- Stonehenge -->
+    <section class="zoo-section">
+        <div class="zoo-image">
+            <img src="../img/menu-img/stonehenge.jpg" alt="Stonehenge" class="zoo-hero-img">
+        </div>
+
+        <div class="zoo-content">
+            <h2 class="attraction-title">Stonehenge: Il Santuario dei Druidi</h2>
+            <p class="attraction-description">
+                Un balzo all'indietro nel tempo di oltre cinquemila anni. Immerso nelle ventose pianure di Salisbury,
+                questo anello di monoliti ancestrali custodisce intatti i misteri del Neolitico, gli allineamenti solari
+                e le leggende legate a Merlino. Una mezza giornata magica dove la presenza di una guida trasforma le
+                pietre silenziose in pura narrazione.
+            </p>
+        </div>
+    </section>
+
+    <!-- Il cerchio di pietre & le capanne neolitiche -->
+    <section class="attraction-section">
+        <div class="attraction-container">
+            <div class="attraction-text">
+                <h2 class="attraction-title">Il Cerchio di Pietre & Le Capanne Neolitiche</h2>
+                <p class="attraction-description">
+                    L'esperienza totale si articola in tre tappe coordinate. Prima si esplora il Museo Interattivo con
+                    il cinema a 360° per vivere i solstizi. Successivamente si visitano le fedeli ricostruzioni delle
+                    Capanne Neolitiche dei costruttori, per poi salire sulla navetta che conduce direttamente ai piedi
+                    del maestoso anello di Pietre Sarsen e Pietre Blu.
+                </p>
+
+                <div class="quick-info">
+                    <span><i class="bi bi-person-check"></i> Tour con guida dedicata</span>
+                </div>
+
+                <!-- <div class="tip-box">
+                    <p><strong>Consiglio:</strong> Potremmo fare <em>"Spirit of London"</em>, la
+                        giostra sui taxi neri che racconta la storia della città!
+                        <br>Il giorno della visita, se siamo interessati, dobbiamo parlare con un membro del personale
+                        per ricevere istruzioni su come salire a bordo
+                    </p>
+                </div>-->
+            </div>
+
+            <div class="attraction-image-wrapper">
+                <img src="../img/menu-img/capanne.avif" alt="Le capanne" class="circle-img">
+            </div>
         </div>
     </section>
 </body>
 
 <!-- Footer con comando alla pagina successiva-->
 <div class="nav-footer">
-    <a href="index.html" class="nav-icon">
+    <a href="../index.html" class="nav-icon">
         <i class="bi bi-house-door"></i>
     </a>
 </div>
 </body>
-<script src="./script.js"></script>
+<script src="../script.js"></script>
 
 </html>
